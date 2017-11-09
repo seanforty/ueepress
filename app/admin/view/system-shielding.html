@@ -1,0 +1,46 @@
+﻿{{include file="public/_meta.html"}}
+<title>基本设置</title>
+</head>
+<body>
+<nav class="breadcrumb">
+	<i class="Hui-iconfont">&#xe67f;</i> 首页<span class="c-gray en">&gt;</span>系统管理<span class="c-gray en">&gt;</span>基本设置
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div class="page-container">
+	<form id="updateform" onclick="return false;">
+	<div>
+		<textarea name="filterwords" class="textarea" style="width:98%; height:300px; resize:none">{{$data.value}}</textarea>
+	</div>
+	<div class="mt-20 text-c">
+		<button onclick="save_info()" class="btn btn-success radius" type="submit"><i class="icon-ok"></i> 确定</button>
+	</div>
+	</form>
+</div>
+{{include file="public/_footer.html"}}
+<script type="text/javascript">
+//保存网站基础设置
+function save_info() {
+	$.ajax({
+		url:'{{url path="api/sitetext/updateFilterText"}}',
+		type:"POST",
+		data:$("#form-update").serialize(),
+		dataType:"JSON",
+		success:function (res) {
+			layer.msg('更新成功!',{icon:1,time:1000});
+		},
+		error:function (res) {
+			alert("更新失败");
+		}
+	});
+}
+
+$(function(){
+	//tab切换窗口
+	$("#tab-system").Huitab({
+		index:0
+	});
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+﻿{{include file="public/_meta.html"}}
+<title>广告列表 - 广告管理 - UEECMS</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 广告管理 <span class="c-gray en">&gt;</span> 广告列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<div class="text-c">
+		<form action="{{url path='admin/sliderbox/getList'}}" method="get">
+		广告位列表：
+		<span class="select-box inline">
+			<select id="menulist" name="id" class="select">
+				<option value="0">--请选择广告位</option>
+				{{$sliderstr}}
+			</select>
+		</span>
+		<input type="submit" class="btn btn-success" value=" 选择">
+		</form>
+	</div>
+	<div class="cl pd-5 bg-1 bk-gray mt-20">
+		<span class="l">
+			<a href="javascript:;" onclick="pop_layer('添加广告','{{url path='admin/Sliderbox/add' params=['id'=>$aid]}}','800','550')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加广告</a>
+		</span>
+		<span class="r"></span> </div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
+			<thead>
+				<tr class="text-c">
+					<th width="25"><input type="checkbox" name="" value=""></th>
+					<th width="80">ID</th>
+					<th>广告图片</th>
+					<th width="60">图片说明</th>
+					<th width="80">目标链接</th>
+					<th width="75">新窗口打开</th>
+					<th width="120">排序</th>
+					<th width="120">操作</th>
+				</tr>
+			</thead>
+			<tbody id="datatr">
+			{{foreach $adlist as $v}}
+			<tr class="text-c">
+				<td><input type="checkbox" name="id" value="{{$v.id}}"></td>
+				<td>{{$v.id}}</td>
+				<td>{{if isset($v.image) && is_array($v.image)}} <img src="{{$v.image.img_url}}" width="200">
+					{{else}}请添加图片{{/if}}
+				</td>
+				<td>{{$v.img_alt}}</td>
+				<td>{{$v.target_url}}</td>
+				<td>{{if $v.target eq "1"}}是{{else}}否{{/if}}</td>
+				<td><input type="text" size="3" name="listorder" value="{{$v.listorder}}" onchange="changeorder(this,'{{$v.id}}')"></td>
+				<td class="f-14 td-manage">
+					<a style="text-decoration:none" class="ml-5" onClick="open_layer('编辑','{{url path='admin/sliderbox/update' params=['id'=>$v.id]}}')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
+					<a style="text-decoration:none" class="ml-5" onClick="del_data(this,'{{$v.id}}','{{url path="api/sliderbox/delete"}}')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a>
+				</td>
+			</tr>
+			{{/foreach}}
+			</tbody>
+		</table>
+	</div>
+</div>
+{{include file="public/_footer.html"}}
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="{{$smarty.const.STATIC}}/admin/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+//更新顺序
+function changeorder(t,id)
+{
+	$.ajax({
+		url:'{{url path="api/sliderbox/changeOrder"}}',
+		data:{
+			id:id,
+			listorder:t.value
+		},
+		dataType:"JSON",
+		type:"POST",
+		success:function (res) {
+			layer.msg("顺序更新成功！",{icon:1,time:1000});
+			location.reload();
+		},
+		error:function (res) {
+			layer.msg("顺序更新失败！",{icon:0,time:1000});
+		}
+	});
+}
+</script> 
+</body>
+</html>

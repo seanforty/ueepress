@@ -1,0 +1,65 @@
+﻿<div class="top">
+    <div class="top1">
+        <div class="w1100 clearfix">
+            <div class="hyy fl">{{$header.headerwelcome}}</div>
+            <div class="dt fr">
+                <a href="{{$header.headermenulink1}}">{{$header.headermenutitle1}}</a>
+                <span>/</span>
+                <a href="{{$header.headermenulink2}}">{{$header.headermenutitle2}}</a>
+                <span>/</span>
+                <a href="{{$header.headermenulink3}}">{{$header.headermenutitle3}}</a>
+            </div>
+        </div>
+    </div>
+    <div class="top2 w1100 clearfix">
+        <div class="logo fl">
+            <a href="{{url path='index'}}">
+                <img src="{{$ads.logo[0].image.img_url}}" width="150" height="100" alt="鹤川泵业（上海）有限公司" title="鹤川泵业（上海）有限公司" /></a>
+        </div>
+        <div class="name fl">
+            <h1>{{$header.sitename}}</h1>
+            <h2>{{$header.sitesubtitle}}</h2></div>
+        <div class="tact fr"><div style="color: #ff8a00;font-size: 20px;overflow:hidden;padding-top: 60px;padding-left: 65px;"><strong>400-086-9986</strong></div></div>
+    </div>
+    <div class="nav">
+        <ul class="w1100 clearfix">
+            <li id="navId1">
+                <a href="/">网站首页</a></li>
+            <li id="navId2">
+                <a href="/aboutus.html">关于鹤川</a></li>
+            <li id="navId3">
+                <a href="/products.html">鹤川产品</a></li>
+            <li id="navId7">
+                <a href="/case.html">鹤川案例</a></li>
+            <li id="navId4">
+                <a href="/news.html">鹤川资讯</a></li>
+            <li id="navId6">
+                <a href="/service.html">鹤川服务</a></li>
+            <li id="navId5">
+                <a href="/honor.html">鹤川资质</a></li>
+            <li id="navId8">
+                <a href="/contact.html">联系鹤川</a></li>
+        </ul>
+        <script language="javascript" type="text/javascript">try {
+            document.getElementById("navId" + nav).className = "current";
+        } catch(e) {}</script>
+    </div>
+    <!--banner start-->
+    <div class="banner">
+        <ul class="banList">
+            {{foreach $ads.sliderbox as $k=>$v}}
+            <li class="active">
+                <a href="$v.target_url"><img src="{{$v.image.img_url}}" /></a>
+            </li>
+            {{/foreach}}
+        </ul>
+        <div class="fomW">
+            <div class="jsNav">
+                <a href="javascript:;" class="trigger current"></a>
+                <a href="javascript:;" class="trigger"></a>
+                <a href="javascript:;" class="trigger"></a>
+            </div>
+        </div>
+    </div>
+    <!--banner end-->
+</div>

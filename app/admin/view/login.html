@@ -1,0 +1,107 @@
+﻿{{include file="public/_meta.html"}}
+<title>后台登录 - UEECMS</title>
+</head>
+<body style="background-color: #00b7ee;">
+<div id="container" style="margin-top: 10%;">
+	<div class="loginWraper" style="height: 100%;margin-left: 20%;">
+		<div id="loginform" class="loginBox">
+			<form class="form form-horizontal" id="login-form" onclick="return false;">
+				<div class="row cl">
+					<label class="form-label col-xs-3"></label>
+					<div class="formControls col-xs-8">
+						<h2>UEECMS后台管理系统</h2>
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
+					<div class="formControls col-xs-8">
+						<input name="username" id="username" type="text" placeholder="账户" class="input-text size-L" style="width:300px;">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
+					<div class="formControls col-xs-8">
+						<input name="password" id="password" type="password" placeholder="密码" class="input-text size-L" style="width:300px;">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe72d;</i></label>
+					<div class="formControls col-xs-8">
+						<input name="captcha" id="captcha" class="input-text size-L" type="text" placeholder="验证码" value="" style="width:150px;">
+						<img src="{{url path='api/login/captcha'}}" onclick="this.src='{{url path='api/login/captcha'}}?id='+Math.random();">
+					</div>
+				</div>
+				<div class="row cl">
+				<div class="formControls col-xs-8 col-xs-offset-3">
+					<label for="online"><input type="checkbox" name="online" id="online" value="">使我保持登录状态</label>
+				</div>
+			</div>
+				<div class="row cl">
+					<div class="formControls col-xs-8 col-xs-offset-3">
+						<input type="submit" onclick="loginsubmit()" class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
+						<input name="" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="footer" style="margin-top: 10%;">&copy; Copyright 2017 All Rights Reserved <a href="http://www.ueecms.com/">UEECMS 1.0</a></div>
+</div>
+
+{{include file="public/_footer.html"}}
+<script type="text/javascript" src="{{$smarty.const.STATIC}}/admin/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="{{$smarty.const.STATIC}}/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="{{$smarty.const.STATIC}}/admin/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript" src="{{$smarty.const.STATIC}}/admin/lib/laypage/1.2/laypage.js"></script>
+<script>
+//如果当前不是顶级窗体则跳转
+if(self != top){
+    top.location.href = "{{url path='admin/login/index'}}";
+}
+
+function loginsubmit()
+{
+	var username = $("#username").val();
+	var password = $("#password").val();
+	var captcha  = $("#captcha").val();
+
+	if(!username){
+		layer.msg('用户名为空!',{icon:0,time:1000});
+		//return false;
+	}
+	if(!password){
+		layer.msg('密码为空!',{icon:0,time:1000});
+		return false;
+	}
+	if(!captcha){
+		layer.msg('验证码为空!',{icon:0,time:1000});
+		return false;
+	}
+
+	$.ajax({
+		url:'{{url path="api/login/login"}}',
+		type:'POST',
+		dataType:'JSON',
+		data:{
+			username:username,
+			password:password,
+			captcha:captcha
+		},
+		success:function (res) {
+			if(res.status){
+				layer.msg('登录成功!',{icon:1,time:1000});
+				window.location.href="{{url path='admin/index/index'}}";
+			}else{
+				layer.msg(res.msg,{icon:0,time:1000});
+			}
+		},
+		error:function (res) {
+			console.log(res);
+			layer.msg('登录失败!',{icon:0,time:1000});
+		}
+	});
+}
+
+</script>
+</body>
+</html>

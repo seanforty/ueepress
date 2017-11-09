@@ -1,0 +1,98 @@
+请求数据(class libs/Request)
+1. 获取GET方式提交的数据($_GET)
+string/array get(string $param)
+注：获取GET方式请求数据，使用addslashes并返回
+	无参数时返回数组
+	参数不存在时返回空字符串
+	参数存在返回字符串
+
+2. 获取POST方式提交的数据($_POST)
+string/array post(string $param)
+注：获取POST方式请求数据，使用addslashes并返回
+	无参数时返回数组
+	参数不存在时返回空字符串
+	参数存在返回字符串
+
+3. 批量获取POST方式提交的数据
+array postMany(array $arr)
+注： 对参数数组中的元素，依次使用request中的post方法遍历。
+
+4. 获取REQUEST方式提交的数据($_REQUEST)
+string/array param(string $param)
+注：获取GET/POST等方式请求数据，使用addslashes并返回
+	无参数时返回数组
+	参数不存在时返回空字符串
+	参数存在返回字符串
+
+5. 返回上传的文件($_FILES)
+array files(void)
+
+6. 检查GET方式提交的数据中是否有指定数据
+bool hasGet(string $param)
+
+7. 检查POST方式提交的数据中是否有指定数据
+bool hasPost(string $param)
+
+RestFUL API
+1. 程序抛出异常时，返回json格式信息
+{
+    "errCode": 700,
+    "errMsg": "手机号码已存在"
+}
+2. 程序无异常执行时，返回json格式信息
+{
+    "status":"true",
+    "msg":"操作成功"
+}
+函数 string status(bool $status,string $msg)
+
+
+数据库操作
+1. 查询所有记录，失败则返回空数组
+array find(void)
+
+2. 查询一条记录，失败则返回空数组
+array get(int $id)
+
+3. 更新数据，返回受影响的记录条数，失败返回0
+int update(array $data)
+参数格式: ["id"=>10,"title"=>"ex","price"=>29]
+
+4. 保存数据，返回受影响的记录条数，失败返回0
+int add(array $data)
+参数格式: ["id"=>10,"title"=>"ex","price"=>29]
+
+5. 保存一条数据，返回已插入的记录的ID
+string addReturnId(array $data)
+参数格式: ["id"=>10,"title"=>"ex","price"=>29]
+
+6. 删除数据，返回受影响的记录数目，否则返回0
+int delete(void)
+注意：需要跟where()配合使用
+
+7. 链式操作函数
+1).选择数据表
+DBObject table(string $table))
+
+2).数据库操作条件WHERE
+DBObject where(array $where)
+参数格式: 一条或二维数组 [ ["id",">","10"], ["create_time","<","2017"] ]
+
+3).查询结果排序
+DBObject order(array $order)
+参数格式:  一条或二维数组 [ ["id","desc"],["update_time","asc"] ]
+
+4).查询结果数目限制
+DBObject limit(array $limit)
+参数格式: 一维数组 ["limit",0,10]
+
+5).分页函数（未测试）
+DBObject pagination(int $page,int $limit)
+
+8. 关联查询
+1).一对一关联
+array hasOne(array $data,string $model,string $localKey,string $ModelKey)
+2).一对多关联
+array hasMany(array $data,string $model,string $localKey,string $ModelKey)
+3).多对多关联
+array toMany(array $data,string $model,string $middleModel,string $localKey,string $modelKey)

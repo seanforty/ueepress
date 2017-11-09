@@ -1,0 +1,19 @@
+
+<script type="text/javascript" src="{{$smarty.const.STATIC}}/admin/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{$smarty.const.STATIC}}/admin/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="{{$smarty.const.STATIC}}/admin/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="{{$smarty.const.STATIC}}/admin/h-ui.admin/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="{{$smarty.const.STATIC}}/huploadify/jquery.Huploadify.js"></script>
+<script type="text/javascript" src="{{$smarty.const.STATIC}}/admin/js/common.js"></script>
+
+<script type="text/javascript">
+var SCOPE = {
+    url: '{{url path="api/image/add"}}'
+};
+//框架跳转
+function header_go(url)
+{
+    $('iframe').attr('src',url);
+}
+
+</script>

@@ -1,0 +1,44 @@
+﻿{{include file="public/_meta.html"}}
+<title>我的桌面</title>
+</head>
+<body>
+<div class="page-container">
+	<p class="f-20 text-success">欢迎使用{{$desktop.uee_name}} <span class="f-14">{{$desktop.uee_version}}</span>！</p>
+	<p>登录次数：{{$desktop.logintimes}} </p>
+	<p>上次登录IP：{{$desktop.lastloginip}}  上次登录时间：{{$desktop.lastlogintime}}</p>
+	<table class="table table-border table-bordered table-bg">
+		<thead>
+			<tr>
+				<th colspan="7" scope="col">信息统计</th>
+			</tr>
+			<tr class="text-c">
+				<th>统计</th>
+				<th>文章</th>
+				<th>评论</th>
+				<th>留言</th>
+				<th>管理员</th>
+				<th>角色</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="text-c">
+				<td>总数</td>
+				<td>{{$desktop.articlenum}}</td>
+				<td>{{$desktop.commentnum}}</td>
+				<td>{{$desktop.messagenum}}</td>
+				<td>{{$desktop.adminnum}}</td>
+				<td>{{$desktop.rolenum}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<footer class="footer mt-20">
+	<div class="container">
+		<p>Copyright &copy;2015-2017 {{$desktop.uee_name}} All Rights Reserved.<br>
+			本后台系统由<a href="http://www.ueecms.com/" target="_blank" title="{{$desktop.uee_name}}">UEECMS</a>技术支持</p>
+	</div>
+</footer>
+{{include file="public/_footer.html"}}
+
+</body>
+</html>
