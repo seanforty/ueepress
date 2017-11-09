@@ -18,7 +18,7 @@ class AdminCategoryMenu extends Menu
      * @param id int 根目录分类id
      * @return string
      */
-    public function menuTree(int $id = 0): string
+    public function menuTree(int $id = 0):string
     {
         $menuStr = "";
 
@@ -53,7 +53,7 @@ EOT;
                 $tempTitle = "<b>" . $v['title'] . "</b>";
             }
             $editLink = url([
-                "path"=>"admin/category/update",
+                "path"=>"admin/pcategory/update",
                 "params"=>[
                     "id"=>$v["id"]
                 ]
@@ -70,7 +70,7 @@ EOT;
                     }
                     $tempClass = "pid-".$v['id'];
                     $editLink = url([
-                        "path"=>"admin/category/update",
+                        "path"=>"admin/pcategory/update",
                         "params"=>[
                             "id"=>$w["id"]
                         ]
@@ -82,7 +82,7 @@ EOT;
                             $tempClass = "pid-".$v['id']." pid-".$w['id'];
                             $tempTitle = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├".$u['title'];
                             $editLink = url([
-                                "path"=>"admin/category/update",
+                                "path"=>"admin/pcategory/update",
                                 "params"=>[
                                     "id"=>$u["id"]
                                 ]

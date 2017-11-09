@@ -9,7 +9,6 @@ declare(strict_types=1);
 namespace app\admin\controller;
 
 use app\api\exception\ParameterException;
-use app\api\model\Category as CategoryModel;
 use app\api\service\AdminCategoryMenu;
 use app\api\service\CategoryDropdownList;
 use app\libs\validate\MustBePostiveValidate;
@@ -22,23 +21,19 @@ class Category extends BaseController
     public function __construct()
     {
         parent::__construct();
-        $this->model = new CategoryModel();
-        $this->data = $this->model->find([],[
-            ["listorder","DESC"],
-            ["id","DESC"]
-        ]);
+        $this->model = new \app\api\model\Category();
     }
 
     /*
-     * 展示分类目录列表页
+     * 显示分类目录列表页
      * @param void
      * @return void
      */
-    public function getList()
+    public function getList(string $template)
     {
         $menuStr = (new AdminCategoryMenu($this->data))->menuTree();
         $this->assign("menuStr",$menuStr);
-        $this->display("article-category");
+        $this->display($template);
     }
 
     /*
@@ -46,11 +41,11 @@ class Category extends BaseController
      * @param void
      * @return void
      */
-    public function add()
+    public function addCate(string $template)
     {
         $dropdownStr = $this->dropdownMenu();
         $this->assign("dropdownStr",$dropdownStr);
-        $this->display("article-category-add");
+        $this->display($template);
     }
 
     /*
@@ -58,18 +53,16 @@ class Category extends BaseController
      * @param void
      * @return void
      */
-    public function update()
+    public function updateCate(string $template)
     {
         (new MustBePostiveValidate())->goCheck();
         $cid = intval(Request::get("id"));
         $res = $this->model->getCateByID($cid);
-        if(!$res){
-            throw new ParameterException("该ID类目不存在");
-        }
+        DBException($res,"该ID类目不存在");
         $dropdownStr = $this->dropdownMenu(0,$cid);
         $this->assign("dropdownStr",$dropdownStr);
         $this->assign("res",$res[0]);
-        $this->display("article-category-update");
+        $this->display($template);
     }
 
 

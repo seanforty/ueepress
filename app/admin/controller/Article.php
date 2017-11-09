@@ -48,37 +48,6 @@ class Article extends BaseController
     }
 
     /*
-     * 获取搜索查询条件
-     * RequestMethod POST
-     * @param string keyword,logmin,logmax 搜索关键词，最小日期，最大日期
-     * @return void
-     */
-    public function getWhere():array
-    {
-        $where = [];
-        $keyword = Request::get("keyword");
-        if($keyword){
-            $where[] = ["title","like","%".$keyword."%"];
-        }
-
-        $categoryId = Request::get("categoryid");
-        if($categoryId){
-            $where[] = ["cate_id","=",$categoryId];
-        }
-
-        $logMax = Request::get("logmax");
-        if($logMax){
-            $where[] = ["create_time","<",$logMax];
-        }
-
-        $logMin = Request::get("logmin");
-        if($logMin){
-            $where[] = ["create_time",">",$logMin];
-        }
-        return $where;
-    }
-
-    /*
      * 文章添加页面
      * @param void
      * @return void

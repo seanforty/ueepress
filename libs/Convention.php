@@ -62,14 +62,19 @@ return [
         "password" => "/^[a-zA-Z0-9_@#.]{6,20}$/",
     ],
 
+    //图片上传目录和缩略图尺寸设置
+    "image"=>[
+        "upload_dir" => "uploads/",
+        "width" => "250", //缩略图尺寸
+        "height" => "250" //缩略图尺寸
+    ],
+
     //其它配置
     "other" => [
         //设置时区
         "timezone" => "PRC",
         //日期格式
-        "timeformat" => "Y-m-d",
-        //图片上传目录 public/
-        "upload_dir" => "uploads/"
+        "timeformat" => "Y-m-d"
     ],
 
 ];

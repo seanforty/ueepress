@@ -37,11 +37,9 @@ class Category extends BaseController
     public function add()
     {
         (new CategoryAddValidate())->goCheck();
-        $data = Request::postMany(["id","title","parent_id","listorder","img_id","description"]);
+        $data = Request::postMany(["id","type","title","parent_id","listorder","img_id","description"]);
         $res = $this->model->add($data);
-        if(!$res){
-            throw new ParameterException("分类目录添加失败");
-        }
+        DBException($res,"添加分类失败");
         return status(true,"添加成功");
     }
 
@@ -75,9 +73,7 @@ class Category extends BaseController
         (new MustBePostiveValidate())->goCheck();
         $cid = intval( Request::post("id") );
         $res = $this->model->deleteByID($cid);
-        if(!$res){
-            throw new ParameterException("删除分类失败");
-        }
+        DBException($res,"删除分类失败");
         return status(true,"删除成功");
     }
 
@@ -89,10 +85,8 @@ class Category extends BaseController
     public function deleteAll()
     {
         $ids = Request::post("ids");
-        $res = $this->model->delete(["id","IN",'('.$ids.')']);
-        if(!$res){
-            throw new ParameterException("批量删除失败");
-        }
+        $res = $this->model->delete(["id","IN",$ids]);
+        DBException($res,"批量删除失败");
         return status(true,"删除成功");
     }
 
@@ -107,9 +101,7 @@ class Category extends BaseController
         $id = Request::post("id");
         $listorder = Request::post("listorder");
         $res = $this->model->updateByID(intval($id),["listorder"=>$listorder]);
-        if(!$res){
-            throw new ParameterException("更新失败");
-        }
+        DBException($res,"更新失败");
         return status(true,"更新成功");
     }
 }

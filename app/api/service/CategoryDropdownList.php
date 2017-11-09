@@ -16,8 +16,9 @@ class CategoryDropdownList extends Menu
      * 分类目录下拉菜单，格式如下
      * <option value="id">菜单一</option>
      * <option value="id">├菜单二</option>
-     * @param id int 根目录分类id
-     * @param curr bool  true 默认选中当前分类，false 默认选中父级分类
+     * @param int id 根目录分类id
+     * @param int cuid 当前分类ID
+     * @param bool curr  true-默认选中当前分类，false-默认选中父级分类
      * @return string
      */
     public function menuTree(int $id=0, int $cuid=0, bool $curr=false): string

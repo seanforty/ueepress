@@ -39,14 +39,18 @@ class Image extends BaseController
     {
         $files = Request::files();
         $file = $files['file'];
-        $uploadDir = Config::getConfig("other.upload_dir");
+        $uploadDir = Config::getConfig("image.upload_dir");
         $res = (new Upload($file,$uploadDir))->uploadFile();
         Log::record("上传图片: " . $res[1]);
         if(true===$res[0]){
-            $mid = $this->model->addAndReturnID(["img_url"=>"/".$res[1]]);
+            $thumbnail = $res[2]?$res[2]:$res[1];
+            $mid = $this->model->addAndReturnID([
+                "img_url"=>"/".$res[1],
+                "thumbnail"=>"/".$thumbnail
+                ]);
             return json([
                 "status"=>true,
-                "url"=>"/".$res[1],
+                "url"=>"/".$thumbnail,
                 "mid"=>$mid
             ]);
         }else{

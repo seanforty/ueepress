@@ -8,7 +8,7 @@
 
 namespace app\libs\validate;
 
-//单页码验证
+//单页码验证 -- 用于管理后台 文章/产品等页面
 class AdminPaginationValidate extends BaseValidate
 {
     protected $rules = [

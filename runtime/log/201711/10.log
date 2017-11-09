@@ -1,0 +1,1982 @@
+
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitename";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitesubtitle";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headerwelcome";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headercontact";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle1";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink1";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle2";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink2";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle3";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink3";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="title";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="description";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="keywords";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="copyright";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="beianhao";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footertext";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footercontact";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_menusite WHERE id=4;
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_menusite WHERE id=5;
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=2;
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (83);
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=1;
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (89,87,88);
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=5;
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="5" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (75);
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT count(`id`) FROM uee_product WHERE `type`="2" ORDER BY id DESC;
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_product WHERE `type`="2" ORDER BY id DESC LIMIT 0,10;
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (104,103,102,100);
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_title";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_subtitle";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_content";
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/js/jquery.scrollshow.js
+GET
+Error Message: Class 'app\js\controller\jquery' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/js/pt_js.js
+GET
+Error Message: Class 'app\js\controller\pt_js' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 05:55:48
+uee2.com/static/index/limages/wen_right_line.png
+GET
+Error Message: syntax error, unexpected 'static' (T_STATIC), expecting identifier (T_STRING)(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitename";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitesubtitle";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headerwelcome";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headercontact";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle1";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink1";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle2";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink2";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle3";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink3";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="title";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="description";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="keywords";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="copyright";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="beianhao";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footertext";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footercontact";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_menusite WHERE id=4;
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_menusite WHERE id=5;
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=2;
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (83);
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=1;
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (89,87,88);
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=5;
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="5" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (75);
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT count(`id`) FROM uee_product WHERE `type`="2" ORDER BY id DESC;
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_product WHERE `type`="2" ORDER BY id DESC LIMIT 0,10;
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (104,103,102,100);
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_title";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_subtitle";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_content";
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/js/jquery.scrollshow.js
+GET
+Error Message: Class 'app\js\controller\jquery' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 05:56:37
+uee2.com/js/pt_js.js
+GET
+Error Message: Class 'app\js\controller\pt_js' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 05:56:38
+uee2.com/static/index/limages/wen_right_line.png
+GET
+Error Message: syntax error, unexpected 'static' (T_STATIC), expecting identifier (T_STRING)(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 06:21:33
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: (0)<br/>Error File: E:\www\meswebsite\libs\Session.php : 41<br>
+
+----------------------------------------
+2017-11-10 06:21:33
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:21:33
+uee2.com/api/login/captcha
+GET
+Error Message: session_start(): Cannot send session cache limiter - headers already sent (output started at E:\www\meswebsite\app\api\service\Captcha.php:63)(0)<br/>Error File: E:\www\meswebsite\libs\Session.php : 53<br>
+
+----------------------------------------
+2017-11-10 06:21:34
+uee2.com/api/login/captcha
+GET
+Error Message: session_start(): Cannot send session cache limiter - headers already sent (output started at E:\www\meswebsite\app\api\service\Captcha.php:63)(0)<br/>Error File: E:\www\meswebsite\libs\Session.php : 53<br>
+
+----------------------------------------
+2017-11-10 06:21:38
+uee2.com/api/login/login
+POST
+SELECT * FROM uee_admin WHERE `title`="admin";
+----------------------------------------
+2017-11-10 06:21:38
+uee2.com/api/login/login
+POST
+UPDATE uee_admin SET `logintimes`=`logintimes`+1,`update_time`=1510266098 WHERE `id`="1"
+----------------------------------------
+2017-11-10 06:21:38
+uee2.com/api/login/login
+POST
+UPDATE uee_admin SET `lastloginip`="127.0.0.1",`lastlogintime`="1510266098",`update_time`="1510266098" WHERE `title`="admin"
+----------------------------------------
+2017-11-10 06:21:38
+uee2.com/admin/index/index
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2) AND `status` = "0";
+----------------------------------------
+2017-11-10 06:21:38
+uee2.com/admin/index/index
+GET
+SELECT * FROM uee_comment WHERE `type` = "3" AND `status` = "0";
+----------------------------------------
+2017-11-10 06:21:38
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin WHERE `title`="admin";
+----------------------------------------
+2017-11-10 06:21:38
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_article;
+----------------------------------------
+2017-11-10 06:21:38
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2);
+----------------------------------------
+2017-11-10 06:21:38
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type`="3";
+----------------------------------------
+2017-11-10 06:21:38
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin;
+----------------------------------------
+2017-11-10 06:21:38
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_role;
+----------------------------------------
+2017-11-10 06:21:50
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:21:51
+uee2.com/admin/pcategory/add
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/api/image/add
+POST
+上传图片: uploads/4adaaf29202c0996654d9f084064ca9b.jpg
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/4adaaf29202c0996654d9f084064ca9b.jpg', '/', '1510266113', '1510266113')
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitename";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitesubtitle";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headerwelcome";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headercontact";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle1";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink1";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle2";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink2";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle3";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink3";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="title";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="description";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="keywords";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="copyright";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="beianhao";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footertext";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footercontact";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_menusite WHERE id=4;
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_menusite WHERE id=5;
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=2;
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (83);
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=1;
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (89,87,88);
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=5;
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="5" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (75);
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT count(`id`) FROM uee_product WHERE `type`="2" ORDER BY id DESC;
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_product WHERE `type`="2" ORDER BY id DESC LIMIT 0,10;
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (104,103,102,100);
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_title";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_subtitle";
+----------------------------------------
+2017-11-10 06:21:53
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_content";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitename";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitesubtitle";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headerwelcome";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headercontact";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle1";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink1";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle2";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink2";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle3";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink3";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="title";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="description";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="keywords";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="copyright";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="beianhao";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footertext";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footercontact";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_menusite WHERE id=4;
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_menusite WHERE id=5;
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_sliderbox WHERE id=2;
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_image WHERE `id` IN (83);
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_sliderbox WHERE id=1;
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_image WHERE `id` IN (89,87,88);
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_sliderbox WHERE id=5;
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="5" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_image WHERE `id` IN (75);
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT count(`id`) FROM uee_product WHERE `type`="2" ORDER BY id DESC;
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_product WHERE `type`="2" ORDER BY id DESC LIMIT 0,10;
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_image WHERE `id` IN (104,103,102,100);
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_title";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_subtitle";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_content";
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/js/jquery.scrollshow.js
+GET
+Error Message: Class 'app\js\controller\jquery' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/js/pt_js.js
+GET
+Error Message: Class 'app\js\controller\pt_js' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 06:22:09
+uee2.com/static/index/limages/wen_right_line.png
+GET
+Error Message: syntax error, unexpected 'static' (T_STATIC), expecting identifier (T_STRING)(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 06:22:19
+uee2.com/admin/index/index?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2) AND `status` = "0";
+----------------------------------------
+2017-11-10 06:22:19
+uee2.com/admin/index/index?XDEBUG_SESSION_START=10116
+GET
+SELECT * FROM uee_comment WHERE `type` = "3" AND `status` = "0";
+----------------------------------------
+2017-11-10 06:22:19
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin WHERE `title`="admin";
+----------------------------------------
+2017-11-10 06:22:19
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_article;
+----------------------------------------
+2017-11-10 06:22:19
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2);
+----------------------------------------
+2017-11-10 06:22:19
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type`="3";
+----------------------------------------
+2017-11-10 06:22:19
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin;
+----------------------------------------
+2017-11-10 06:22:19
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_role;
+----------------------------------------
+2017-11-10 06:22:22
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:22:34
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:22:35
+uee2.com/admin/pcategory/add
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:23:56
+uee2.com/api/image/add
+POST
+上传图片: uploads/42f98443b4e09bfc9686e693bb9e7d4d.jpg
+----------------------------------------
+2017-11-10 06:25:40
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:25:40
+uee2.com/admin/pcategory/add
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:27:58
+uee2.com/api/image/add
+POST
+上传图片: uploads/2d30dc283e034394a000aa0d31bd3321.jpg
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/2d30dc283e034394a000aa0d31bd3321.jpg', '/', '1510266479', '1510266479')
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitename";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitesubtitle";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headerwelcome";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headercontact";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle1";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink1";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle2";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink2";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle3";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink3";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="title";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="description";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="keywords";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="copyright";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="beianhao";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footertext";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footercontact";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_menusite WHERE id=4;
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_menusite WHERE id=5;
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=2;
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (83);
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=1;
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (89,87,88);
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=5;
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="5" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (75);
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT count(`id`) FROM uee_product WHERE `type`="2" ORDER BY id DESC;
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_product WHERE `type`="2" ORDER BY id DESC LIMIT 0,10;
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (104,103,102,100);
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_title";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_subtitle";
+----------------------------------------
+2017-11-10 06:27:59
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_content";
+----------------------------------------
+2017-11-10 06:28:02
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:28:03
+uee2.com/admin/pcategory/add
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:28:43
+uee2.com/api/image/add
+POST
+上传图片: uploads/ccae88c1ee7832372196952d11948112.jpg
+----------------------------------------
+2017-11-10 06:30:44
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/ccae88c1ee7832372196952d11948112.jpg', '/1', '1510266644', '1510266644')
+----------------------------------------
+2017-11-10 06:30:45
+uee2.com/1
+GET
+Error Message: syntax error, unexpected '1' (T_LNUMBER), expecting identifier (T_STRING)(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 06:30:54
+uee2.com/api/image/add
+POST
+上传图片: uploads/32f6c12a0299b4b2f1fc4f01fb4d4763.jpg
+----------------------------------------
+2017-11-10 06:30:55
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/32f6c12a0299b4b2f1fc4f01fb4d4763.jpg', '/uploads/32f6c12a0299b4b2f1fc4f01fb4d4763.jpg250x250.jpg', '1510266655', '1510266655')
+----------------------------------------
+2017-11-10 06:35:24
+uee2.com/admin/pcategory/add
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 06:35:27
+uee2.com/api/image/add
+POST
+上传图片: uploads/99013122b341b7ec168b79f2bf61b0b2.jpg
+----------------------------------------
+2017-11-10 06:35:27
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/99013122b341b7ec168b79f2bf61b0b2.jpg', '/uploads/99013122b341b7ec168b79f2bf61b0b2.jpg.250x250.jpg', '1510266927', '1510266927')
+----------------------------------------
+2017-11-10 06:36:07
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:10:34
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:10:35
+uee2.com/admin/pcategory/add
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:10:51
+uee2.com/api/image/add
+POST
+上传图片: uploads/4b4c25b8d3eb726e98c9a56f211c12c7.jpg
+----------------------------------------
+2017-11-10 07:10:51
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/4b4c25b8d3eb726e98c9a56f211c12c7.jpg', '/uploads/4b4c25b8d3eb726e98c9a56f211c12c7.jpg.250x250.jpg', '1510269051', '1510269051')
+----------------------------------------
+2017-11-10 07:10:57
+uee2.com/api/category/add
+POST
+INSERT INTO uee_category(`id`, `title`, `parent_id`, `listorder`, `img_id`, `description`, `create_time`, `update_time`) VALUES ('0', '生产看板', '0', '0', '112', '生产看板', '1510269057', '1510269057')
+----------------------------------------
+2017-11-10 07:10:59
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:11:01
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:11:04
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:12:48
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:12:59
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:13:00
+uee2.com/admin/pcategory/add
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:13:09
+uee2.com/api/category/add
+POST
+INSERT INTO uee_category(`id`, `type`, `title`, `parent_id`, `listorder`, `img_id`, `description`, `create_time`, `update_time`) VALUES ('0', '2', '计数看板', '1', '0', '', '', '1510269189', '1510269189')
+----------------------------------------
+2017-11-10 07:13:11
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:19:18
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:19:19
+uee2.com/admin/category/update?id=1
+GET
+Error Message: Call to undefined method app\admin\controller\Category::update()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:21:28
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:21:29
+uee2.com/admin/pcategory/update?id=2
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:21:29
+uee2.com/admin/pcategory/update?id=2
+GET
+SELECT * FROM uee_category WHERE `id`="2";
+----------------------------------------
+2017-11-10 07:21:29
+uee2.com/admin/pcategory/update?id=2
+GET
+SELECT * FROM uee_image WHERE `id` IN (0);
+----------------------------------------
+2017-11-10 07:21:33
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:21:33
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_category WHERE `id`="1";
+----------------------------------------
+2017-11-10 07:21:33
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_image WHERE `id` IN (112);
+----------------------------------------
+2017-11-10 07:21:45
+uee2.com/admin/pcategory/update?id=2
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:21:45
+uee2.com/admin/pcategory/update?id=2
+GET
+SELECT * FROM uee_category WHERE `id`="2";
+----------------------------------------
+2017-11-10 07:21:45
+uee2.com/admin/pcategory/update?id=2
+GET
+SELECT * FROM uee_image WHERE `id` IN (0);
+----------------------------------------
+2017-11-10 07:21:50
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:21:50
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_category WHERE `id`="1";
+----------------------------------------
+2017-11-10 07:21:50
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_image WHERE `id` IN (112);
+----------------------------------------
+2017-11-10 07:21:54
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:21:54
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_category WHERE `id`="1";
+----------------------------------------
+2017-11-10 07:21:54
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_image WHERE `id` IN (112);
+----------------------------------------
+2017-11-10 07:22:20
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:22:20
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_category WHERE `id`="1";
+----------------------------------------
+2017-11-10 07:22:20
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_image WHERE `id` IN (112);
+----------------------------------------
+2017-11-10 07:22:38
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:22:40
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:22:40
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_category WHERE `id`="1";
+----------------------------------------
+2017-11-10 07:22:40
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_image WHERE `id` IN (112);
+----------------------------------------
+2017-11-10 07:23:05
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:23:07
+uee2.com/admin/pcategory/update?id=2
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:23:07
+uee2.com/admin/pcategory/update?id=2
+GET
+SELECT * FROM uee_category WHERE `id`="2";
+----------------------------------------
+2017-11-10 07:23:07
+uee2.com/admin/pcategory/update?id=2
+GET
+SELECT * FROM uee_image WHERE `id` IN (0);
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitename";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitesubtitle";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headerwelcome";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headercontact";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle1";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink1";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle2";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink2";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle3";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink3";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="title";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="description";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="keywords";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="copyright";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="beianhao";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footertext";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footercontact";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_menusite WHERE id=4;
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_menusite WHERE id=5;
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_sliderbox WHERE id=2;
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_image WHERE `id` IN (83);
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_sliderbox WHERE id=1;
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_image WHERE `id` IN (89,87,88);
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_sliderbox WHERE id=5;
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="5" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_image WHERE `id` IN (75);
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT count(`id`) FROM uee_product WHERE `type`="2" ORDER BY id DESC;
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_product WHERE `type`="2" ORDER BY id DESC LIMIT 0,10;
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_image WHERE `id` IN (104,103,102,100);
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_title";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_subtitle";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_content";
+----------------------------------------
+2017-11-10 07:23:16
+uee2.com/js/jquery.scrollshow.js
+GET
+Error Message: Class 'app\js\controller\jquery' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:23:17
+uee2.com/js/pt_js.js
+GET
+Error Message: Class 'app\js\controller\pt_js' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:23:17
+uee2.com/static/index/limages/wen_right_line.png
+GET
+Error Message: syntax error, unexpected 'static' (T_STATIC), expecting identifier (T_STRING)(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:23:22
+uee2.com/admin/index/index?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2) AND `status` = "0";
+----------------------------------------
+2017-11-10 07:23:22
+uee2.com/admin/index/index?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_comment WHERE `type` = "3" AND `status` = "0";
+----------------------------------------
+2017-11-10 07:23:22
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin WHERE `title`="admin";
+----------------------------------------
+2017-11-10 07:23:22
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_article;
+----------------------------------------
+2017-11-10 07:23:22
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2);
+----------------------------------------
+2017-11-10 07:23:22
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type`="3";
+----------------------------------------
+2017-11-10 07:23:22
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin;
+----------------------------------------
+2017-11-10 07:23:22
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_role;
+----------------------------------------
+2017-11-10 07:23:24
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:23:26
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:23:28
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_category WHERE `id`="1";
+----------------------------------------
+2017-11-10 07:23:28
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_image WHERE `id` IN (112);
+----------------------------------------
+2017-11-10 07:24:31
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:24:32
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:24:32
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_category WHERE `id`="1";
+----------------------------------------
+2017-11-10 07:24:32
+uee2.com/admin/pcategory/update?id=1
+GET
+SELECT * FROM uee_image WHERE `id` IN (112);
+----------------------------------------
+2017-11-10 07:25:12
+uee2.com/api/category/update
+POST
+UPDATE uee_category SET `title`="生产看板2",`parent_id`="0",`listorder`="0",`img_id`="112",`description`="生产看板",`update_time`="1510269912" WHERE `id`="1"
+----------------------------------------
+2017-11-10 07:25:13
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:25:36
+uee2.com/api/category/delete
+POST
+DELETE FROM uee_category WHERE `id`="2"
+----------------------------------------
+2017-11-10 07:25:37
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:25:52
+uee2.com/api/pcategory/deleteAll
+POST
+Error Message: Class 'app\api\controller\pcategory' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:26:06
+uee2.com/api/pcategory/deleteAll
+POST
+Error Message: Class 'app\api\controller\pcategory' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:26:39
+uee2.com/api/pcategory/deleteAll
+POST
+Error Message: Class 'app\api\controller\pcategory' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:26:42
+uee2.com/admin/index/index?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2) AND `status` = "0";
+----------------------------------------
+2017-11-10 07:26:42
+uee2.com/admin/index/index?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_comment WHERE `type` = "3" AND `status` = "0";
+----------------------------------------
+2017-11-10 07:26:42
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin WHERE `title`="admin";
+----------------------------------------
+2017-11-10 07:26:42
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_article;
+----------------------------------------
+2017-11-10 07:26:42
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2);
+----------------------------------------
+2017-11-10 07:26:42
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type`="3";
+----------------------------------------
+2017-11-10 07:26:42
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin;
+----------------------------------------
+2017-11-10 07:26:42
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_role;
+----------------------------------------
+2017-11-10 07:26:44
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:26:46
+uee2.com/api/category/deleteAll
+POST
+DELETE FROM uee_category WHERE `id` IN (1)
+----------------------------------------
+2017-11-10 07:26:47
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:28:35
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:28:38
+uee2.com/admin/product/index
+GET
+Error Message: Call to undefined method app\admin\controller\Product::index()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:28:45
+uee2.com/admin/product/index
+GET
+Error Message: Call to undefined method app\admin\controller\Product::index()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:28:46
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:28:47
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:28:48
+uee2.com/admin/product/index
+GET
+Error Message: Call to undefined method app\admin\controller\Product::index()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:28:54
+uee2.com/admin/product/index
+GET
+Error Message: Call to undefined method app\admin\controller\Product::index()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:28:57
+uee2.com/admin/product/index
+GET
+Error Message: Call to undefined method app\admin\controller\Product::index()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:29:02
+uee2.com/admin/product/index
+GET
+Error Message: Call to undefined method app\admin\controller\Product::index()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:29:06
+uee2.com/admin/product/index
+GET
+Error Message: Call to undefined method app\admin\controller\Product::index()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:29:11
+uee2.com/admin/product/index
+GET
+Error Message: Call to undefined method app\admin\controller\Product::index()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:42:08
+uee2.com/admin/product/index
+GET
+Error Message: Call to undefined method app\admin\controller\Product::index()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:42:38
+uee2.com/admin/product/index
+GET
+Error Message: Call to undefined method app\admin\controller\Product::index()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-10 07:42:51
+uee2.com/admin/index/index?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2) AND `status` = "0";
+----------------------------------------
+2017-11-10 07:42:51
+uee2.com/admin/index/index?XDEBUG_SESSION_START=11631
+GET
+SELECT * FROM uee_comment WHERE `type` = "3" AND `status` = "0";
+----------------------------------------
+2017-11-10 07:42:51
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin WHERE `title`="admin";
+----------------------------------------
+2017-11-10 07:42:51
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_article;
+----------------------------------------
+2017-11-10 07:42:51
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2);
+----------------------------------------
+2017-11-10 07:42:51
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type`="3";
+----------------------------------------
+2017-11-10 07:42:51
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin;
+----------------------------------------
+2017-11-10 07:42:51
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_role;
+----------------------------------------
+2017-11-10 07:42:53
+uee2.com/admin/products/index
+GET
+SELECT count(`id`) FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:42:53
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-10 07:42:53
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_image WHERE `id` IN ();
+----------------------------------------
+2017-11-10 07:42:53
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-10 07:51:02
+uee2.com/admin/products/index
+GET
+SELECT count(`id`) FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:51:02
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-10 07:51:02
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_image WHERE `id` IN ();
+----------------------------------------
+2017-11-10 07:51:02
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-10 07:52:39
+uee2.com/admin/products/index
+GET
+SELECT count(`id`) FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:52:39
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-10 07:52:39
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_image WHERE `id` IN ();
+----------------------------------------
+2017-11-10 07:52:39
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-10 07:52:40
+uee2.com/admin/products/add
+GET
+Error Message: Argument 2 passed to app\admin\controller\Product::addPro() must be of the type integer, none given, called in E:\www\meswebsite\app\admin\controller\Products.php on line 27(0)<br/>Error File: E:\www\meswebsite\app\admin\controller\Product.php : 53<br>
+
+----------------------------------------
+2017-11-10 07:53:21
+uee2.com/admin/products/index
+GET
+SELECT count(`id`) FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:53:21
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-10 07:53:21
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_image WHERE `id` IN ();
+----------------------------------------
+2017-11-10 07:53:21
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-10 07:53:24
+uee2.com/admin/products/add
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-10 07:57:09
+uee2.com/api/article/add
+POST
+INSERT INTO uee_article(`title`, `slug`, `content`, `keyword`, `description`, `cate_id`, `img_id`, `author`, `sources`, `read`, `comment`, `stick`, `create_time`, `update_time`) VALUES ('生产看板', '', '<p>生产看板</p>', '', '', '0', '0', '', '', '0', '1', '0', '1510271829', '1510271829')
+----------------------------------------
+2017-11-10 07:57:44
+uee2.com/admin/products/index
+GET
+SELECT count(`id`) FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:57:44
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-10 07:57:44
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_image WHERE `id` IN ();
+----------------------------------------
+2017-11-10 07:57:44
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-10 07:57:46
+uee2.com/admin/products/index
+GET
+SELECT count(`id`) FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:57:46
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-10 07:57:46
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_image WHERE `id` IN ();
+----------------------------------------
+2017-11-10 07:57:46
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-10 07:57:47
+uee2.com/admin/products/index
+GET
+SELECT count(`id`) FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-10 07:57:47
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-10 07:57:47
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_image WHERE `id` IN ();
+----------------------------------------
+2017-11-10 07:57:47
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";

@@ -14,6 +14,7 @@ class CategoryAddValidate extends BaseValidate
     protected $rules = [
         "id"     => ["isNonNegetiveInt","isRequired"],
         "title"  => ["isRequired"],
+        "type"   => ["isNonNegetiveInt","isRequired"],
         "parent_id" => ["isNonNegetiveInt"],
         "img_id" => ["isNonNegetiveInt"],
         "listorder" => ["isNonNegetiveInt"]

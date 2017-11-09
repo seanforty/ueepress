@@ -2381,3 +2381,1274 @@ Error Message: Class 'app\js\controller\jquery' not found(0)<br/>Error File: E:\
 localhost/js/pt_js.js
 GET
 Error Message: Class 'app\js\controller\pt_js' not found(0)<br/>Error File: E:\www\ueepress2\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitename";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitesubtitle";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headerwelcome";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headercontact";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle1";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink1";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle2";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink2";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle3";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink3";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="title";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="description";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="keywords";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="copyright";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="beianhao";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footertext";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footercontact";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_menusite WHERE id=4;
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_menucontent WHERE `mid`="4" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_menusite WHERE id=5;
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_menucontent WHERE `mid`="5" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (62,63,64,65,66,67,68,69);
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=2;
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (83);
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=1;
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (89,87,88);
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=5;
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="5" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (75);
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT count(`id`) FROM uee_product WHERE `type`="2" ORDER BY id DESC;
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_product WHERE `type`="2" ORDER BY id DESC LIMIT 0,10;
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (104,103,102,100);
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_title";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_subtitle";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_content";
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/js/jquery.scrollshow.js
+GET
+Error Message: Class 'app\js\controller\jquery' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/js/pt_js.js
+GET
+Error Message: Class 'app\js\controller\pt_js' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/static/index/limages/wen_right_line.png
+GET
+Error Message: syntax error, unexpected 'static' (T_STATIC), expecting identifier (T_STRING)(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/js/jquery.scrollshow.js
+GET
+Error Message: Class 'app\js\controller\jquery' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 20:59:35
+uee2.com/js/pt_js.js
+GET
+Error Message: Class 'app\js\controller\pt_js' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 20:59:47
+uee2.com/admin
+GET
+Error Message: Undefined index: (0)<br/>Error File: E:\www\meswebsite\libs\Session.php : 41<br>
+
+----------------------------------------
+2017-11-09 20:59:47
+uee2.com/admin
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2) AND `status` = "0";
+----------------------------------------
+2017-11-09 20:59:47
+uee2.com/admin
+GET
+SELECT * FROM uee_comment WHERE `type` = "3" AND `status` = "0";
+----------------------------------------
+2017-11-09 20:59:47
+uee2.com/api/login/captcha
+GET
+Error Message: session_start(): Cannot send session cache limiter - headers already sent (output started at E:\www\meswebsite\app\api\service\Captcha.php:63)(0)<br/>Error File: E:\www\meswebsite\libs\Session.php : 53<br>
+
+----------------------------------------
+2017-11-09 20:59:53
+uee2.com/api/login/login
+POST
+SELECT * FROM uee_admin WHERE `title`="admin";
+----------------------------------------
+2017-11-09 20:59:53
+uee2.com/api/login/login
+POST
+UPDATE uee_admin SET `logintimes`=`logintimes`+1,`update_time`=1510232393 WHERE `id`="1"
+----------------------------------------
+2017-11-09 20:59:53
+uee2.com/api/login/login
+POST
+UPDATE uee_admin SET `lastloginip`="127.0.0.1",`lastlogintime`="1510232393",`update_time`="1510232393" WHERE `title`="admin"
+----------------------------------------
+2017-11-09 20:59:53
+uee2.com/admin/index/index
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2) AND `status` = "0";
+----------------------------------------
+2017-11-09 20:59:53
+uee2.com/admin/index/index
+GET
+SELECT * FROM uee_comment WHERE `type` = "3" AND `status` = "0";
+----------------------------------------
+2017-11-09 20:59:53
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin WHERE `title`="admin";
+----------------------------------------
+2017-11-09 20:59:53
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_article;
+----------------------------------------
+2017-11-09 20:59:53
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2);
+----------------------------------------
+2017-11-09 20:59:53
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type`="3";
+----------------------------------------
+2017-11-09 20:59:53
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin;
+----------------------------------------
+2017-11-09 20:59:53
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_role;
+----------------------------------------
+2017-11-09 21:38:51
+uee2.com/admin/product/getList
+GET
+Error Message: Call to undefined method app\admin\controller\Product::getList()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 22:06:50
+uee2.com/admin/product/getList
+GET
+Error Message: Class 'app\admin\controller\Request' not found(0)<br/>Error File: E:\www\meswebsite\app\admin\controller\Product.php : 23<br>
+
+----------------------------------------
+2017-11-09 22:06:50
+uee2.com/admin/product/getList
+GET
+Error Message: Class 'app\admin\controller\Request' not found(0)<br/>Error File: E:\www\meswebsite\app\admin\controller\Product.php : 23<br>
+
+----------------------------------------
+2017-11-09 22:07:18
+uee2.com/admin/product/getList
+GET
+Error Message: Call to a member function pagination() on null(0)<br/>Error File: E:\www\meswebsite\app\admin\controller\Product.php : 33<br>
+
+----------------------------------------
+2017-11-09 22:08:17
+uee2.com/admin/product/getList
+GET
+SELECT count(`id`) FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 22:08:17
+uee2.com/admin/product/getList
+GET
+SELECT * FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-09 22:08:17
+uee2.com/admin/product/getList
+GET
+SELECT * FROM uee_image WHERE `id` IN ();
+----------------------------------------
+2017-11-09 22:08:17
+uee2.com/admin/product/getList
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-09 22:16:59
+uee2.com/admin/pcategory/getList
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 22:16:59
+uee2.com/admin/pcategory/getList
+GET
+Error Message: Argument 1 passed to app\admin\controller\Category::getList() must be of the type string, none given, called in E:\www\meswebsite\libs\Route.php(123) : eval()'d code on line 1(0)<br/>Error File: E:\www\meswebsite\app\admin\controller\Category.php : 32<br>
+
+----------------------------------------
+2017-11-09 22:17:01
+uee2.com/admin/pcategory/getList
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 22:17:01
+uee2.com/admin/pcategory/getList
+GET
+Error Message: Argument 1 passed to app\admin\controller\Category::getList() must be of the type string, none given, called in E:\www\meswebsite\libs\Route.php(123) : eval()'d code on line 1(0)<br/>Error File: E:\www\meswebsite\app\admin\controller\Category.php : 32<br>
+
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitename";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitesubtitle";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headerwelcome";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headercontact";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle1";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink1";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle2";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink2";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle3";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink3";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="title";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="description";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="keywords";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="copyright";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="beianhao";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footertext";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footercontact";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_menusite WHERE id=4;
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_menusite WHERE id=5;
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_sliderbox WHERE id=2;
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_image WHERE `id` IN (83);
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_sliderbox WHERE id=1;
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_image WHERE `id` IN (89,87,88);
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_sliderbox WHERE id=5;
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="5" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_image WHERE `id` IN (75);
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT count(`id`) FROM uee_product WHERE `type`="2" ORDER BY id DESC;
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_product WHERE `type`="2" ORDER BY id DESC LIMIT 0,10;
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_image WHERE `id` IN (104,103,102,100);
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_title";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_subtitle";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_content";
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/js/pt_js.js
+GET
+Error Message: Class 'app\js\controller\pt_js' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/js/jquery.scrollshow.js
+GET
+Error Message: Class 'app\js\controller\jquery' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 22:19:09
+uee2.com/static/index/limages/wen_right_line.png
+GET
+Error Message: syntax error, unexpected 'static' (T_STATIC), expecting identifier (T_STRING)(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 22:19:17
+uee2.com/admin/index/index?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2) AND `status` = "0";
+----------------------------------------
+2017-11-09 22:19:17
+uee2.com/admin/index/index?XDEBUG_SESSION_START=18407
+GET
+SELECT * FROM uee_comment WHERE `type` = "3" AND `status` = "0";
+----------------------------------------
+2017-11-09 22:19:17
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin WHERE `title`="admin";
+----------------------------------------
+2017-11-09 22:19:17
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_article;
+----------------------------------------
+2017-11-09 22:19:17
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2);
+----------------------------------------
+2017-11-09 22:19:17
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type`="3";
+----------------------------------------
+2017-11-09 22:19:18
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin;
+----------------------------------------
+2017-11-09 22:19:18
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_role;
+----------------------------------------
+2017-11-09 22:19:19
+uee2.com/admin/product/index
+GET
+Error Message: Call to undefined method app\admin\controller\Product::index()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 22:19:20
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 22:19:20
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: menustr(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 40<br>
+
+----------------------------------------
+2017-11-09 22:19:20
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 40<br>
+
+----------------------------------------
+2017-11-09 22:19:20
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 74<br>
+
+----------------------------------------
+2017-11-09 22:19:20
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 74<br>
+
+----------------------------------------
+2017-11-09 22:19:20
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 154<br>
+
+----------------------------------------
+2017-11-09 22:19:20
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 154<br>
+
+----------------------------------------
+2017-11-09 22:19:20
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 156<br>
+
+----------------------------------------
+2017-11-09 22:19:20
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 156<br>
+
+----------------------------------------
+2017-11-09 22:19:20
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 158<br>
+
+----------------------------------------
+2017-11-09 22:19:20
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 158<br>
+
+----------------------------------------
+2017-11-09 22:19:32
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 22:19:32
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: menustr(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 40<br>
+
+----------------------------------------
+2017-11-09 22:19:32
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 40<br>
+
+----------------------------------------
+2017-11-09 22:19:32
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 74<br>
+
+----------------------------------------
+2017-11-09 22:19:32
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 74<br>
+
+----------------------------------------
+2017-11-09 22:19:32
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 154<br>
+
+----------------------------------------
+2017-11-09 22:19:32
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 154<br>
+
+----------------------------------------
+2017-11-09 22:19:32
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 156<br>
+
+----------------------------------------
+2017-11-09 22:19:32
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 156<br>
+
+----------------------------------------
+2017-11-09 22:19:32
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 158<br>
+
+----------------------------------------
+2017-11-09 22:19:32
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 158<br>
+
+----------------------------------------
+2017-11-09 22:22:12
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 22:22:12
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: menustr(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 40<br>
+
+----------------------------------------
+2017-11-09 22:22:12
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 40<br>
+
+----------------------------------------
+2017-11-09 22:22:12
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 74<br>
+
+----------------------------------------
+2017-11-09 22:22:12
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 74<br>
+
+----------------------------------------
+2017-11-09 22:22:12
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 154<br>
+
+----------------------------------------
+2017-11-09 22:22:12
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 154<br>
+
+----------------------------------------
+2017-11-09 22:22:12
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 156<br>
+
+----------------------------------------
+2017-11-09 22:22:12
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 156<br>
+
+----------------------------------------
+2017-11-09 22:22:12
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 158<br>
+
+----------------------------------------
+2017-11-09 22:22:12
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 158<br>
+
+----------------------------------------
+2017-11-09 22:22:15
+uee2.com/admin/category/getList
+GET
+Error Message: Argument 1 passed to app\admin\controller\Category::getList() must be of the type string, none given, called in E:\www\meswebsite\libs\Route.php(123) : eval()'d code on line 1(0)<br/>Error File: E:\www\meswebsite\app\admin\controller\Category.php : 32<br>
+
+----------------------------------------
+2017-11-09 22:22:19
+uee2.com/admin/product/index
+GET
+Error Message: Call to undefined method app\admin\controller\Product::index()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 22:22:19
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 22:22:19
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: menustr(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 40<br>
+
+----------------------------------------
+2017-11-09 22:22:19
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 40<br>
+
+----------------------------------------
+2017-11-09 22:22:19
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 74<br>
+
+----------------------------------------
+2017-11-09 22:22:19
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 74<br>
+
+----------------------------------------
+2017-11-09 22:22:19
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 154<br>
+
+----------------------------------------
+2017-11-09 22:22:19
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 154<br>
+
+----------------------------------------
+2017-11-09 22:22:19
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 156<br>
+
+----------------------------------------
+2017-11-09 22:22:19
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 156<br>
+
+----------------------------------------
+2017-11-09 22:22:19
+uee2.com/admin/pcategory/index
+GET
+Error Message: Undefined index: res(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 158<br>
+
+----------------------------------------
+2017-11-09 22:22:19
+uee2.com/admin/pcategory/index
+GET
+Error Message: Trying to get property of non-object(0)<br/>Error File: E:\www\meswebsite\runtime\tempate_c\e495db7a166b1b1bf975822177da980e799aad88_0.file.product-list.html.php : 158<br>
+
+----------------------------------------
+2017-11-09 22:22:52
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 22:27:33
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 22:27:56
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 22:27:57
+uee2.com/admin/pcategory/add
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitename";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitesubtitle";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headerwelcome";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headercontact";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle1";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink1";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle2";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink2";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle3";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink3";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="title";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="description";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="keywords";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="copyright";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="beianhao";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footertext";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footercontact";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_menusite WHERE id=4;
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_menusite WHERE id=5;
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=2;
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (83);
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=1;
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (89,87,88);
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=5;
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="5" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (75);
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT count(`id`) FROM uee_product WHERE `type`="2" ORDER BY id DESC;
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_product WHERE `type`="2" ORDER BY id DESC LIMIT 0,10;
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (104,103,102,100);
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_title";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_subtitle";
+----------------------------------------
+2017-11-09 23:00:15
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_content";
+----------------------------------------
+2017-11-09 23:00:16
+uee2.com/js/pt_js.js
+GET
+Error Message: Class 'app\js\controller\pt_js' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 23:00:16
+uee2.com/js/jquery.scrollshow.js
+GET
+Error Message: Class 'app\js\controller\jquery' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 23:00:16
+uee2.com/static/index/limages/wen_right_line.png
+GET
+Error Message: syntax error, unexpected 'static' (T_STATIC), expecting identifier (T_STRING)(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 23:00:16
+uee2.com/js/pt_js.js
+GET
+Error Message: Class 'app\js\controller\pt_js' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitename";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitesubtitle";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headerwelcome";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headercontact";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle1";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink1";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle2";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink2";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle3";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink3";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="title";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="description";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="keywords";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="copyright";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="beianhao";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footertext";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footercontact";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_menusite WHERE id=4;
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_menusite WHERE id=5;
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_sliderbox WHERE id=2;
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_image WHERE `id` IN (83);
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_sliderbox WHERE id=1;
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_image WHERE `id` IN (89,87,88);
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_sliderbox WHERE id=5;
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="5" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_image WHERE `id` IN (75);
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT count(`id`) FROM uee_product WHERE `type`="2" ORDER BY id DESC;
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_product WHERE `type`="2" ORDER BY id DESC LIMIT 0,10;
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_image WHERE `id` IN (104,103,102,100);
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_title";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_subtitle";
+----------------------------------------
+2017-11-09 23:00:27
+uee2.com/?XDEBUG_SESSION_START=16348
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_content";
+----------------------------------------
+2017-11-09 23:00:28
+uee2.com/js/jquery.scrollshow.js
+GET
+Error Message: Class 'app\js\controller\jquery' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 23:00:28
+uee2.com/js/pt_js.js
+GET
+Error Message: Class 'app\js\controller\pt_js' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-09 23:00:28
+uee2.com/static/index/limages/wen_right_line.png
+GET
+Error Message: syntax error, unexpected 'static' (T_STATIC), expecting identifier (T_STRING)(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>

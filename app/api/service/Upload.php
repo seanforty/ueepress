@@ -8,6 +8,8 @@
 
 namespace app\api\service;
 
+use libs\Config;
+
 class Upload
 {
     protected $fileInfo       = array();	//数组,   $_FILES文件信息
@@ -36,7 +38,8 @@ class Upload
 
     public function uploadFile(){
         if( $this->checkError() && $this->checkSize() && $this->checkExt() && $this->checkImg() && $this->checkDestination() && $this->makeFileName()  ){
-            return [true,$this->resultDir];
+            $thumbnail = $this->zoomInPic();
+            return [true,$this->resultDir,$thumbnail];
         }else{
             return [false,$this->errMessage];
         }
@@ -128,6 +131,83 @@ class Upload
         }else{
             return true;
         }
+    }
+
+
+    //生成图片缩略图
+    function zoomInPic($pwidth=100,$pheight=100)
+    {
+        //获取配置文件中图片宽高
+        $width = Config::getConfig("image.width")?Config::getConfig("image.width"):$pwidth;
+        $height = Config::getConfig("image.height")?Config::getConfig("image.height"):$pheight;
+
+        //获取图像资源变量
+        $resource = null;
+        switch($this->fileInfo["type"])
+        {
+            case 'image/jpeg':
+                $resource = @imagecreatefromjpeg($this->resultDir);
+                break;
+            case 'image/gif':
+                $resource = @imagecreatefromgif($this->resultDir);
+                break;
+            case 'image/png':
+                $resource = @imagecreatefrompng($this->resultDir);
+                break;
+            case 'image/wbmp':
+                $resource = @imagecreatefromwbmp($this->resultDir);
+            default:
+                return false;
+        }
+
+        if(!$resource){
+            return false;
+        }
+
+        //获取上传图片的宽和高
+        $src_w = imagesx($resource);
+        $src_h = imagesy($resource);
+        //生成缩略图
+        //在属性里定义缩略图的宽和高，并将原图按照比例缩放
+        //缩放算法是: 新宽/原宽 = 新高/原高,这样就能等比例缩放了.....
+        if($src_w > $src_h)
+        {
+            $new_w = $width;
+            $new_h = ceil(($width/$src_w)*$src_h);
+        }else{
+            $new_h = $height;
+            $new_w = ceil(($height/$src_h)*$src_w);
+        }
+
+        $paint = imagecreatetruecolor($new_w, $new_h);
+        if(!@imagecopyresampled($paint, $resource, 0,0,0,0, $new_w, $new_h, $src_w, $src_h)){
+            return false;
+        }
+
+        //在原图上保存缩略图
+        $outputRes = "";
+        $outputPath = $this->resultDir . "." . $width . "x" . $height . "." . $this->getExt();
+        switch($this->fileInfo["type"])
+        {
+            case 'image/jpeg':
+                $outputRes = imagejpeg($paint, $outputPath);
+                break;
+            case 'image/gif':
+                $outputRes = imagegif($paint,  $outputPath);
+                break;
+            case 'image/png':
+                $outputRes = imagepng($paint,  $outputPath);
+                break;
+            case 'image/wbmp':
+                $outputRes = imagewbmp($paint,  $outputPath);
+                break;
+        }
+        //释放资源
+        imagedestroy($paint);
+        if(!$outputRes){
+            return false;
+        }
+        return $outputPath;
     }
 
     // 检查文件上传error状态
