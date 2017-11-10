@@ -26,10 +26,14 @@ class Article extends BaseController
     /*
      * 文章列表页面
      * RequestMethod POST
+     * @param string template
+     * @param int atype  1-文章 2-页面
+     * @param int ctype 1-文章 2-产品
      * @param int page 页码，正整数
      * @return void
      */
-    public function getList(){
+    protected function getList(string $template,int $atype=1,int $ctype=1,bool $isCate=true)
+    {
         (new AdminPaginationValidate())->goCheck();
         $pageNum = Request::get("page");
         if(!$pageNum){
@@ -38,55 +42,56 @@ class Article extends BaseController
             $pageNum = intval($pageNum);
         }
 
-        $where = $this->getWhere();
+        $where = $this->getWhere($atype);
         $order = [["create_time","DESC"],["id","DESC"]];
         $res = $this->model->pagination($pageNum,$where,$order);
-        $menuStr = $this->getMenuStr();
         $this->assign("res",$res);
-        $this->assign("menustr",$menuStr);
-        $this->display("article-list");
+
+        if($isCate){
+            $menuStr = $this->getMenuStr($ctype);
+            $this->assign("menustr",$menuStr);
+        }
+
+        $this->display($template);
     }
 
     /*
      * 文章添加页面
-     * @param void
+     * @param string template
+     * @param int ctype 分类类型 1-文章 2-产品
+     * @param bool isCate 是否分类
      * @return void
      */
-    public function add()
+    public function addArt(string $template,int $ctype=1,bool $isCate=true)
     {
-        $menuStr = $this->getMenuStr();
-        $this->assign("menustr",$menuStr);
-        $this->display("article-add");
+        if($isCate){
+            $menuStr = $this->getMenuStr();
+            $this->assign("menustr",$menuStr);
+        }
+        $this->display($template);
     }
 
     /*
      * 文章编辑更新页面
-     * @param void
+     * @param string template
+     * @param int ctype 分类类型 1-文章 2-产品
+     * @param bool isCate 是否分类
      * @return void
      */
-    public function update()
+    public function updateArt(string $template,int $ctype=1,bool $isCate=true)
     {
         (new MustBePostiveValidate())->goCheck();
         $aid = Request::get("id");
-        $res = $this->model->getArticles(["id","=",$aid]);
-        if(!$res){
-            throw new ParameterException("该文章不存在");
+        $res = $this->model->getWithImg(intval($aid));
+        DBException($res,"该文章不存在");
+        $this->assign("res",$res);
+
+        if($isCate){
+            $menuStr = $this->getMenuStr(1,intval($res["cate_id"]));
+            $this->assign("menustr",$menuStr);
         }
-        $menuStr = $this->getMenuStr(intval($res[0]["cate_id"]));
-        $this->assign("menustr",$menuStr);
-        $this->assign("res",$res[0]);
-        $this->display("article-update");
+
+        $this->display($template);
     }
 
-    /*
-     * 获取分类目录下拉菜单代码
-     * @param void
-     * @return void
-     */
-    protected function getMenuStr(int $cid=0)
-    {
-        $data = (new \app\api\model\Category())->find();
-        $menuStr = (new CategoryDropdownList($data))->menuTree(0,$cid,true);
-        return $menuStr;
-    }
 }

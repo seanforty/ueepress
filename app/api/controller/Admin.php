@@ -10,18 +10,17 @@ namespace app\api\controller;
 
 use app\api\exception\AdminAddException;
 use app\api\exception\AdminRoleException;
-use app\api\exception\ParameterException;
-use \app\api\model\Admin as AdminModel;
+use app\api\model\Admin as AdminModel;
 use app\libs\validate\AdminAddValidate;
 use app\libs\validate\IDValidate;
-use app\libs\validate\MustBePostiveValidate;
 use libs\Request;
-use libs\Validate;
 
 class Admin extends BaseController
 {
     protected $beforeActionList = [
-        "changeStatus"=>"defaultLoginCheck"
+        "add"=>"defaultLoginCheck",
+        "update"=>"defaultLoginCheck",
+        "loginRecord"=>"defaultLoginCheck"
     ];
 
     /*
@@ -33,43 +32,29 @@ class Admin extends BaseController
     }
 
     /*
-     * 删除指定ID的数据
+     * 获取添加管理员信息处理后存入数据库
      * RequestMethod POST
-     * @param id int 管理员ID
+     * @param title,password,password1,email,mobile,description
      * @return string/json
      */
-    public function delete():string
+    public function add()
     {
-        (new MustBePostiveValidate())->goCheck();
-        $id = Request::post("id");
-        $res = $this->model->delByID( intval($id) );
-        if($res){
-            return status(true,"删除成功");
-        }else{
-            return status(false,"删除失败");
-        }
-    }
+        (new AdminAddValidate())->goCheck();
+        $data = Request::post();
+        //验证用户名/邮箱和手机是否已存在
+        $this->existUser($data["title"]);
+        $this->existEmail($data["email"]);
+        $this->existMobile($data["mobile"]);
 
-    /*
-     * 修改管理员账号状态 启用/停用
-     * RequestMethod POST
-     * @param id int 管理员ID
-     * @return string/json
-     */
-    public function changeStatus()
-    {
-        (new MustBePostiveValidate())->goCheck();
-        $id = Request::post("id");
-        $status = Request::post("status");
-        if(1!=$status && 0!=$status){
-            throw new AdminRoleException("状态更新失败");
+        //删除data数组中不必要的元素
+        $roleId = $this->beforeAdd($data);
+        //data中添加盐和md5密码
+        $data["salt"] = $this->getPassword($data["password"]);
+        $res = $this->model->addNew($data,$roleId);
+        if(!$res) {
+            throw new AdminRoleException("管理员添加失败");
         }
-        $res = $this->model->updateByID(intval($id),["status"=>$status]);
-        if($res){
-            return status(true,"更新成功");
-        }else{
-            return status(false,"未更新");
-        }
+        return status(true,"管理员账号添加成功");
     }
 
     /*
@@ -105,32 +90,6 @@ class Admin extends BaseController
     }
 
     /*
-     * 获取添加管理员信息处理后存入数据库
-     * RequestMethod POST
-     * @param title,password,password1,email,mobile,description
-     * @return string/json
-     */
-    public function add()
-    {
-        (new AdminAddValidate())->goCheck();
-        $data = Request::post();
-        //验证用户名/邮箱和手机是否已存在
-        $this->existUser($data["title"]);
-        $this->existEmail($data["email"]);
-        $this->existMobile($data["mobile"]);
-
-        //删除data数组中不必要的元素
-        $roleId = $this->beforeAdd($data);
-        //data中添加盐和md5密码
-        $data["salt"] = $this->getPassword($data["password"]);
-        $res = $this->model->addNew($data,$roleId);
-        if(!$res) {
-            throw new AdminRoleException("管理员添加失败");
-        }
-        return status(true,"管理员账号添加成功");
-    }
-
-    /*
      * 在提交修改之前处理data数据
      * @param data array
      * @param changePWD bool
@@ -161,7 +120,7 @@ class Admin extends BaseController
      * @param aid int 管理员ID
      * @return void
      */
-    public function existUser(string $username, bool $new=true,int $aid=0)
+    protected function existUser(string $username, bool $new=true,int $aid=0)
     {
         $this->checkExist("title",$username,$new,$aid,"用户名已存在！");
     }
@@ -173,7 +132,7 @@ class Admin extends BaseController
      * @param aid int 管理员ID
      * @return void
      */
-    public function existEmail(string $email, bool $new=true,int $aid=0)
+    protected function existEmail(string $email, bool $new=true,int $aid=0)
     {
         $this->checkExist("email",$email,$new,$aid,"电子邮箱已存在！");
     }
@@ -185,7 +144,7 @@ class Admin extends BaseController
      * @param aid int 管理员ID
      * @return void
      */
-    public function existMobile(string $mobile, bool $new=true,int $aid=0)
+    protected function existMobile(string $mobile, bool $new=true,int $aid=0)
     {
         $this->checkExist("mobile",$mobile,$new,$aid,"手机号码已存在！");
     }

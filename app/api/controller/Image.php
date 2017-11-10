@@ -59,22 +59,22 @@ class Image extends BaseController
     }
 
     /*
-     * 删除图片
+     * 删除产品
      * RequestMethod POST
-     * @param int id
-     * @return json
+     * @param id
+     * @return void
      */
     public function delete()
     {
         (new MustBePostiveValidate())->goCheck();
-        $id = Request::post("id");
-        $res = $this->model->deleteByID(intval($id));
-        DBException($res,"删除图片失败！");
-        return status(true,"删除图片成功！");
+        $aid = Request::post("id");
+        $res = $this->model->deleteImgByID(intval($aid));
+        DBException($res,"删除失败");
+        return status(true,"删除成功");
     }
 
     /*
-     * 批量删除
+     * 批量产品
      * RequestMethod POST
      * @param string ids
      * @return void
@@ -83,9 +83,7 @@ class Image extends BaseController
     {
         $ids = Request::post("ids");
         $res = $this->model->delete(["id","IN",$ids]);
-        if(!$res){
-            throw new ParameterException("批量删除失败");
-        }
+        DBException($res,"批量删除失败");
         return status(true,"删除成功");
     }
 

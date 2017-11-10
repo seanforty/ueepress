@@ -68,32 +68,6 @@ class Comment extends BaseController
     }
 
     /*
-     * 获取搜索查询条件
-     * RequestMethod POST
-     * @param string keyword,logmin,logmax 搜索关键词，最小日期，最大日期
-     * @return void
-     */
-    public function getWhere():array
-    {
-        $where = [];
-        $keyword = Request::get("keyword");
-        if($keyword){
-            $where[] = ["title","like","%".$keyword."%"];
-        }
-
-        $logMax = Request::get("logmax");
-        if($logMax){
-            $where[] = ["create_time","<",$logMax];
-        }
-
-        $logMin = Request::get("logmin");
-        if($logMin){
-            $where[] = ["create_time",">",$logMin];
-        }
-        return $where;
-    }
-
-    /*
      * 阅读评论
      * RequestMethod GET
      * @param int id

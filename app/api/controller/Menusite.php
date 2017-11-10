@@ -23,7 +23,7 @@ class Menusite extends BaseController
     protected $beforeActionList = [
         "addCate"=>"defaultLoginCheck",
         "addPage"=>"defaultLoginCheck",
-        "delete"=>"defaultLoginCheck",
+        "updateMenuContent"=>"defaultLoginCheck",
     ];
 
     public function __construct()
@@ -111,54 +111,6 @@ class Menusite extends BaseController
             throw new ParameterException("更新菜单项内容失败");
         }
         return status(true,"更新菜单项内容成功");
-    }
-
-    /*
-     * 删除记录
-     * RequestMethod POST
-     * @param id
-     * @return void
-     */
-    public function delete()
-    {
-        (new MustBePostiveValidate())->goCheck();
-        $id = Request::post("id");
-        $res = $this->model2->deleteByID(intval($id));
-        if(!$res){
-            throw new ParameterException("删除失败");
-        }
-        $this->model2->checkAndUpdateParentId();
-        return status(true,"删除成功");
-    }
-
-    /*
-     * 批量删除记录
-     * RequestMethod POST
-     * @param ids
-     * @return void
-     */
-    public function deleteAll()
-    {
-        $ids = Request::post("ids");
-        $res = $this->model2->delete(["id","IN",'('.$ids.')']);
-        if(!$res){
-            throw new ParameterException("批量删除失败");
-        }
-        $this->model2->checkAndUpdateParentId();
-        return status(true,"删除成功");
-    }
-
-    /*
-     * 更新菜单项顺序
-     */
-    public function changeOrder()
-    {
-        (new ListOrderValidate())->goCheck();
-        $id = Request::post("id");
-        $listorder = Request::post("listorder");
-        $res = $this->model2->updateByID(intval($id),["listorder"=>$listorder]);
-        DBException($res,"菜单顺序更新失败");
-        return status(true,"菜单顺序更新失败");
     }
 
 }

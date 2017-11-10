@@ -43,8 +43,8 @@ class Admin extends BaseModel
             return [];
         }
         $role = $this->table("role_admin")->where(["aid","=",$aid])->find();
-        $data[0]["role"] = $role;
-        return $data[0];
+        $data["role"] = $role;
+        return $data;
     }
 
     /*

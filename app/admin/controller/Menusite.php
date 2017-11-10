@@ -41,7 +41,7 @@ class Menusite extends BaseController
         }else{
             $menuId = intval($menuId);
         }
-        $menuStr = $this->getMenuStr($menuId);
+        $menuStr = $this->getMenuTableStr($menuId);
         $menuList = $this->getMenuList($menuId);
         $cateList = $this->getCateList();
         $pageList = $this->getPageList();
@@ -57,7 +57,7 @@ class Menusite extends BaseController
      * @param int mid 菜单组ID
      * @return string
      */
-    public function getMenuStr(int $mid):string
+    public function getMenuTableStr(int $mid):string
     {
         $data = $this->model2->find(["mid","=",$mid],[["listorder","desc"],["id","desc"]]);
         $mestr = (new AdminIndexMenu($data))->menuTrees(0,$mid);

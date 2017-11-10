@@ -14,6 +14,10 @@ use libs\Request;
 
 class Siteinfo extends BaseController
 {
+    protected $beforeActionList = [
+        "update"=>"defaultLoginCheck"
+    ];
+
     public function __construct()
     {
         parent::__construct();

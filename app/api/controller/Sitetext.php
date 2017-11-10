@@ -14,6 +14,11 @@ use libs\Request;
 
 class Sitetext extends BaseController
 {
+    protected $beforeActionList = [
+        "updateFilterText"=>"defaultLoginCheck",
+        "update"=>"defaultLoginCheck"
+    ];
+
     public function __construct()
     {
         parent::__construct();

@@ -23,6 +23,18 @@ class Role extends BaseController
     }
 
     /*
+     * 角色列表
+     * @param void
+     * @return void
+     */
+    public function getAll()
+    {
+        $res = $this->model->getAllWithAdmin();
+        $this->assign("res",$res);
+        return $this->display("admin-role");
+    }
+
+    /*
      * 管理员角色更新页面
      * @param void
      * @return void
@@ -34,18 +46,6 @@ class Role extends BaseController
         $res = $this->model->get($rid);
         $this->assign("res",$res);
         $this->display("admin-role-update");
-    }
-
-    /*
-     * 角色列表
-     * @param void
-     * @return void
-     */
-    public function getAll()
-    {
-        $res = $this->model->getAllWithAdmin();
-        $this->assign("res",$res);
-        return $this->display("admin-role");
     }
 
     /*

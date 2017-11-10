@@ -93,13 +93,16 @@ class BaseController extends Controller
     /*
      * 获取分类目录下拉菜单代码
      * @access protected
-     * @param int ctype 分类类型
+     * @param int ctype 分类类型 1-文章 2-产品
      * @param int cid 选中分类
      * @return string
      */
     protected function getMenuStr(int $ctype=1,int $cid=0):string
     {
         $data = (new \app\api\model\Category())->find(["type","=",$ctype]);
+        if(!$data){
+            return "";
+        }
         $menuStr = (new CategoryDropdownList($data))->menuTree(0,$cid,true);
         return $menuStr;
     }

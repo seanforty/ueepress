@@ -8,7 +8,6 @@
 declare (strict_types=1);
 namespace app\api\service;
 
-
 use app\api\exception\ParameterException;
 
 class Menu
@@ -56,7 +55,12 @@ class Menu
         if(0==$cid){
             return "0";
         }
-        $pid = $this->cateList[$cid]["parent_id"];
+        if( isset($this->cateList[$cid]["parent_id"]) ){
+            $pid = $this->cateList[$cid]["parent_id"];
+        }else{
+            $pid = 0;
+        }
+
         if($pid){
             return $this->cateList[$pid]["id"];
         }else{

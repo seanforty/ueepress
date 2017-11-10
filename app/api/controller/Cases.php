@@ -18,11 +18,7 @@ class Cases extends BaseController
 {
     protected $beforeActionList = [
         "add"=>"defaultLoginCheck",
-        "update"=>"defaultLoginCheck",
-        "delete"=>"defaultLoginCheck",
-        "deleteAll"=>"defaultLoginCheck",
-        "changeStatus"=>"defaultLoginCheck",
-        "changeStatus"=>"defaultLoginCheck",
+        "update"=>"defaultLoginCheck"
     ];
 
     public function __construct()
@@ -70,50 +66,4 @@ class Cases extends BaseController
         return status(true,"更新成功");
     }
 
-    /*
-     * 删除文章
-     * RequestMethod POST
-     * @param id
-     * @return void
-     */
-    public function delete()
-    {
-        (new MustBePostiveValidate())->goCheck();
-        $aid = Request::post("id");
-        $res = $this->model->deleteByID(intval($aid));
-        DBException($res,"删除失败");
-        return status(true,"删除成功");
-    }
-
-    /*
-     * 批量删除
-     * RequestMethod POST
-     * @param string ids
-     * @return void
-     */
-    public function deleteAll()
-    {
-        $ids = Request::post("ids");
-        $res = $this->model->delete(["id","IN",$ids]);
-        DBException($res,"批量删除失败");
-        return status(true,"删除成功");
-    }
-
-    /*
-     * 修改状态
-     * RequestMethod POST
-     * @param id, status
-     * @return void
-     */
-    public function changeStatus()
-    {
-        (new StatusValidate())->goCheck();
-        $statusId = Request::post("status");
-        $id = Request::post("id");
-        $res = $this->model->updateByID(intval($id),["status"=>$statusId]);
-        if(!$res){
-            throw new ParameterException("状态修改失败");
-        }
-        return status(true,"状态成功");
-    }
 }

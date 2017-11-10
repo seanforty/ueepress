@@ -10,6 +10,17 @@ namespace app\api\model;
 
 class Image extends BaseModel
 {
+
+    /*
+     * 删除指定ID所在的记录
+     * @param id int
+     * @return int
+     */
+    public function deleteImgByID(int $id):int
+    {
+        return $this->table()->where(["id","=",$id])->delete();
+    }
+
     /*
      * 获取分页数据
      * @param int page 当前页码

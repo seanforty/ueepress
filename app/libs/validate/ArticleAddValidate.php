@@ -13,10 +13,11 @@ class ArticleAddValidate extends BaseValidate
 {
     protected $rules = [
         "id" => ["isNonNegetiveInt","isRequired"],
+        "type" => ["isNonNegetiveInt","isRequired"],
         "title"=>["isRequired"],
-        "cate_id"=>["isNonNegetiveInt","isRequired"],
-        "img_id"=>["isNonNegetiveInt","isRequired"],
-        "read"=>["isNonNegetiveInt","isRequired"],
+        "cate_id"=>["isNonNegetiveInt"],
+        "img_id"=>["isNonNegetiveInt"],
+        "read"=>["isNonNegetiveInt"]
     ];
 
     protected $message = [

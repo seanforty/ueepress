@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-09 15:36:53
+/* Smarty version 3.1.30, created on 2017-11-10 14:14:55
   from "E:\www\ueepress2\app\admin\view\article-list.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a040595e8b2d5_03319637',
+  'unifunc' => 'content_5a0543df8ca242_62620084',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ce05328ea2bce4b3763c5951f429ca72bea85760' => 
     array (
       0 => 'E:\\www\\ueepress2\\app\\admin\\view\\article-list.html',
-      1 => 1510213010,
+      1 => 1510285439,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:public/_footer.html' => 1,
   ),
 ),false)) {
-function content_5a040595e8b2d5_03319637 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a0543df8ca242_62620084 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:public/_meta.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -51,7 +51,7 @@ $_smarty_tpl->_subTemplateRender("file:public/_meta.html", $_smarty_tpl->cache_i
 		<span class="l">
 			<a href="javascript:;" onclick="del_all('<?php echo url(array('path'=>"api/article/deleteAll"),$_smarty_tpl);?>
 ')" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
-			<a class="btn btn-primary radius" data-title="添加文章" data-href="<?php echo url(array('path'=>'admin/article/add'),$_smarty_tpl);?>
+			<a class="btn btn-primary radius" data-title="添加文章" data-href="<?php echo url(array('path'=>'admin/articles/add'),$_smarty_tpl);?>
 " onclick="Hui_admin_tab(this)" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加文章</a>
 		</span>
 		<span class="r"></span> </div>
@@ -70,6 +70,7 @@ $_smarty_tpl->_subTemplateRender("file:public/_meta.html", $_smarty_tpl->cache_i
 				</tr>
 			</thead>
 			<tbody id="datatr">
+			<?php if ($_smarty_tpl->tpl_vars['res']->value['data']) {?>
 			<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['res']->value['data'], 'val');
 if ($_from !== null) {
@@ -108,7 +109,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['val']->value) {
 						<?php }?>
 					</td>
 					<td class="f-14 td-manage">
-						<a style="text-decoration:none" class="ml-5" onClick="open_layer('文章编辑','<?php echo url(array('path'=>'admin/article/update','params'=>array('id'=>$_smarty_tpl->tpl_vars['val']->value['id'])),$_smarty_tpl);?>
+						<a style="text-decoration:none" class="ml-5" onClick="open_layer('文章编辑','<?php echo url(array('path'=>'admin/articles/update','params'=>array('id'=>$_smarty_tpl->tpl_vars['val']->value['id'])),$_smarty_tpl);?>
 ')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
 						<a style="text-decoration:none" class="ml-5" onClick="del_data(this,'<?php echo $_smarty_tpl->tpl_vars['val']->value['id'];?>
 ','<?php echo url(array('path'=>"api/article/delete"),$_smarty_tpl);?>
@@ -121,6 +122,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['val']->value) {
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 ?>
 
+			<?php } else { ?>
+			<tr><td colspan="8">暂无数据</td></tr>
+			<?php }?>
 			</tbody>
 		</table>
 	</div>

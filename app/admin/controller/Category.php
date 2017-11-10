@@ -20,8 +20,8 @@ class Category extends BaseController
 
     public function __construct()
     {
-        parent::__construct();
         $this->model = new \app\api\model\Category();
+        parent::__construct();
     }
 
     /*
@@ -64,7 +64,6 @@ class Category extends BaseController
         $this->assign("res",$res[0]);
         $this->display($template);
     }
-
 
     /*
      * 分类目录下拉菜单，格式如下

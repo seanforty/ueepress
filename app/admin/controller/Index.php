@@ -61,7 +61,7 @@ class Index extends BaseController
         $desktop["logintimes"]    = $res[0]["logintimes"];
         $desktop["lastloginip"]   = $res[0]["lastloginip"];
 
-        $desktop["articlenum"] = (new \app\api\model\Article())->getCount();
+        $desktop["articlenum"] = (new \app\api\model\Article())->getCount(["type","=",1]);
         $desktop["commentnum"] = (new \app\api\model\Comment())->getCount(["type","IN","0,1,2"]);
         $desktop["messagenum"] = (new \app\api\model\Comment())->getCount(["type","=",3]);
         $desktop["adminnum"] =   (new \app\api\model\Admin())->getCount();

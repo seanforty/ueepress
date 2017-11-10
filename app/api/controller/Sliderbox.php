@@ -16,6 +16,11 @@ use libs\Request;
 
 class Sliderbox extends BaseController
 {
+    protected $beforeActionList = [
+        "addImage"=>"defaultLoginCheck",
+        "update"=>"defaultLoginCheck"
+    ];
+
     protected $model2;
     public function __construct()
     {
@@ -58,29 +63,5 @@ class Sliderbox extends BaseController
         return status(true,"更新广告图片成功");
     }
 
-    /*
-     * 更新排序
-     */
-    public function changeOrder()
-    {
-        (new ListOrderValidate())->goCheck();
-        $listorder = Request::post("listorder");
-        $id = Request::post("id");
-        $res = $this->model2->updateByID(intval($id),["listorder"=>$listorder]);
-        DBException($res,"广告图片排序失败");
-        return status(true,"广告图片排序成功");
-    }
-
-    /*
-     * 删除广告图片
-     */
-    public function delete()
-    {
-        (new MustBePostiveValidate())->goCheck();
-        $id = Request::post("id");
-        $res = $this->model2->deleteByID(intval($id));
-        DBException($res,"删除广告图片失败");
-        return status(true,"删除广告图片成功");
-    }
 
 }

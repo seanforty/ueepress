@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-09 14:46:56
+/* Smarty version 3.1.30, created on 2017-11-10 14:16:13
   from "E:\www\ueepress2\app\admin\view\slider-list.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a03f9e05c73a0_14085695',
+  'unifunc' => 'content_5a05442d6b4c13_82463529',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2b09cacfcdd0604dce0d4cafa8766bb5a1f059d0' => 
     array (
       0 => 'E:\\www\\ueepress2\\app\\admin\\view\\slider-list.html',
-      1 => 1510189717,
+      1 => 1510273511,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:public/_footer.html' => 1,
   ),
 ),false)) {
-function content_5a03f9e05c73a0_14085695 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a05442d6b4c13_82463529 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:public/_meta.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 

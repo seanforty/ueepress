@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-09 13:40:19
+/* Smarty version 3.1.30, created on 2017-11-10 13:11:50
   from "E:\www\ueepress2\app\index\view\pc\public\_footer.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a03ea43c6ff39_70976605',
+  'unifunc' => 'content_5a053516922132_23894530',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5f190a1d24da16745d1ed1fb68ee6a17c54fd1c1' => 
     array (
       0 => 'E:\\www\\ueepress2\\app\\index\\view\\pc\\public\\_footer.html',
-      1 => 1510205609,
+      1 => 1510273511,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a03ea43c6ff39_70976605 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a053516922132_23894530 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!--底部-->
 <div class="bot">

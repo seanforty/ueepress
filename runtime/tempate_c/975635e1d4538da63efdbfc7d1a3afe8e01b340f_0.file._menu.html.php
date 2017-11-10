@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-09 16:02:13
+/* Smarty version 3.1.30, created on 2017-11-10 14:12:20
   from "E:\www\ueepress2\app\admin\view\public\_menu.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a040b858aeda0_45593650',
+  'unifunc' => 'content_5a0543447672d2_67571720',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '975635e1d4538da63efdbfc7d1a3afe8e01b340f' => 
     array (
       0 => 'E:\\www\\ueepress2\\app\\admin\\view\\public\\_menu.html',
-      1 => 1510214526,
+      1 => 1510286409,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a040b858aeda0_45593650 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a0543447672d2_67571720 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <aside class="Hui-aside">
 	<div class="menu_dropdown bk_2">
@@ -28,11 +28,11 @@ function content_5a040b858aeda0_45593650 (Smarty_Internal_Template $_smarty_tpl)
 			<dt><i class="Hui-iconfont">&#xe616;</i> 产品管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="<?php echo url(array('path'=>'admin/product/getList'),$_smarty_tpl);?>
+					<li><a data-href="<?php echo url(array('path'=>'admin/products/index'),$_smarty_tpl);?>
 " data-title="产品管理" href="javascript:void(0)">产品管理</a></li>
-					<li><a data-href="<?php echo url(array('path'=>'admin/pcategory/getList'),$_smarty_tpl);?>
+					<li><a data-href="<?php echo url(array('path'=>'admin/pcategory/index'),$_smarty_tpl);?>
 " data-title="产品分类" href="javascript:void(0)">产品分类</a></li>
-					<li><a data-href="<?php echo url(array('path'=>'admin/cases/getList'),$_smarty_tpl);?>
+					<li><a data-href="<?php echo url(array('path'=>'admin/cases/index'),$_smarty_tpl);?>
 " data-title="案例列表" href="javascript:void(0)">案例列表</a></li>
 				</ul>
 			</dd>
@@ -41,11 +41,11 @@ function content_5a040b858aeda0_45593650 (Smarty_Internal_Template $_smarty_tpl)
 			<dt><i class="Hui-iconfont">&#xe616;</i> 内容管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="<?php echo url(array('path'=>'admin/article/getList'),$_smarty_tpl);?>
+					<li><a data-href="<?php echo url(array('path'=>'admin/articles/index'),$_smarty_tpl);?>
 " data-title="文章管理" href="javascript:void(0)">文章管理</a></li>
-					<li><a data-href="<?php echo url(array('path'=>'admin/category/getList'),$_smarty_tpl);?>
+					<li><a data-href="<?php echo url(array('path'=>'admin/acategory/index'),$_smarty_tpl);?>
 " data-title="文章分类" href="javascript:void(0)">文章分类</a></li>
-					<li><a data-href="<?php echo url(array('path'=>'admin/page/getList'),$_smarty_tpl);?>
+					<li><a data-href="<?php echo url(array('path'=>'admin/page/index'),$_smarty_tpl);?>
 " data-title="页面列表" href="javascript:void(0)">页面列表</a></li>
 				</ul>
 			</dd>
@@ -55,7 +55,9 @@ function content_5a040b858aeda0_45593650 (Smarty_Internal_Template $_smarty_tpl)
 			<dd>
 				<ul>
 					<li><a data-href="<?php echo url(array('path'=>'admin/comment/commentList'),$_smarty_tpl);?>
-" data-title="评论列表" href="javascript:;">评论列表</a></li>
+" data-title="文章评论" href="javascript:;">文章评论</a></li>
+					<li><a data-href="<?php echo url(array('path'=>'admin/comment/commentList'),$_smarty_tpl);?>
+" data-title="产品评论" href="javascript:;">评论列表</a></li>
 					<li><a data-href="<?php echo url(array('path'=>'admin/comment/messageList'),$_smarty_tpl);?>
 " data-title="在线留言" href="javascript:void(0)">在线留言</a></li>
 				</ul>

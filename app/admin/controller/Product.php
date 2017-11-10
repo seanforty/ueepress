@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace app\admin\controller;
 
 use app\libs\validate\AdminPaginationValidate;
+use app\libs\validate\MustBePostiveValidate;
 use libs\Request;
 
 class Product extends BaseController
@@ -21,12 +22,12 @@ class Product extends BaseController
 
     /*
      * 显示产品列表页
-     * @param int ptype 内容类型
-     * @param int ctype 分类类型
+     * @param int ptype 内容类型 1为产品 2为案例
+     * @param int ctype 分类类型 1为文章 2为产品
      * @param string template
      * @return void
      */
-    public function getList(string $template,int $ptype,int $ctype=1)
+    protected function getList(string $template,int $ptype=1,int $ctype=2,bool $isCate=true)
     {
         (new AdminPaginationValidate())->goCheck();
         $pageNum = Request::get("page");
@@ -39,9 +40,13 @@ class Product extends BaseController
         $where = $this->getWhere($ptype);
         $order = [["create_time","DESC"],["id","DESC"]];
         $res = $this->model->pagination($pageNum,$where,$order);
-        $menuStr = $this->getMenuStr($ctype);
         $this->assign("res",$res); //产品列表
-        $this->assign("menustr",$menuStr); //分类下拉菜单
+
+        if($isCate){
+            $menuStr = $this->getMenuStr($ctype);
+            $this->assign("menustr",$menuStr); //分类下拉菜单
+        }
+
         $this->display($template);
     }
 
@@ -50,29 +55,33 @@ class Product extends BaseController
      * @param string template
      * @return void
     */
-    public function addPro(string $template,int $ctype)
+    public function addPro(string $template,int $ctype,bool $isCate=true)
     {
-        $menuStr = $this->getMenuStr($ctype);
-        $this->assign("menustr",$menuStr);
+        if($isCate){
+            $menuStr = $this->getMenuStr($ctype);
+            $this->assign("menustr",$menuStr);
+        }
         $this->display($template);
     }
 
     /*
      * 产品编辑更新页面
      * @param string template
+     * @param int ctype   2:产品分类
      * @return void
      */
-    public function updatePro(string $template)
+    public function updatePro(string $template,int $ctype=2)
     {
         (new MustBePostiveValidate())->goCheck();
-        $aid = Request::get("id");
-        $res = $this->model->getArticles(["id","=",$aid]);
-        if(!$res){
-            throw new ParameterException("该文章不存在");
-        }
-        $menuStr = $this->getMenuStr(intval($res[0]["cate_id"]));
+        $id = Request::get("id");
+        $res = $this->model->get(intval($id));
+        DBException($res,"该文章不存在");
+        $images = (new \app\api\model\Image())->find(["id","IN",$res["imgs"]]);
+        $res["image"] = $images;
+
+        $menuStr = $this->getMenuStr($ctype,intval($res["cate_id"]));
         $this->assign("menustr",$menuStr);
-        $this->assign("res",$res[0]);
+        $this->assign("res",$res);
         $this->display($template);
     }
 

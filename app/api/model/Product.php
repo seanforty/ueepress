@@ -31,20 +31,4 @@ class Product extends BaseModel
         return $result;
     }
 
-    /*
-     * 获取单条记录，带图片
-     * @param int id
-     * @return array
-     */
-    public function getOneRecord(int $id)
-    {
-        $res = $this->get($id);
-        if( isset($res["img_id"]) ){
-            $image = $this->table("image")->get(intval($res["img_id"]));
-            if($image){
-                $res["image"] = $image;
-            }
-        }
-        return $res;
-    }
 }

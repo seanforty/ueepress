@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-09 10:21:00
+/* Smarty version 3.1.30, created on 2017-11-10 14:12:20
   from "E:\www\ueepress2\app\admin\view\public\_header.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a03bb8c2a7d70_96182995',
+  'unifunc' => 'content_5a05434459a368_02255480',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b3e1a27b61622e1681baa795db317ca1c0dd8a84' => 
     array (
       0 => 'E:\\www\\ueepress2\\app\\admin\\view\\public\\_header.html',
-      1 => 1510189717,
+      1 => 1510273511,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a03bb8c2a7d70_96182995 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a05434459a368_02255480 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <header class="navbar-wrapper">
 	<div class="navbar navbar-fixed-top">

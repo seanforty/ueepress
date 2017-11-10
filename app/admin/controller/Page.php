@@ -13,45 +13,27 @@ use app\libs\validate\MustBePostiveValidate;
 use app\libs\validate\PageAddValidate;
 use libs\Request;
 
-class Page extends BaseController
+class Page extends Article
 {
-    public function __construct()
-    {
-        parent::__construct();
-        $this->model = new \app\api\model\Page();
-    }
-
     /*
-     * 获取页面列表
+     * 显示文章列表页
      */
-    public function getList()
+    public function index()
     {
-        $res = $this->model->find();
-        $this->assign("res",$res);
-        $this->display("page-list");
+        $this->getList("page-list",2,2,false);
     }
-
     /*
-     * 添加页面
+     * 显示文章添加页面
      */
     public function add()
     {
-        $this->display("page-add");
+        $this->addArt("page-add",2,false);
     }
-
     /*
-     * 更新页面
+     * 显示文章编辑页面
      */
     public function update()
     {
-        (new MustBePostiveValidate())->goCheck();
-        $pid = Request::get("id");
-        $res = $this->model->getOnePage(intval($pid));
-        if(!$res){
-            throw new ParameterException("页面不存在");
-        }
-        $this->assign("res",$res);
-        $this->display("page-update");
+        $this->updateArt("page-update",2,false);
     }
-
 }

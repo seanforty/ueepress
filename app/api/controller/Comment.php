@@ -17,66 +17,10 @@ use libs\Request;
 
 class Comment extends BaseController
 {
-    protected $beforeActionList = [
-        "delete"=>"defaultLoginCheck",
-        "deleteAll"=>"defaultLoginCheck",
-        "changeStatus"=>"defaultLoginCheck",
-    ];
 
     public function __construct()
     {
         $this->model = new \app\api\model\Comment();
-    }
-
-    /*
-     * 删除评论
-     * RequestMethod POST
-     * @param id
-     * @return void
-     */
-    public function delete()
-    {
-        (new MustBePostiveValidate())->goCheck();
-        $aid = Request::post("id");
-        $res = $this->model->deleteByID(intval($aid));
-        if(!$res){
-            throw new ParameterException("删除失败");
-        }
-        return status(true,"删除成功");
-    }
-
-    /*
-     * 批量评论
-     * RequestMethod POST
-     * @param string ids
-     * @return void
-     */
-    public function deleteAll()
-    {
-        $ids = Request::post("ids");
-        $res = $this->model->delete(["id","IN",'('.$ids.')']);
-        if(!$res){
-            throw new ParameterException("批量删除失败");
-        }
-        return status(true,"删除成功");
-    }
-
-    /*
-     * 修改状态
-     * RequestMethod POST
-     * @param id, status
-     * @return void
-     */
-    public function changeStatus()
-    {
-        (new StatusValidate())->goCheck();
-        $statusId = Request::post("status");
-        $id = Request::post("id");
-        $res = $this->model->updateByID(intval($id),["status"=>$statusId]);
-        if(!$res){
-            throw new ParameterException("状态修改失败");
-        }
-        return status(true,"状态修改成功");
     }
 
     /*

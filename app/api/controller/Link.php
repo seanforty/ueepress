@@ -14,6 +14,11 @@ use libs\Request;
 
 class Link extends BaseController
 {
+    protected $beforeActionList = [
+        "add"=>"defaultLoginCheck",
+        "update"=>"defaultLoginCheck"
+    ];
+
     public function __construct()
     {
         $this->model = new \app\api\model\Link();
@@ -30,30 +35,6 @@ class Link extends BaseController
         $res = $this->model->add($data);
         DBException($res,"添加友链失败！");
         return status(true,"添加友链成功！");
-    }
-
-    /*
-     * 删除友链
-     * RequestMethod POST
-     */
-    public function delete()
-    {
-        (new MustBePostiveValidate())->goCheck();
-        $id = Request::post("id");
-        $res = $this->model->deleteByID(intval($id));
-        DBException($res,"删除友链失败！");
-        return status(true,"删除友链成功！");
-    }
-
-    /*
-     * 批量删除友链
-     */
-    public function deleteAll()
-    {
-        $ids = Request::post("ids");
-        $res = $this->model->delete(["id","in",$ids]);
-        DBException($res,"批量删除失败！");
-        return status(true,"批量删除成功！");
     }
 
 }

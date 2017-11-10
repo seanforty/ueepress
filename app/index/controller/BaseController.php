@@ -43,6 +43,8 @@ class BaseController extends Controller
         $header["sitesubtitle"] = $this->siteInfo->getValueByKey("sitesubtitle");
         $header["headerwelcome"] = $this->siteInfo->getValueByKey("headerwelcome");
         $header["headercontact"] = $this->siteInfo->getValueByKey("headercontact");
+
+        //顶部菜单
         $header["headermenutitle1"] = $this->siteInfo->getValueByKey("headermenutitle1");
         $header["headermenulink1"] = $this->siteInfo->getValueByKey("headermenulink1");
         $header["headermenutitle2"] = $this->siteInfo->getValueByKey("headermenutitle2");

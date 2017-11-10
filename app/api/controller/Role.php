@@ -20,7 +20,6 @@ class Role extends BaseController
     protected $beforeActionList = [
         "add"=>"defaultLoginCheck",
         "update"=>"defaultLoginCheck",
-        "delete"=>"defaultLoginCheck",
     ];
 
     public $model;
@@ -70,20 +69,4 @@ class Role extends BaseController
         return status(true,$msg);
     }
 
-    /*
-     * 删除记录
-     * RequestMethod POST
-     * @param id int
-     * @return string/json
-     */
-    public function delete()
-    {
-        (new MustBePostiveValidate())->goCheck();
-        $rid = Request::post("id");
-        $res = $this->model->deleteRole(intval($rid));
-        if(!$res){
-            throw new DataDeleteException("角色删除失败");
-        }
-        return status(true,"删除角色成功");
-    }
 }
