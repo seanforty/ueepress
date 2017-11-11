@@ -8,7 +8,7 @@
 
 namespace app\index\controller;
 
-use app\api\model\Menusite;
+use app\api\model\Menulist;
 use app\api\model\Siteinfo;
 use app\api\model\Sliderbox;
 use libs\mvc\Controller;
@@ -24,7 +24,7 @@ class BaseController extends Controller
     {
         $this->siteInfo  = new Siteinfo();
         $this->sliderBox = new Sliderbox();
-        $this->smenu     = new Menusite();
+        $this->smenu     = new Menulist();
 
         $this->getHeader();
         $this->getFooter();

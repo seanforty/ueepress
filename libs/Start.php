@@ -10,7 +10,7 @@
 define('UEE_NAME','优亦内容管理系统');
 define('UEE_VERSION', 'V1.0');   //框架版本号
 DEFINE("DS",DIRECTORY_SEPARATOR);   //目录分隔符
-DEFINE("ROOT_PATH",__DIR__ . DS . ".." . DS);    //文件根目录
+DEFINE("ROOT_PATH", dirname(__DIR__) . DS);    //文件根目录
 DEFINE("TEMP_C_PATH",ROOT_PATH . "runtime" . DS . "tempate_c" . DS);    //模板编译目录
 DEFINE("CACHE_PATH",ROOT_PATH . "runtime" . DS . "cache" . DS); //模板缓存目录
 DEFINE("LOG_PATH",ROOT_PATH . "runtime" . DS . "log" . DS); //日志目录

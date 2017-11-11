@@ -1,0 +1,1191 @@
+
+----------------------------------------
+2017-11-11 04:52:47
+uee2.com/admin/Menusite/indx
+GET
+Error Message: Class 'app\admin\controller\Menusite' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-11 04:53:04
+uee2.com/admin/index/index
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2) AND `status` = "0";
+----------------------------------------
+2017-11-11 04:53:04
+uee2.com/admin/index/index
+GET
+SELECT * FROM uee_comment WHERE `type` = "3" AND `status` = "0";
+----------------------------------------
+2017-11-11 04:53:22
+uee2.com/index.php?module=admin
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2) AND `status` = "0";
+----------------------------------------
+2017-11-11 04:53:22
+uee2.com/index.php?module=admin
+GET
+SELECT * FROM uee_comment WHERE `type` = "3" AND `status` = "0";
+----------------------------------------
+2017-11-11 04:53:22
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin WHERE `title`="admin";
+----------------------------------------
+2017-11-11 04:53:22
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_article WHERE `type`="1";
+----------------------------------------
+2017-11-11 04:53:22
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2);
+----------------------------------------
+2017-11-11 04:53:22
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type`="3";
+----------------------------------------
+2017-11-11 04:53:22
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin;
+----------------------------------------
+2017-11-11 04:53:22
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_role;
+----------------------------------------
+2017-11-11 04:53:29
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_menulist LIMIT 0,1;
+----------------------------------------
+2017-11-11 04:53:29
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_menucontent WHERE `mid`="4" ORDER BY `listorder` desc, `id` desc;
+----------------------------------------
+2017-11-11 04:53:29
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_menulist;
+----------------------------------------
+2017-11-11 04:53:29
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_category;
+----------------------------------------
+2017-11-11 04:53:29
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_page;
+----------------------------------------
+2017-11-11 04:53:36
+uee2.com/admin/menulist/index?id=4
+GET
+Error Message: Call to undefined method app\admin\controller\Menulist::index()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-11 04:53:37
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_menulist LIMIT 0,1;
+----------------------------------------
+2017-11-11 04:53:37
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_menucontent WHERE `mid`="4" ORDER BY `listorder` desc, `id` desc;
+----------------------------------------
+2017-11-11 04:53:37
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_menulist;
+----------------------------------------
+2017-11-11 04:53:37
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_category;
+----------------------------------------
+2017-11-11 04:53:37
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_page;
+----------------------------------------
+2017-11-11 04:54:29
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_menulist LIMIT 0,1;
+----------------------------------------
+2017-11-11 04:54:29
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_menucontent WHERE `mid`="4" ORDER BY `listorder` desc, `id` desc;
+----------------------------------------
+2017-11-11 04:54:29
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_menulist;
+----------------------------------------
+2017-11-11 04:54:29
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_category;
+----------------------------------------
+2017-11-11 04:54:29
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_page;
+----------------------------------------
+2017-11-11 04:54:31
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_menulist LIMIT 0,1;
+----------------------------------------
+2017-11-11 04:54:31
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_menucontent WHERE `mid`="4" ORDER BY `listorder` desc, `id` desc;
+----------------------------------------
+2017-11-11 04:54:31
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_menulist;
+----------------------------------------
+2017-11-11 04:54:31
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_category;
+----------------------------------------
+2017-11-11 04:54:31
+uee2.com/admin/Menulist/indx
+GET
+SELECT * FROM uee_page;
+----------------------------------------
+2017-11-11 04:54:44
+uee2.com/admin/menulist/index?id=4
+GET
+Error Message: Call to undefined method app\admin\controller\Menulist::index()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-11 04:55:08
+uee2.com/admin/Menulist/indx
+GET
+Error Message: Call to undefined method app\admin\controller\Menulist::indx()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-11 04:55:09
+uee2.com/index.php?module=admin
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2) AND `status` = "0";
+----------------------------------------
+2017-11-11 04:55:09
+uee2.com/index.php?module=admin
+GET
+SELECT * FROM uee_comment WHERE `type` = "3" AND `status` = "0";
+----------------------------------------
+2017-11-11 04:55:09
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin WHERE `title`="admin";
+----------------------------------------
+2017-11-11 04:55:09
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_article WHERE `type`="1";
+----------------------------------------
+2017-11-11 04:55:09
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2);
+----------------------------------------
+2017-11-11 04:55:09
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type`="3";
+----------------------------------------
+2017-11-11 04:55:09
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin;
+----------------------------------------
+2017-11-11 04:55:09
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_role;
+----------------------------------------
+2017-11-11 04:55:10
+uee2.com/admin/Menulist/indx
+GET
+Error Message: Call to undefined method app\admin\controller\Menulist::indx()(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(123) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-11 04:55:30
+uee2.com/index.php?module=admin
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2) AND `status` = "0";
+----------------------------------------
+2017-11-11 04:55:30
+uee2.com/index.php?module=admin
+GET
+SELECT * FROM uee_comment WHERE `type` = "3" AND `status` = "0";
+----------------------------------------
+2017-11-11 04:55:31
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin WHERE `title`="admin";
+----------------------------------------
+2017-11-11 04:55:31
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_article WHERE `type`="1";
+----------------------------------------
+2017-11-11 04:55:31
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type` IN (0,1,2);
+----------------------------------------
+2017-11-11 04:55:31
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_comment WHERE `type`="3";
+----------------------------------------
+2017-11-11 04:55:31
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_admin;
+----------------------------------------
+2017-11-11 04:55:31
+uee2.com/admin/index/welcome
+GET
+SELECT * FROM uee_role;
+----------------------------------------
+2017-11-11 04:55:32
+uee2.com/admin/Menulist/index
+GET
+SELECT * FROM uee_menulist LIMIT 0,1;
+----------------------------------------
+2017-11-11 04:55:32
+uee2.com/admin/Menulist/index
+GET
+SELECT * FROM uee_menucontent WHERE `mid`="4" ORDER BY `listorder` desc, `id` desc;
+----------------------------------------
+2017-11-11 04:55:32
+uee2.com/admin/Menulist/index
+GET
+SELECT * FROM uee_menulist;
+----------------------------------------
+2017-11-11 04:55:32
+uee2.com/admin/Menulist/index
+GET
+SELECT * FROM uee_category;
+----------------------------------------
+2017-11-11 04:55:32
+uee2.com/admin/Menulist/index
+GET
+SELECT * FROM uee_page;
+----------------------------------------
+2017-11-11 04:55:33
+uee2.com/admin/menulist/index?id=4
+GET
+SELECT * FROM uee_menucontent WHERE `mid`="4" ORDER BY `listorder` desc, `id` desc;
+----------------------------------------
+2017-11-11 04:55:33
+uee2.com/admin/menulist/index?id=4
+GET
+SELECT * FROM uee_menulist;
+----------------------------------------
+2017-11-11 04:55:33
+uee2.com/admin/menulist/index?id=4
+GET
+SELECT * FROM uee_category;
+----------------------------------------
+2017-11-11 04:55:33
+uee2.com/admin/menulist/index?id=4
+GET
+SELECT * FROM uee_page;
+----------------------------------------
+2017-11-11 04:55:35
+uee2.com/admin/menulist/index?id=4
+GET
+SELECT * FROM uee_menucontent WHERE `mid`="4" ORDER BY `listorder` desc, `id` desc;
+----------------------------------------
+2017-11-11 04:55:35
+uee2.com/admin/menulist/index?id=4
+GET
+SELECT * FROM uee_menulist;
+----------------------------------------
+2017-11-11 04:55:35
+uee2.com/admin/menulist/index?id=4
+GET
+SELECT * FROM uee_category;
+----------------------------------------
+2017-11-11 04:55:35
+uee2.com/admin/menulist/index?id=4
+GET
+SELECT * FROM uee_page;
+----------------------------------------
+2017-11-11 04:55:38
+uee2.com/api/menusite/addCate
+POST
+Error Message: Class 'app\api\controller\menusite' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-11 04:55:40
+uee2.com/api/menusite/addpage
+POST
+Error Message: Class 'app\api\controller\menusite' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-11 04:55:42
+uee2.com/api/menusite/addpage
+POST
+Error Message: Class 'app\api\controller\menusite' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-11 04:55:43
+uee2.com/api/menusite/addCate
+POST
+Error Message: Class 'app\api\controller\menusite' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-11 04:55:45
+uee2.com/api/menusite/addCate
+POST
+Error Message: Class 'app\api\controller\menusite' not found(0)<br/>Error File: E:\www\meswebsite\libs\Route.php(115) : eval()'d code : 1<br>
+
+----------------------------------------
+2017-11-11 04:55:50
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 04:55:51
+uee2.com/admin/pcategory/add
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 04:56:37
+uee2.com/api/category/add
+POST
+INSERT INTO uee_category(`id`, `type`, `title`, `parent_id`, `listorder`, `img_id`, `description`, `create_time`, `update_time`) VALUES ('0', '2', '电子看板', '0', '0', '', '', '1510347397', '1510347397')
+----------------------------------------
+2017-11-11 04:56:38
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 04:56:39
+uee2.com/admin/pcategory/add
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 04:56:57
+uee2.com/api/category/add
+POST
+INSERT INTO uee_category(`id`, `type`, `title`, `parent_id`, `listorder`, `img_id`, `description`, `create_time`, `update_time`) VALUES ('0', '2', 'E-SOP', '0', '0', '', '', '1510347417', '1510347417')
+----------------------------------------
+2017-11-11 04:56:58
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 04:56:59
+uee2.com/admin/pcategory/add
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 04:57:16
+uee2.com/api/category/add
+POST
+INSERT INTO uee_category(`id`, `type`, `title`, `parent_id`, `listorder`, `img_id`, `description`, `create_time`, `update_time`) VALUES ('0', '2', '安灯呼叫系统', '0', '0', '', '', '1510347436', '1510347436')
+----------------------------------------
+2017-11-11 04:57:17
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 04:57:28
+uee2.com/admin/products/index
+GET
+SELECT count(`id`) FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 04:57:28
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 04:57:28
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_image WHERE `id` IN ();
+----------------------------------------
+2017-11-11 04:57:28
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 04:57:30
+uee2.com/admin/products/add
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:02:49
+uee2.com/api/image/add
+POST
+上传图片: uploads/0b57fef5f932f6ec6fab64b7d8dcfe00.jpg
+----------------------------------------
+2017-11-11 05:02:49
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/0b57fef5f932f6ec6fab64b7d8dcfe00.jpg', '/uploads/0b57fef5f932f6ec6fab64b7d8dcfe00.jpg.250x250.jpg', '1510347769', '1510347769')
+----------------------------------------
+2017-11-11 05:02:52
+uee2.com/api/image/add
+POST
+上传图片: uploads/1b0f5506a3f3e30a79a7dfc39d6bdcf2.jpg
+----------------------------------------
+2017-11-11 05:02:52
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/1b0f5506a3f3e30a79a7dfc39d6bdcf2.jpg', '/uploads/1b0f5506a3f3e30a79a7dfc39d6bdcf2.jpg.250x250.jpg', '1510347772', '1510347772')
+----------------------------------------
+2017-11-11 05:02:55
+uee2.com/api/image/add
+POST
+上传图片: uploads/c0336b299961ee203aa503dd78b279e6.jpg
+----------------------------------------
+2017-11-11 05:02:55
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/c0336b299961ee203aa503dd78b279e6.jpg', '/uploads/c0336b299961ee203aa503dd78b279e6.jpg.250x250.jpg', '1510347775', '1510347775')
+----------------------------------------
+2017-11-11 05:02:57
+uee2.com/api/image/add
+POST
+上传图片: uploads/f6c2e27982c63b3929b45ffa5f9a8ec5.jpg
+----------------------------------------
+2017-11-11 05:02:57
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/f6c2e27982c63b3929b45ffa5f9a8ec5.jpg', '/uploads/f6c2e27982c63b3929b45ffa5f9a8ec5.jpg.250x250.jpg', '1510347777', '1510347777')
+----------------------------------------
+2017-11-11 05:03:55
+uee2.com/api/product/addpro
+POST
+INSERT INTO uee_product(`title`, `type`, `slug`, `price`, `sales`, `content`, `keyword`, `description`, `cate_id`, `comment`, `stick`, `img_id`, `imgs`, `create_time`, `update_time`) VALUES ('E-SOP电子作业指导书', '1', 'esopsystem', '0', '0', '<p><img src=\"/ueditor/image/20171111/1510347821.jpg\" title=\"1510347821.jpg\" alt=\"35.jpg\"/><img src=\"/ueditor/image/20171111/1510347825.jpg\" title=\"1510347825.jpg\" alt=\"36.jpg\"/></p>', 'E-SOP,电子作业指导书', 'E-SOP电子作业指导书', '2', '1', '0', '180', '180,181,182,183', '1510347835', '1510347835')
+----------------------------------------
+2017-11-11 05:03:56
+uee2.com/admin/products/index
+GET
+SELECT count(`id`) FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:03:56
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:03:56
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (180);
+----------------------------------------
+2017-11-11 05:03:56
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:03:58
+uee2.com/admin/products/add
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:04:59
+uee2.com/api/image/add
+POST
+上传图片: uploads/243ef900ef2f4f7a1d9552435b987b4a.jpg
+----------------------------------------
+2017-11-11 05:04:59
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/243ef900ef2f4f7a1d9552435b987b4a.jpg', '/uploads/243ef900ef2f4f7a1d9552435b987b4a.jpg.250x250.jpg', '1510347899', '1510347899')
+----------------------------------------
+2017-11-11 05:05:01
+uee2.com/api/image/add
+POST
+上传图片: uploads/45c4838b5878a366bf86fc5b3174dd7a.jpg
+----------------------------------------
+2017-11-11 05:05:01
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/45c4838b5878a366bf86fc5b3174dd7a.jpg', '/uploads/45c4838b5878a366bf86fc5b3174dd7a.jpg.250x250.jpg', '1510347901', '1510347901')
+----------------------------------------
+2017-11-11 05:05:03
+uee2.com/api/image/add
+POST
+上传图片: uploads/4352526036ba2d92c3d4ab2f772f80d0.jpg
+----------------------------------------
+2017-11-11 05:05:03
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/4352526036ba2d92c3d4ab2f772f80d0.jpg', '/uploads/4352526036ba2d92c3d4ab2f772f80d0.jpg.250x250.jpg', '1510347903', '1510347903')
+----------------------------------------
+2017-11-11 05:05:04
+uee2.com/api/image/add
+POST
+上传图片: uploads/ade68ac06031ec5d62673483c9d03dbf.jpg
+----------------------------------------
+2017-11-11 05:05:04
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/ade68ac06031ec5d62673483c9d03dbf.jpg', '/uploads/ade68ac06031ec5d62673483c9d03dbf.jpg.250x250.jpg', '1510347904', '1510347904')
+----------------------------------------
+2017-11-11 05:05:06
+uee2.com/api/image/add
+POST
+上传图片: uploads/012b4dcb5baa296d690b7e2da6fd979a.jpg
+----------------------------------------
+2017-11-11 05:05:06
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/012b4dcb5baa296d690b7e2da6fd979a.jpg', '/uploads/012b4dcb5baa296d690b7e2da6fd979a.jpg.250x250.jpg', '1510347906', '1510347906')
+----------------------------------------
+2017-11-11 05:06:01
+uee2.com/api/product/addpro
+POST
+INSERT INTO uee_product(`title`, `type`, `slug`, `price`, `sales`, `content`, `keyword`, `description`, `cate_id`, `comment`, `stick`, `img_id`, `imgs`, `create_time`, `update_time`) VALUES ('安灯呼叫系统', '1', 'andonsystem', '0', '0', '<p>Andon系统主要功能：</p><p>1、工位作业管理——工位呼叫;集中事件呼叫。</p><p>2、设备运行管理——故障、运行状态、维护信息。</p><p>3、信息可视管理——通过Andon看板，显示呼叫信息、故障信息、停线信息。</p><p>4、物料呼叫——通过物料显示屏，显示物料呼叫信息。</p><p>5、质量呼叫——通过广播，呼叫质量信息。</p><p>6、设备呼叫——当设备故障时，通过广播进行呼叫。</p><p>7、维修呼叫管理——通过维修Andon看板，显示维修信息。</p><p>8、公共信息管理——通过信息显示屏，显示各种公共信息。安灯系统的作用及其使用</p><p><br/></p>', '安灯呼叫系统,andon系统,安灯看板,电子看板', 'Andon系统能够收集生产线上有关设备和质量管理等与生产有关的信息，加以处理后，控制分布于车间各处的灯光和声音报警系统。从而实现生产信息的透明化。', '3', '1', '0', '184', '184,185,186,187,188', '1510347961', '1510347961')
+----------------------------------------
+2017-11-11 05:06:02
+uee2.com/admin/products/index
+GET
+SELECT count(`id`) FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:06:02
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:06:02
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (184,180);
+----------------------------------------
+2017-11-11 05:06:02
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:06:04
+uee2.com/admin/products/add
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:07:01
+uee2.com/api/image/add
+POST
+上传图片: uploads/ebb7d5460793b24f92cb758c0ebb7ae0.jpg
+----------------------------------------
+2017-11-11 05:07:01
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/ebb7d5460793b24f92cb758c0ebb7ae0.jpg', '/uploads/ebb7d5460793b24f92cb758c0ebb7ae0.jpg.250x250.jpg', '1510348021', '1510348021')
+----------------------------------------
+2017-11-11 05:07:03
+uee2.com/api/image/add
+POST
+上传图片: uploads/64a7667848938a23c4408a7ae3a89fec.jpg
+----------------------------------------
+2017-11-11 05:07:04
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/64a7667848938a23c4408a7ae3a89fec.jpg', '/uploads/64a7667848938a23c4408a7ae3a89fec.jpg.250x250.jpg', '1510348023', '1510348023')
+----------------------------------------
+2017-11-11 05:07:06
+uee2.com/api/image/add
+POST
+上传图片: uploads/e999aab8ead90101551b6aa3e6aee97c.jpg
+----------------------------------------
+2017-11-11 05:07:06
+uee2.com/api/image/add
+POST
+INSERT INTO uee_image(`img_url`, `thumbnail`, `create_time`, `update_time`) VALUES ('/uploads/e999aab8ead90101551b6aa3e6aee97c.jpg', '/uploads/e999aab8ead90101551b6aa3e6aee97c.jpg.250x250.jpg', '1510348026', '1510348026')
+----------------------------------------
+2017-11-11 05:07:33
+uee2.com/api/product/addpro
+POST
+INSERT INTO uee_product(`title`, `type`, `slug`, `price`, `sales`, `content`, `keyword`, `description`, `cate_id`, `comment`, `stick`, `img_id`, `imgs`, `create_time`, `update_time`) VALUES ('电子看板', '1', 'dianzikanban', '1600', '1500', '<p>LED电子看板屏广泛应用于大型工厂车间，使企业管理更加方便快捷，提高工人劳动生产力</p><p>在生产运用中存在有多种形式的电子看板:</p><p>1、 用于及时反馈生产活动的信息，生产看板</p><p>2、 用于及时反馈物料状态的信息，物料电子看板；</p><p>3、 用于及时反馈现场机器生产状态的信息，机台状况电子看板；</p><p>4、 用于及时反馈现场人员生产状态的信息，人员状况电子看板</p><p>5、 用于及时反馈现场所有状态及工位品质状况的信息，流程及品 质控制看板；</p><p>看板最初是丰田汽车公司于20世纪50年代从超级市场的运行机制中得到启示，作为一种生产、运送指令的传递工具而被创造出来的。经过近50年的发展和完善，目前已经在很多方面都发挥着重要的机能。</p><p>1. 准确的发布生产及运送工作指令使浪费最小化</p><p>2. 防止过量生产和过量运送，快速应变生产的紧急状况，</p><p>天海LED生产看板</p><p>天海LED生产看板</p><p>3.在正确的时间和地点用正确的方法做正确数量 的正确事情</p><p>3. 进行“目视管理”的工具,实面价值流中有效的相互关系,</p><p>4. 改善生产及管理的工具，以达到全过程的高质量</p><p>谈谈什么是电子看板、看板系统</p><p>一、看板类型：</p><p>1、点阵数码混合型：文字部分采用点阵模块显示。主要发送通知、标语、时间等。</p><p>数码管显示生产数字。</p><p>不锈钢外框、钢架结构、表面贴进口PVC面膜。PVC面膜颜色由客户确定或由我方推荐。</p><p>点阵模块规格：φ5、φ4.8、</p><p>四维电器厂电子看板</p><p>四维电器厂电子看板</p><p>φ3.7、φ3.0</p><p>单元板尺寸：488mm×122mm、384mm×96mm、304mm×76mm、256mm×64mm一个单元板可显示四个汉字。</p><p>数码管尺寸：8″、5″、4″、3″、2.3″、1.0″、0.8″等</p><p>2、全点阵型</p><p>信息内容均由点阵显示，不断翻屏、滚动、刷新</p><p>点阵模块规格：φ5、φ4.8、φ3.7、φ3.0</p><p>3、全数码型</p><p>文字部分采用丝网印刷，为固定不变的内容。采用进口PVC面膜，丝网印刷。</p><p>显示内容均为数字或英文字符，由数码管完成。</p><p><br/></p>', '电子看板,生产看板', '电子看板是目视化管理(VM,Visual Management)的一种表现形式，即对数据、情报等的状况一目了然地表现，主要是对于管理项目、特别是情报进行的透明化管理活动。', '1', '1', '0', '189', '189,190,191', '1510348053', '1510348053')
+----------------------------------------
+2017-11-11 05:07:34
+uee2.com/admin/products/index
+GET
+SELECT count(`id`) FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:07:34
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:07:34
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (189,184,180);
+----------------------------------------
+2017-11-11 05:07:34
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:07:37
+uee2.com/admin/products/index
+GET
+SELECT count(`id`) FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:07:37
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_product WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:07:37
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (189,184,180);
+----------------------------------------
+2017-11-11 05:07:37
+uee2.com/admin/products/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:07:38
+uee2.com/admin/pcategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:07:42
+uee2.com/admin/cases/index
+GET
+SELECT count(`id`) FROM uee_product WHERE `type` = "2" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:07:42
+uee2.com/admin/cases/index
+GET
+SELECT * FROM uee_product WHERE `type` = "2" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:07:42
+uee2.com/admin/cases/index
+GET
+SELECT * FROM uee_image WHERE `id` IN ();
+----------------------------------------
+2017-11-11 05:07:45
+uee2.com/admin/articles/index
+GET
+SELECT count(`id`) FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:07:45
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:07:45
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_image WHERE `id` IN ();
+----------------------------------------
+2017-11-11 05:07:45
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `id` IN ();
+----------------------------------------
+2017-11-11 05:07:45
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:07:46
+uee2.com/admin/articles/add
+GET
+SELECT * FROM uee_category WHERE `type`="1";
+----------------------------------------
+2017-11-11 05:08:06
+uee2.com/admin/acategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:08:07
+uee2.com/admin/acategory/add
+GET
+SELECT * FROM uee_category WHERE `type`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:08:20
+uee2.com/api/category/add
+POST
+INSERT INTO uee_category(`id`, `type`, `title`, `parent_id`, `listorder`, `img_id`, `description`, `create_time`, `update_time`) VALUES ('0', '1', 'MES系统', '0', '0', '', '', '1510348100', '1510348100')
+----------------------------------------
+2017-11-11 05:08:21
+uee2.com/admin/acategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:08:21
+uee2.com/admin/acategory/add
+GET
+SELECT * FROM uee_category WHERE `type`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:08:27
+uee2.com/api/category/add
+POST
+INSERT INTO uee_category(`id`, `type`, `title`, `parent_id`, `listorder`, `img_id`, `description`, `create_time`, `update_time`) VALUES ('0', '1', '行业资讯', '0', '0', '', '', '1510348107', '1510348107')
+----------------------------------------
+2017-11-11 05:08:28
+uee2.com/admin/acategory/index
+GET
+SELECT * FROM uee_category WHERE `type`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:08:31
+uee2.com/admin/articles/index
+GET
+SELECT count(`id`) FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:08:31
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:08:31
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_image WHERE `id` IN ();
+----------------------------------------
+2017-11-11 05:08:31
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `id` IN ();
+----------------------------------------
+2017-11-11 05:08:31
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:08:32
+uee2.com/admin/articles/add
+GET
+SELECT * FROM uee_category WHERE `type`="1";
+----------------------------------------
+2017-11-11 05:09:07
+uee2.com/api/article/add
+POST
+INSERT INTO uee_article(`title`, `type`, `slug`, `content`, `keyword`, `description`, `cate_id`, `img_id`, `author`, `sources`, `read`, `comment`, `stick`, `create_time`, `update_time`) VALUES ('工业4.0和精益生产密切相关', '1', '', '<p style=\"margin-top: 0px;margin-bottom: 0px;padding: 0px;color: rgb(102, 102, 102);font-family: tahoma, &#39;microsoft yahei&#39;, 微软雅黑, 宋体;font-size: 12px;white-space: normal;background-color: rgb(255, 255, 255)\"><span style=\";padding: 0px\">在国家制造大战略的鼓舞下，国内已有很多企业开始尝试工业自动化以及工业</span>4.0<span style=\";padding: 0px\">的技术开发和产品布局，以图在未来中国制造逐步走向工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">的升级改造中获得商业机会。最近，网络上也开始传播海尔、格力等企业关于工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">示范工厂的视频，说明工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">离我们并不遥远，德国制造能办到的事，中国制造也能办到。但就中国大量的制造型企业特别是中小企业来说，管理现状依然停留在工业&nbsp;</span><span style=\";padding: 0px\">1.5</span><span style=\";padding: 0px\">、工业&nbsp;</span><span style=\";padding: 0px\">2.0&nbsp;</span><span style=\";padding: 0px\">的低水平上，工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">还是一个模糊的和不确定的未来。 &nbsp;</span></p><p style=\"margin-top: 0px;margin-bottom: 0px;padding: 0px;color: rgb(102, 102, 102);font-family: tahoma, &#39;microsoft yahei&#39;, 微软雅黑, 宋体;font-size: 12px;white-space: normal;background-color: rgb(255, 255, 255)\"><br/></p><p style=\"margin-top: 0px;margin-bottom: 0px;padding: 0px;color: rgb(102, 102, 102);font-family: tahoma, &#39;microsoft yahei&#39;, 微软雅黑, 宋体;font-size: 12px;white-space: normal;background-color: rgb(255, 255, 255)\"><span style=\";padding: 0px\">企业走向工业</span>4.0<span style=\";padding: 0px\">，需要逐步进行精益化、自动化、智慧化（信息化的高级形式）、智能化等四化建设，而精益化是其他三化的基础，精益化将伴随企业走向工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">的整个进程。可见，工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">是目标，精益化既是走向工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">的手段，也是一个持续的过程。其实工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">本身并不可怕，真正可怕的是，我们的企业停止了进化，或者进化得太慢，以至于生存出现问题。如何做到快速进化，让进化速度能够契合企业生存的需要？答案是走精益之路，即开始拥有精益思维，积极采取精益行动。</span></p><p><br/></p>', '工业4.0和精益生产密切相关', '工业4.0和精益生产密切相关', '0', '0', '', '', '0', '1', '0', '1510348147', '1510348147')
+----------------------------------------
+2017-11-11 05:09:08
+uee2.com/admin/articles/index
+GET
+SELECT count(`id`) FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:09:08
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:09:08
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (0);
+----------------------------------------
+2017-11-11 05:09:08
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `id` IN (0);
+----------------------------------------
+2017-11-11 05:09:08
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:09:09
+uee2.com/admin/articles/add
+GET
+SELECT * FROM uee_category WHERE `type`="1";
+----------------------------------------
+2017-11-11 05:09:57
+uee2.com/api/article/add
+POST
+INSERT INTO uee_article(`title`, `type`, `slug`, `content`, `keyword`, `description`, `cate_id`, `img_id`, `author`, `sources`, `read`, `comment`, `stick`, `create_time`, `update_time`) VALUES ('现代经济建设可离不开智能工厂！', '1', '', '<p>智能工厂具有以下六个显著特征：</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. 设备互联。能够实现设备与设备互联（M2M），通过与设备控制系统集成，以及外接传感器等方式，由SCADA（数据采集与监控系统）实时采集设备的状态，生产完工的信息、质量信息，并通过应用RFID（无线射频技术）、条码（一维和二维）等技术，实现生产过程的可追溯。</p><p><br/></p><p>&nbsp;&nbsp;&nbsp;&nbsp;2. 广泛应用工业软件。广泛应用MES（制造执行系统）、APS（先进生产排程），在推进数字化转型的过程中，必须确保工厂的数据安全和设备和自动化系统安全。在通过专业检测设备检出次品时，不仅要能够自动与合格品分流，而且能够通过SPC（统计过程控制）等软件，分析出现质量问题的原因。</p><p><br/></p><p>&nbsp;&nbsp;&nbsp;&nbsp;3. 充分结合精益生产理念。充分体现工业工程和精益生产的理念，能够实现按订单驱动，拉动式生产，尽量减少在制品库存，消除浪费。推进智能工厂建设要充分结合企业产品和工艺特点。在研发阶段也需要大力推进标准化、模块化和系列化，奠定推进精益生产的基础。</p><p><br/></p><p>4.&nbsp;实现柔性自动化。工厂的自动化生产线和装配线应当适当考虑冗余，避免由于关键设备故障而停线；同时，应当充分考虑如何快速换模，能够适应多品种的混线生产。物流自动化对于实现智能工厂至关重要，企业可以通过AGV、行架式机械手、悬挂式输送链等物流设备实现工序之间的物料传递，并配置物料超市，尽量将物料配送到线边。</p><p><br/></p><p>&nbsp;&nbsp;&nbsp;&nbsp;5. 注重环境友好，实现绿色制造。能够及时采集设备和产线的能源消耗，实现能源高效利用。在危险和存在污染的环节，优先用机器人替代人工，能够实现废料的回收和再利用。</p><p><br/></p><p>6.&nbsp;可以实现实时洞察。从生产排产指令的下达到完工信息的反馈，实现闭环。通过建立生产指挥系统，实时洞察工厂的生产、质量、能耗和设备状态信息，避免非计划性停机。通过建立工厂的Digital Twin（数字映射），方便地洞察生产现场的状态，辅助各级管理人员做出正确决策。</p><p><br/></p>', '现代经济建设可离不开智能工厂！', '现代经济建设可离不开智能工厂！', '0', '0', '', '', '0', '1', '0', '1510348197', '1510348197')
+----------------------------------------
+2017-11-11 05:09:58
+uee2.com/admin/articles/index
+GET
+SELECT count(`id`) FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:09:58
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:09:58
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (0,0);
+----------------------------------------
+2017-11-11 05:09:58
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `id` IN (0,0);
+----------------------------------------
+2017-11-11 05:09:58
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:10:25
+uee2.com/admin/articles/add
+GET
+SELECT * FROM uee_category WHERE `type`="1";
+----------------------------------------
+2017-11-11 05:11:01
+uee2.com/api/article/add
+POST
+INSERT INTO uee_article(`title`, `type`, `slug`, `content`, `keyword`, `description`, `cate_id`, `img_id`, `author`, `sources`, `read`, `comment`, `stick`, `create_time`, `update_time`) VALUES ('精益管理在办公室的应用', '1', '', '<p>精益管理的思想不光是在生产运营，在医院、在政府机构、在办公室都在开展，精益管理办公在办公室里面是怎么应用的？</p><p>要了解精益管理是怎么在办公室怎么应用，我们就要回到根本，精益管理办公系统源于丰田生产系统模式！要了解办公系统，我们必须要寻找根源，精益管理系统，是来自哪里？</p><p>大家会发现，以后在推进精益管理办公的时候，所有它的思想，工具，实际上都源自于TPS精益管理生产模式。也就是丰田精益管理生产模式。但有人会问，TPS中“P”指的就是生产，那我们又不生产，我们是办公室的，让我们学生产系统，是不是有意义？是不是可以用在办公环境中？答案是肯定的。<br/></p><p>很多公司对TPS精益管理生产的理解还停留在工具层面上。也就是说从工具层面上，你会发现这个适用在生产中。比如说，看板系统——是物料的一个同步系统。这个工具确实适用在生产领域。他形成一个物流与信息的同步。那么这种看板系统也可以运用在我们的办公室呢？答案也是肯定的！</p><p><br/></p>', '精益管理在办公室的应用', '精益管理在办公室的应用', '5', '0', '', '', '0', '1', '0', '1510348261', '1510348261')
+----------------------------------------
+2017-11-11 05:11:02
+uee2.com/admin/articles/index
+GET
+SELECT count(`id`) FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:11:02
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:11:02
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (0,0,0);
+----------------------------------------
+2017-11-11 05:11:02
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `id` IN (5,0,0);
+----------------------------------------
+2017-11-11 05:11:02
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:11:06
+uee2.com/admin/articles/update?id=2
+GET
+SELECT * FROM uee_article WHERE id=2;
+----------------------------------------
+2017-11-11 05:11:06
+uee2.com/admin/articles/update?id=2
+GET
+SELECT * FROM uee_category WHERE `type`="1";
+----------------------------------------
+2017-11-11 05:11:10
+uee2.com/api/article/update
+POST
+UPDATE uee_article SET `title`="现代经济建设可离不开智能工厂！",`type`="1",`slug`="",`content`="<p>智能工厂具有以下六个显著特征：</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. 设备互联。能够实现设备与设备互联（M2M），通过与设备控制系统集成，以及外接传感器等方式，由SCADA（数据采集与监控系统）实时采集设备的状态，生产完工的信息、质量信息，并通过应用RFID（无线射频技术）、条码（一维和二维）等技术，实现生产过程的可追溯。</p><p><br/></p><p>&nbsp;&nbsp;&nbsp;&nbsp;2. 广泛应用工业软件。广泛应用MES（制造执行系统）、APS（先进生产排程），在推进数字化转型的过程中，必须确保工厂的数据安全和设备和自动化系统安全。在通过专业检测设备检出次品时，不仅要能够自动与合格品分流，而且能够通过SPC（统计过程控制）等软件，分析出现质量问题的原因。</p><p><br/></p><p>&nbsp;&nbsp;&nbsp;&nbsp;3. 充分结合精益生产理念。充分体现工业工程和精益生产的理念，能够实现按订单驱动，拉动式生产，尽量减少在制品库存，消除浪费。推进智能工厂建设要充分结合企业产品和工艺特点。在研发阶段也需要大力推进标准化、模块化和系列化，奠定推进精益生产的基础。</p><p><br/></p><p>4.&nbsp;实现柔性自动化。工厂的自动化生产线和装配线应当适当考虑冗余，避免由于关键设备故障而停线；同时，应当充分考虑如何快速换模，能够适应多品种的混线生产。物流自动化对于实现智能工厂至关重要，企业可以通过AGV、行架式机械手、悬挂式输送链等物流设备实现工序之间的物料传递，并配置物料超市，尽量将物料配送到线边。</p><p><br/></p><p>&nbsp;&nbsp;&nbsp;&nbsp;5. 注重环境友好，实现绿色制造。能够及时采集设备和产线的能源消耗，实现能源高效利用。在危险和存在污染的环节，优先用机器人替代人工，能够实现废料的回收和再利用。</p><p><br/></p><p>6.&nbsp;可以实现实时洞察。从生产排产指令的下达到完工信息的反馈，实现闭环。通过建立生产指挥系统，实时洞察工厂的生产、质量、能耗和设备状态信息，避免非计划性停机。通过建立工厂的Digital Twin（数字映射），方便地洞察生产现场的状态，辅助各级管理人员做出正确决策。</p><p><br/></p>",`keyword`="现代经济建设可离不开智能工厂！",`description`="现代经济建设可离不开智能工厂！",`cate_id`="5",`img_id`="0",`author`="",`sources`="",`read`="0",`comment`="1",`stick`="0",`update_time`="1510348270" WHERE `id`="2"
+----------------------------------------
+2017-11-11 05:11:11
+uee2.com/admin/articles/index
+GET
+SELECT count(`id`) FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:11:11
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:11:11
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (0,0,0);
+----------------------------------------
+2017-11-11 05:11:11
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `id` IN (5,5,0);
+----------------------------------------
+2017-11-11 05:11:11
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:11:13
+uee2.com/admin/articles/update?id=2
+GET
+SELECT * FROM uee_article WHERE id=2;
+----------------------------------------
+2017-11-11 05:11:13
+uee2.com/admin/articles/update?id=2
+GET
+SELECT * FROM uee_category WHERE `type`="1";
+----------------------------------------
+2017-11-11 05:11:22
+uee2.com/admin/articles/index
+GET
+SELECT count(`id`) FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:11:22
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:11:22
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (0,0,0);
+----------------------------------------
+2017-11-11 05:11:22
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `id` IN (5,5,0);
+----------------------------------------
+2017-11-11 05:11:22
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:11:24
+uee2.com/admin/articles/update?id=1
+GET
+SELECT * FROM uee_article WHERE id=1;
+----------------------------------------
+2017-11-11 05:11:24
+uee2.com/admin/articles/update?id=1
+GET
+SELECT * FROM uee_category WHERE `type`="1";
+----------------------------------------
+2017-11-11 05:11:29
+uee2.com/api/article/update
+POST
+UPDATE uee_article SET `title`="工业4.0和精益生产密切相关",`type`="1",`slug`="",`content`="<p style=\"margin-top: 0px;margin-bottom: 0px;padding: 0px;color: rgb(102, 102, 102);font-family: tahoma, &#39;microsoft yahei&#39;, 微软雅黑, 宋体;font-size: 12px;white-space: normal;background-color: rgb(255, 255, 255)\"><span style=\";padding: 0px\">在国家制造大战略的鼓舞下，国内已有很多企业开始尝试工业自动化以及工业</span>4.0<span style=\";padding: 0px\">的技术开发和产品布局，以图在未来中国制造逐步走向工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">的升级改造中获得商业机会。最近，网络上也开始传播海尔、格力等企业关于工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">示范工厂的视频，说明工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">离我们并不遥远，德国制造能办到的事，中国制造也能办到。但就中国大量的制造型企业特别是中小企业来说，管理现状依然停留在工业&nbsp;</span><span style=\";padding: 0px\">1.5</span><span style=\";padding: 0px\">、工业&nbsp;</span><span style=\";padding: 0px\">2.0&nbsp;</span><span style=\";padding: 0px\">的低水平上，工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">还是一个模糊的和不确定的未来。 &nbsp;</span></p><p style=\"margin-top: 0px;margin-bottom: 0px;padding: 0px;color: rgb(102, 102, 102);font-family: tahoma, &#39;microsoft yahei&#39;, 微软雅黑, 宋体;font-size: 12px;white-space: normal;background-color: rgb(255, 255, 255)\"><br/></p><p style=\"margin-top: 0px;margin-bottom: 0px;padding: 0px;color: rgb(102, 102, 102);font-family: tahoma, &#39;microsoft yahei&#39;, 微软雅黑, 宋体;font-size: 12px;white-space: normal;background-color: rgb(255, 255, 255)\"><span style=\";padding: 0px\">企业走向工业</span>4.0<span style=\";padding: 0px\">，需要逐步进行精益化、自动化、智慧化（信息化的高级形式）、智能化等四化建设，而精益化是其他三化的基础，精益化将伴随企业走向工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">的整个进程。可见，工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">是目标，精益化既是走向工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">的手段，也是一个持续的过程。其实工业</span><span style=\";padding: 0px\">4.0</span><span style=\";padding: 0px\">本身并不可怕，真正可怕的是，我们的企业停止了进化，或者进化得太慢，以至于生存出现问题。如何做到快速进化，让进化速度能够契合企业生存的需要？答案是走精益之路，即开始拥有精益思维，积极采取精益行动。</span></p><p><br/></p>",`keyword`="工业4.0和精益生产密切相关",`description`="工业4.0和精益生产密切相关",`cate_id`="5",`img_id`="0",`author`="",`sources`="",`read`="0",`comment`="1",`stick`="0",`update_time`="1510348289" WHERE `id`="1"
+----------------------------------------
+2017-11-11 05:11:30
+uee2.com/admin/articles/index
+GET
+SELECT count(`id`) FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:11:30
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:11:30
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (0,0,0);
+----------------------------------------
+2017-11-11 05:11:30
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `id` IN (5,5,5);
+----------------------------------------
+2017-11-11 05:11:30
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:11:37
+uee2.com/admin/articles/index
+GET
+SELECT count(`id`) FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:11:37
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:11:37
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (0,0,0);
+----------------------------------------
+2017-11-11 05:11:37
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `id` IN (5,5,5);
+----------------------------------------
+2017-11-11 05:11:37
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:11:42
+uee2.com/admin/articles/add
+GET
+SELECT * FROM uee_category WHERE `type`="1";
+----------------------------------------
+2017-11-11 05:12:21
+uee2.com/api/article/add
+POST
+INSERT INTO uee_article(`title`, `type`, `slug`, `content`, `keyword`, `description`, `cate_id`, `img_id`, `author`, `sources`, `read`, `comment`, `stick`, `create_time`, `update_time`) VALUES ('工业4.0 | 西门子未来工厂揭秘', '1', '', '<p>先透过一些数据看看这个工厂</p><p><br/></p><p>24小时交货时间</p><p>每1秒出一个产品</p><p>合格率99.9985%</p><p>管理30亿的元器件</p><p>约1200员工</p><p>5公里地下元器件运输带</p><p>磁悬浮运输带</p><p>&nbsp;</p><p>这家工厂，生产设备和电脑可以自主处理75%的工序，只有剩余1/4的工作需要人工完成。</p><p>自建成以来，工厂的生产面积没有扩张，员工数量也几乎未变，产能却提升了8倍，平均1秒即可生产一个产品。同时，产品质量合格率高达99.9985%，全球没有任何一家同类工厂可以匹敌。</p><p>&nbsp;</p><p><br/></p><p><br/></p><p>这是让人目瞪口呆的西门子“未来工厂”，最目瞪口呆的是这工厂不是在未来，而是活在当下，在德国巴伐利亚邦东部的安贝格（Amberg），纽伦堡以东约60公里的维尔斯河（Vils）畔，当我还在陶醉在维尔斯河美景时，冷不防的已到达门禁森严的德国工业4.0最佳示范单位。</p><p>&nbsp;</p><p>所谓未来工厂，西门子的官目前的说法是数字化工厂，或者直接安贝格电子制造工厂（Electronic Works Amberg，简称EWA）。</p><p>&nbsp;</p><p>去德国之前已知道中国与德国有很大差距，去之后确认差距真的很大，比我想象中还要大。</p><p>&nbsp;</p><p>默克尔解密西门子</p><p>&nbsp;</p><p>到访西门子，第一印象是门禁及管理，全程不许拍照录影，手机不准取出来，连心脏起搏器都不准带。都不许进厂之前每人获发一条纸带，要穿在鞋上带走静电。</p><p>&nbsp;</p><p>另外访客都要穿上白袍，从s码到5XL码都有，来自中国的娇小女士以至欧美壮男都能找到贴身的选择。按规定，穿白袍的访客都要由穿蓝袍的西门子员工带领，才能在厂内走动。</p><p>&nbsp;</p><p>只有一个人例外，她就是德国总理默克尔（Angela Dorothea MERKEL），她在2015年2月参观EWA时，便穿上西门子员工的蓝袍，官方其后发布了她参观及讲话的视频，终于解密了这座神秘的未来工厂。让我们跟随默克尔的步伐，近距离欣赏这家欧洲最佳数字工厂。</p><p>&nbsp;</p><p><br/></p><p>EWA本身就是德国工业4.0的孩子，西门子根据2011年4月发表的报告，在原有的强大基础下，打造这家超强未来工厂，并于2013年在中国四川成都开枝散叶，默克尔2015年2月亲临EWA，对这项阶段成果表示赞赏。</p><p>&nbsp;</p><p>&nbsp;</p><p>真正的工业4.0</p><p>西门子对工业4.0的定义，重点在于Cyber Physical System （CPS），即赛博物理系统。</p><p>&nbsp;</p><p>这家明星工厂的闪光之处在于“机器控制机器的生产”，也就是端到端的数字化，这正是未来制造所要达到的目标。</p><p>&nbsp;</p><p>这家工厂主要生产SIMATIC可编程逻辑控制器（PLC）及相关产品，打个比方说，这些东西类似电脑里的CPU。一般来说，一家汽车制造厂仅需使用50至100套SIMATIC控制系统，一个石油平台只需使用5到20套。EWA则生产多达1000种的这类产品可被用于控制机械设备与工厂，从而实现生产过程的自动化。</p><p>&nbsp;</p><p>而数字化带来的，产品之间以及产品与机器设备之间的互通互联使得生产路径不断优化，不断提升生产效率。</p><p>&nbsp;</p><p>在EWA，每条生产线上都运行着约1000台SIMATIC控制器。这些产品通过产品代码控制它们自身的制造过程，它们可告知生产设备它们的要求是什么、下一步工序是什么。</p><p>&nbsp;</p><p>产品可与生产设备通信，所有流程均已经实现了IT控制并进行了优化。工人在这里只需要做生产全过程1/4的工作，比如在生产之初，将印刷电路板安装在生产线上，此后所有的工作均由机器自动控制完成。</p><p>&nbsp;</p><p>即使是原料配送也全部实现了自动化与信息化。在安贝格工厂的地下仓库里，物料安静地等待着被运送到需要它们的生产线上，地下运输带长达5米。</p><p>&nbsp;</p><p>当生产过程中需要某种物料时，屏幕上会有提示，工人会拿着扫描枪，在物料样品上进行扫描，条码信息传输到工厂的自动化仓库之后，ERP系统发出的指令会让自动化的物流系统去仓库的指定位置取指定的物料，然后通过自动升降机，将物料传送到生产线附近。</p><p>&nbsp;</p><p>人，仍是不可或缺的</p><p><br/></p><p>高度的数字化和自动化提升了生产效率。不过，人依然不可或缺。</p><p>&nbsp;</p><p><br/></p><p>在生产车间中，时不时会看到工人在走动巡查。这家工厂依然有大约1200名员工，实行三班轮换制，每班大约有300-400名员工。他们会起身查看自己负责环节的进展，比如手工连接上某些原材料以及查看数据等。</p><p>&nbsp;</p><p>由于工厂里的所有设备都已经联网，可以实时交换数据，因此员工可以通过移动终端查看重要信息。而1000多台扫描仪实时记录所有生产步骤，记录焊接温度、贴片数据和测试结果等产品细节信息。而人最为重要的作用是提出改进意见。现在，员工提出的改进意见对年生产力增长的贡献率达40%，剩余60%源于基础设施投资，包括购置新装配线和用创新方法改造物流设备。</p><p>&nbsp;</p><p>员工提改善意见还有奖金可拿，上个财政年度，公司便发放了220万欧元的奖金给予提意见并获采纳的员工。</p><p>&nbsp;</p><p>西门子废品率一直在下降，从下图看出，90/91年，每100万件产品中有约560件废品，而到13/14年，每100万件产品仅有11.5件废品。</p><p>&nbsp;</p><p>从Big Data到Small Data</p><p><br/></p><p>西门子EWA每天处理的数据：</p><p>&nbsp;</p><p>§&nbsp; &nbsp; &nbsp; 1995年 &gt; 5,000</p><p>&nbsp;</p><p>§&nbsp; &nbsp; &nbsp; 2000年 &gt; 50,000</p><p>&nbsp;</p><p>§&nbsp; &nbsp; &nbsp; 2014年 &gt; 50,000,000</p><p>&nbsp;</p><p>未来工厂的核心便是将Big Data变成Smart Data，EWA主要透过数据挖掘、分析及管理层整合，以及分类主动推送给相关员工等多种手段，让人员用好数据，这也是未来工厂仍要保留人的智慧的另一体现。</p><p><br/></p>', '工业4.0 | 西门子未来工厂揭秘', '工业4.0 | 西门子未来工厂揭秘', '0', '0', '', '', '0', '1', '0', '1510348341', '1510348341')
+----------------------------------------
+2017-11-11 05:12:22
+uee2.com/admin/articles/index
+GET
+SELECT count(`id`) FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:12:22
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:12:22
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (0,0,0,0);
+----------------------------------------
+2017-11-11 05:12:22
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `id` IN (0,5,5,5);
+----------------------------------------
+2017-11-11 05:12:22
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:12:35
+uee2.com/admin/articles/add
+GET
+SELECT * FROM uee_category WHERE `type`="1";
+----------------------------------------
+2017-11-11 05:12:57
+uee2.com/api/article/add
+POST
+INSERT INTO uee_article(`title`, `type`, `slug`, `content`, `keyword`, `description`, `cate_id`, `img_id`, `author`, `sources`, `read`, `comment`, `stick`, `create_time`, `update_time`) VALUES ('智能工厂如何建设？', '1', '', '<p>现代企业制造中自动化、信息化和智能化成为当今社会经济生活中提及率极高的关键词，智能工厂建设成了热门。通过建立优质、高效、低耗、清洁、灵活的生产，从而实现基于工业大数据和“互联网”的智能工厂。　</p><p>一、智能工厂特点：</p><p>1、生产设备网络化</p><p>在生产过程中，将所有的设备及工位统一联网管理，使设备与设备之间、设备与计算机之间能够联网通讯，设备与工位人员紧密关联。</p><p><br/></p><p><br/></p><p>2、生产数据可视化，利用大数据分析进行生产决策。</p><p>利用大数据技术，还可以对产品的生产过程建立虚拟模型，仿真并优化生产流程，当所有流程和绩效数据都能在系统中重建时，这种透明度将有助于制造企业改进其生产流程。</p><p>没有精益的自动化、信息化会造成极大浪费。</p><p><br/></p><p>3、生产文档无纸化，实现高效、绿色制造</p><p>生产文档进行无纸化管理后，工作人员在智能工厂生产现场即可快速查询、浏览、下载所需要的生产信息，生产过程中产生的资料能够即时进行归档保存，大幅降低基于纸质文档的人工传递及流转，从而杜绝了文件、数据丢失，进一步提高了生产准备效率和生产作业效率，实现绿色、无纸化生产。</p><p><br/></p><p>二、实现智能工厂方法：</p><p>1、建设愿景，就是装上一个能帮助我们实现高效经营的数据大脑</p><p>这个数据大脑是企业经营中负责思考、判断和发出指令的神经中枢。它从企业经营的各个领域获取有价值的信息，并通过分类、加工处理，得出各种有效的结论或指令，高效管控企业的运营。</p><p>&nbsp;</p><p>2、精益化、自动化和信息化</p><p>精益化，指的是与提供产品或服务密切相关的主价值（研、产、销等）流程，保障流程、系统能够高效、快捷和稳定地提供产品和服务。自动化，目的不外乎是提高效率、保障质量（比人工稳定可靠）、规避安全风险（不怕意外）和降低劳动强度（不怕苦累）等。信息化，对诸如记录、统计、分析、报告、预警、判断、指令和协同等工作实现替代。</p><p><br/></p><p>3、标准化管理、精益改善机制、改善工具方法的学习和利润经营机制。</p><p>经营理念和经营战略开始，并通过制定和落实年度经营计划等一系列具体的经营行为，来达成企业提升利润等经营目标。</p><p><br/></p><p>总的来说虽然国内很多企业都在炒作智能制造，但是绝大多数企业还处在部分使用应用软件的阶段，少数企业也只是实现了信息集成，也就是可以达到数字化工厂的水平；极少数企业，能够实现人机的有效交互，也就是达到智能工厂的水平。中国企业智能工厂改进还需要不断努力。</p><p><br/></p>', '智能工厂如何建设？', '智能工厂如何建设？', '0', '0', '', '', '0', '1', '0', '1510348377', '1510348377')
+----------------------------------------
+2017-11-11 05:12:58
+uee2.com/admin/articles/index
+GET
+SELECT count(`id`) FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:12:58
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:12:58
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (0,0,0,0,0);
+----------------------------------------
+2017-11-11 05:12:58
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `id` IN (0,0,5,5,5);
+----------------------------------------
+2017-11-11 05:12:58
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:13:03
+uee2.com/admin/articles/update?id=4
+GET
+SELECT * FROM uee_article WHERE id=4;
+----------------------------------------
+2017-11-11 05:13:03
+uee2.com/admin/articles/update?id=4
+GET
+SELECT * FROM uee_category WHERE `type`="1";
+----------------------------------------
+2017-11-11 05:13:09
+uee2.com/api/article/update
+POST
+UPDATE uee_article SET `title`="工业4.0 | 西门子未来工厂揭秘",`type`="1",`slug`="",`content`="<p>先透过一些数据看看这个工厂</p><p><br/></p><p>24小时交货时间</p><p>每1秒出一个产品</p><p>合格率99.9985%</p><p>管理30亿的元器件</p><p>约1200员工</p><p>5公里地下元器件运输带</p><p>磁悬浮运输带</p><p>&nbsp;</p><p>这家工厂，生产设备和电脑可以自主处理75%的工序，只有剩余1/4的工作需要人工完成。</p><p>自建成以来，工厂的生产面积没有扩张，员工数量也几乎未变，产能却提升了8倍，平均1秒即可生产一个产品。同时，产品质量合格率高达99.9985%，全球没有任何一家同类工厂可以匹敌。</p><p>&nbsp;</p><p><br/></p><p><br/></p><p>这是让人目瞪口呆的西门子“未来工厂”，最目瞪口呆的是这工厂不是在未来，而是活在当下，在德国巴伐利亚邦东部的安贝格（Amberg），纽伦堡以东约60公里的维尔斯河（Vils）畔，当我还在陶醉在维尔斯河美景时，冷不防的已到达门禁森严的德国工业4.0最佳示范单位。</p><p>&nbsp;</p><p>所谓未来工厂，西门子的官目前的说法是数字化工厂，或者直接安贝格电子制造工厂（Electronic Works Amberg，简称EWA）。</p><p>&nbsp;</p><p>去德国之前已知道中国与德国有很大差距，去之后确认差距真的很大，比我想象中还要大。</p><p>&nbsp;</p><p>默克尔解密西门子</p><p>&nbsp;</p><p>到访西门子，第一印象是门禁及管理，全程不许拍照录影，手机不准取出来，连心脏起搏器都不准带。都不许进厂之前每人获发一条纸带，要穿在鞋上带走静电。</p><p>&nbsp;</p><p>另外访客都要穿上白袍，从s码到5XL码都有，来自中国的娇小女士以至欧美壮男都能找到贴身的选择。按规定，穿白袍的访客都要由穿蓝袍的西门子员工带领，才能在厂内走动。</p><p>&nbsp;</p><p>只有一个人例外，她就是德国总理默克尔（Angela Dorothea MERKEL），她在2015年2月参观EWA时，便穿上西门子员工的蓝袍，官方其后发布了她参观及讲话的视频，终于解密了这座神秘的未来工厂。让我们跟随默克尔的步伐，近距离欣赏这家欧洲最佳数字工厂。</p><p>&nbsp;</p><p><br/></p><p>EWA本身就是德国工业4.0的孩子，西门子根据2011年4月发表的报告，在原有的强大基础下，打造这家超强未来工厂，并于2013年在中国四川成都开枝散叶，默克尔2015年2月亲临EWA，对这项阶段成果表示赞赏。</p><p>&nbsp;</p><p>&nbsp;</p><p>真正的工业4.0</p><p>西门子对工业4.0的定义，重点在于Cyber Physical System （CPS），即赛博物理系统。</p><p>&nbsp;</p><p>这家明星工厂的闪光之处在于“机器控制机器的生产”，也就是端到端的数字化，这正是未来制造所要达到的目标。</p><p>&nbsp;</p><p>这家工厂主要生产SIMATIC可编程逻辑控制器（PLC）及相关产品，打个比方说，这些东西类似电脑里的CPU。一般来说，一家汽车制造厂仅需使用50至100套SIMATIC控制系统，一个石油平台只需使用5到20套。EWA则生产多达1000种的这类产品可被用于控制机械设备与工厂，从而实现生产过程的自动化。</p><p>&nbsp;</p><p>而数字化带来的，产品之间以及产品与机器设备之间的互通互联使得生产路径不断优化，不断提升生产效率。</p><p>&nbsp;</p><p>在EWA，每条生产线上都运行着约1000台SIMATIC控制器。这些产品通过产品代码控制它们自身的制造过程，它们可告知生产设备它们的要求是什么、下一步工序是什么。</p><p>&nbsp;</p><p>产品可与生产设备通信，所有流程均已经实现了IT控制并进行了优化。工人在这里只需要做生产全过程1/4的工作，比如在生产之初，将印刷电路板安装在生产线上，此后所有的工作均由机器自动控制完成。</p><p>&nbsp;</p><p>即使是原料配送也全部实现了自动化与信息化。在安贝格工厂的地下仓库里，物料安静地等待着被运送到需要它们的生产线上，地下运输带长达5米。</p><p>&nbsp;</p><p>当生产过程中需要某种物料时，屏幕上会有提示，工人会拿着扫描枪，在物料样品上进行扫描，条码信息传输到工厂的自动化仓库之后，ERP系统发出的指令会让自动化的物流系统去仓库的指定位置取指定的物料，然后通过自动升降机，将物料传送到生产线附近。</p><p>&nbsp;</p><p>人，仍是不可或缺的</p><p><br/></p><p>高度的数字化和自动化提升了生产效率。不过，人依然不可或缺。</p><p>&nbsp;</p><p><br/></p><p>在生产车间中，时不时会看到工人在走动巡查。这家工厂依然有大约1200名员工，实行三班轮换制，每班大约有300-400名员工。他们会起身查看自己负责环节的进展，比如手工连接上某些原材料以及查看数据等。</p><p>&nbsp;</p><p>由于工厂里的所有设备都已经联网，可以实时交换数据，因此员工可以通过移动终端查看重要信息。而1000多台扫描仪实时记录所有生产步骤，记录焊接温度、贴片数据和测试结果等产品细节信息。而人最为重要的作用是提出改进意见。现在，员工提出的改进意见对年生产力增长的贡献率达40%，剩余60%源于基础设施投资，包括购置新装配线和用创新方法改造物流设备。</p><p>&nbsp;</p><p>员工提改善意见还有奖金可拿，上个财政年度，公司便发放了220万欧元的奖金给予提意见并获采纳的员工。</p><p>&nbsp;</p><p>西门子废品率一直在下降，从下图看出，90/91年，每100万件产品中有约560件废品，而到13/14年，每100万件产品仅有11.5件废品。</p><p>&nbsp;</p><p>从Big Data到Small Data</p><p><br/></p><p>西门子EWA每天处理的数据：</p><p>&nbsp;</p><p>§&nbsp; &nbsp; &nbsp; 1995年 &gt; 5,000</p><p>&nbsp;</p><p>§&nbsp; &nbsp; &nbsp; 2000年 &gt; 50,000</p><p>&nbsp;</p><p>§&nbsp; &nbsp; &nbsp; 2014年 &gt; 50,000,000</p><p>&nbsp;</p><p>未来工厂的核心便是将Big Data变成Smart Data，EWA主要透过数据挖掘、分析及管理层整合，以及分类主动推送给相关员工等多种手段，让人员用好数据，这也是未来工厂仍要保留人的智慧的另一体现。</p><p><br/></p>",`keyword`="工业4.0 | 西门子未来工厂揭秘",`description`="工业4.0 | 西门子未来工厂揭秘",`cate_id`="5",`img_id`="0",`author`="",`sources`="",`read`="0",`comment`="1",`stick`="0",`update_time`="1510348389" WHERE `id`="4"
+----------------------------------------
+2017-11-11 05:13:10
+uee2.com/admin/articles/index
+GET
+SELECT count(`id`) FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:13:10
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:13:10
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (0,0,0,0,0);
+----------------------------------------
+2017-11-11 05:13:10
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `id` IN (0,5,5,5,5);
+----------------------------------------
+2017-11-11 05:13:10
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:13:11
+uee2.com/admin/articles/update?id=5
+GET
+SELECT * FROM uee_article WHERE id=5;
+----------------------------------------
+2017-11-11 05:13:11
+uee2.com/admin/articles/update?id=5
+GET
+SELECT * FROM uee_category WHERE `type`="1";
+----------------------------------------
+2017-11-11 05:13:16
+uee2.com/api/article/update
+POST
+UPDATE uee_article SET `title`="智能工厂如何建设？",`type`="1",`slug`="",`content`="<p>现代企业制造中自动化、信息化和智能化成为当今社会经济生活中提及率极高的关键词，智能工厂建设成了热门。通过建立优质、高效、低耗、清洁、灵活的生产，从而实现基于工业大数据和“互联网”的智能工厂。　</p><p>一、智能工厂特点：</p><p>1、生产设备网络化</p><p>在生产过程中，将所有的设备及工位统一联网管理，使设备与设备之间、设备与计算机之间能够联网通讯，设备与工位人员紧密关联。</p><p><br/></p><p><br/></p><p>2、生产数据可视化，利用大数据分析进行生产决策。</p><p>利用大数据技术，还可以对产品的生产过程建立虚拟模型，仿真并优化生产流程，当所有流程和绩效数据都能在系统中重建时，这种透明度将有助于制造企业改进其生产流程。</p><p>没有精益的自动化、信息化会造成极大浪费。</p><p><br/></p><p>3、生产文档无纸化，实现高效、绿色制造</p><p>生产文档进行无纸化管理后，工作人员在智能工厂生产现场即可快速查询、浏览、下载所需要的生产信息，生产过程中产生的资料能够即时进行归档保存，大幅降低基于纸质文档的人工传递及流转，从而杜绝了文件、数据丢失，进一步提高了生产准备效率和生产作业效率，实现绿色、无纸化生产。</p><p><br/></p><p>二、实现智能工厂方法：</p><p>1、建设愿景，就是装上一个能帮助我们实现高效经营的数据大脑</p><p>这个数据大脑是企业经营中负责思考、判断和发出指令的神经中枢。它从企业经营的各个领域获取有价值的信息，并通过分类、加工处理，得出各种有效的结论或指令，高效管控企业的运营。</p><p>&nbsp;</p><p>2、精益化、自动化和信息化</p><p>精益化，指的是与提供产品或服务密切相关的主价值（研、产、销等）流程，保障流程、系统能够高效、快捷和稳定地提供产品和服务。自动化，目的不外乎是提高效率、保障质量（比人工稳定可靠）、规避安全风险（不怕意外）和降低劳动强度（不怕苦累）等。信息化，对诸如记录、统计、分析、报告、预警、判断、指令和协同等工作实现替代。</p><p><br/></p><p>3、标准化管理、精益改善机制、改善工具方法的学习和利润经营机制。</p><p>经营理念和经营战略开始，并通过制定和落实年度经营计划等一系列具体的经营行为，来达成企业提升利润等经营目标。</p><p><br/></p><p>总的来说虽然国内很多企业都在炒作智能制造，但是绝大多数企业还处在部分使用应用软件的阶段，少数企业也只是实现了信息集成，也就是可以达到数字化工厂的水平；极少数企业，能够实现人机的有效交互，也就是达到智能工厂的水平。中国企业智能工厂改进还需要不断努力。</p><p><br/></p>",`keyword`="智能工厂如何建设？",`description`="智能工厂如何建设？",`cate_id`="5",`img_id`="0",`author`="",`sources`="",`read`="0",`comment`="1",`stick`="0",`update_time`="1510348396" WHERE `id`="5"
+----------------------------------------
+2017-11-11 05:13:19
+uee2.com/api/article/update
+POST
+UPDATE uee_article SET `title`="智能工厂如何建设？",`type`="1",`slug`="",`content`="<p>现代企业制造中自动化、信息化和智能化成为当今社会经济生活中提及率极高的关键词，智能工厂建设成了热门。通过建立优质、高效、低耗、清洁、灵活的生产，从而实现基于工业大数据和“互联网”的智能工厂。　</p><p>一、智能工厂特点：</p><p>1、生产设备网络化</p><p>在生产过程中，将所有的设备及工位统一联网管理，使设备与设备之间、设备与计算机之间能够联网通讯，设备与工位人员紧密关联。</p><p><br/></p><p><br/></p><p>2、生产数据可视化，利用大数据分析进行生产决策。</p><p>利用大数据技术，还可以对产品的生产过程建立虚拟模型，仿真并优化生产流程，当所有流程和绩效数据都能在系统中重建时，这种透明度将有助于制造企业改进其生产流程。</p><p>没有精益的自动化、信息化会造成极大浪费。</p><p><br/></p><p>3、生产文档无纸化，实现高效、绿色制造</p><p>生产文档进行无纸化管理后，工作人员在智能工厂生产现场即可快速查询、浏览、下载所需要的生产信息，生产过程中产生的资料能够即时进行归档保存，大幅降低基于纸质文档的人工传递及流转，从而杜绝了文件、数据丢失，进一步提高了生产准备效率和生产作业效率，实现绿色、无纸化生产。</p><p><br/></p><p>二、实现智能工厂方法：</p><p>1、建设愿景，就是装上一个能帮助我们实现高效经营的数据大脑</p><p>这个数据大脑是企业经营中负责思考、判断和发出指令的神经中枢。它从企业经营的各个领域获取有价值的信息，并通过分类、加工处理，得出各种有效的结论或指令，高效管控企业的运营。</p><p>&nbsp;</p><p>2、精益化、自动化和信息化</p><p>精益化，指的是与提供产品或服务密切相关的主价值（研、产、销等）流程，保障流程、系统能够高效、快捷和稳定地提供产品和服务。自动化，目的不外乎是提高效率、保障质量（比人工稳定可靠）、规避安全风险（不怕意外）和降低劳动强度（不怕苦累）等。信息化，对诸如记录、统计、分析、报告、预警、判断、指令和协同等工作实现替代。</p><p><br/></p><p>3、标准化管理、精益改善机制、改善工具方法的学习和利润经营机制。</p><p>经营理念和经营战略开始，并通过制定和落实年度经营计划等一系列具体的经营行为，来达成企业提升利润等经营目标。</p><p><br/></p><p>总的来说虽然国内很多企业都在炒作智能制造，但是绝大多数企业还处在部分使用应用软件的阶段，少数企业也只是实现了信息集成，也就是可以达到数字化工厂的水平；极少数企业，能够实现人机的有效交互，也就是达到智能工厂的水平。中国企业智能工厂改进还需要不断努力。</p><p><br/></p>",`keyword`="智能工厂如何建设？",`description`="智能工厂如何建设？",`cate_id`="5",`img_id`="0",`author`="",`sources`="",`read`="0",`comment`="1",`stick`="0",`update_time`="1510348399" WHERE `id`="5"
+----------------------------------------
+2017-11-11 05:13:24
+uee2.com/admin/articles/index
+GET
+SELECT count(`id`) FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:13:24
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:13:24
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (0,0,0,0,0);
+----------------------------------------
+2017-11-11 05:13:24
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `id` IN (5,5,5,5,5);
+----------------------------------------
+2017-11-11 05:13:24
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";
+----------------------------------------
+2017-11-11 05:13:26
+uee2.com/admin/articles/index
+GET
+SELECT count(`id`) FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC;
+----------------------------------------
+2017-11-11 05:13:26
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_article WHERE `type` = "1" ORDER BY `create_time` DESC, `id` DESC LIMIT 0,10;
+----------------------------------------
+2017-11-11 05:13:26
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_image WHERE `id` IN (0,0,0,0,0);
+----------------------------------------
+2017-11-11 05:13:26
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `id` IN (5,5,5,5,5);
+----------------------------------------
+2017-11-11 05:13:26
+uee2.com/admin/articles/index
+GET
+SELECT * FROM uee_category WHERE `type`="2";

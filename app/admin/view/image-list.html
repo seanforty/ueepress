@@ -56,28 +56,6 @@
 <script type="text/javascript" src="{{$smarty.const.STATIC}}/admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
 <script type="text/javascript">
 
-function useChecker(t,id)
-{
-    $.ajax({
-		url:'{{url path="api/image/useChecker"}}',
-		data:{
-		    id:id
-		},
-		dataType:"JSON",
-		type:"POST",
-		success:function (res) {
-		    if(res.status){
-                layer.msg("在"+res.msg+"中被引用",{icon:1,time:1000});
-			}else{
-		        layer.msg("该图片未被使用！",{icon:0,time:1000});
-			}
-        },
-		error:function (res) {
-			layer.msg("查询失败");
-        }
-	});
-}
-
 $(function () {
     //分页插件kkpager
 	kkpager.generPageHtml({

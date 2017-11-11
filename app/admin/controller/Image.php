@@ -70,7 +70,7 @@ class Image extends BaseController
         //分类引用
         $categoryUse = (new \app\api\model\Category())->getBy("img_id",$id);
         //管理后台菜单引用
-        $menuUse = (new \app\api\model\Menusite())->getBy("img_id",$id);
+        $menuUse = (new \app\api\model\Menulist())->getBy("img_id",$id);
         //菜单引用
         $menucontentUse = (new \app\api\model\Menucontent())->getBy("img_id",$id);
         //页面引用

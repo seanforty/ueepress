@@ -69,7 +69,7 @@ class Image extends BaseController
         (new MustBePostiveValidate())->goCheck();
         $aid = Request::post("id");
         $res = $this->model->deleteImgByID(intval($aid));
-        DBException($res,"删除失败");
+        DBException($res,"删除失败1");
         return status(true,"删除成功");
     }
 
@@ -82,7 +82,7 @@ class Image extends BaseController
     public function deleteAll()
     {
         $ids = Request::post("ids");
-        $res = $this->model->delete(["id","IN",$ids]);
+        $res = $this->model->deleteImgByIDs(["id","IN",$ids]);
         DBException($res,"批量删除失败");
         return status(true,"删除成功");
     }
