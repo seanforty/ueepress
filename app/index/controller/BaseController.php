@@ -79,8 +79,8 @@ class BaseController extends Controller
     public function getAds()
     {
         $data = [];
-        $data["logo"]      = $this->sliderBox->sliderInfo(2); //logo
-        $data["sliderbox"] = $this->sliderBox->sliderInfo(1); //幻灯片
+        $data["logo"]      = $this->sliderBox->sliderInfo(1); //logo
+        $data["sliderbox"] = $this->sliderBox->sliderInfo(2); //幻灯片
         $data["footer_img"]= $this->sliderBox->sliderInfo(5); //网站底部二维码
         $this->assign("ads",$data);
     }

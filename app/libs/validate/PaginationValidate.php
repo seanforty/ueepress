@@ -12,9 +12,8 @@ namespace app\libs\validate;
 class PaginationValidate extends BaseValidate
 {
     protected $rules = [
-        "pcid"  => ["isPositiveInt","isRequired"],
-        "scid"  => ["isPositiveInt"],
-        "page" => ["isPositiveInt"]
+        "page" => ["isPositiveInt"],
+        "cate" => ["isPositiveInt"]
     ];
 
     protected $message = [

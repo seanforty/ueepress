@@ -29,21 +29,59 @@ class URL
         }
         $path = $pathinfo["path"];
         $pathArr = self::getPath($path);
+        $params = (isset($pathinfo["params"]))?$pathinfo["params"]:[];
 
-        if( isset($pathinfo["params"]) ){
-            $params = $pathinfo["params"];
-            $paramStr = self::getParam($params);
+        // 简单URL格式 /index/index/index?id=1
+        if( "simple" == Config::getConfig("route.simplify_url") ) {
+            $url = self::getSimplifyUrl($pathArr,$params);
+        }elseif( "rewrite" == Config::getConfig("route.simplify_url") ){
+            $url = self::getRewriteUrl($pathArr,$params);
         }else{
-            $paramStr = "";
+            $url = self::getOriginalUrl($pathArr,$params);
         }
-        if( Config::getConfig("route.simplify_url") ){
+        return $url;
+    }
+
+    /*
+     * 获取重写URL rewrite格式 /page-12.html
+     * @param array pathArr 模块/控制器/方法组成的三成员数组
+     * @param array params 传递过来的参数
+     * @return string
+     */
+    protected static function getRewriteUrl(array $pathArr,array $params):string
+    {
+        $routes    = Config::getConfig("route.routes");
+        $simpleUrl = sprintf("/%s/%s/%s",$pathArr[0],$pathArr[1],$pathArr[2]);
+        foreach($routes as $v){
+            if($v[1] == $simpleUrl){
+                $paramRewrite = implode(",",$params);
+                $url = sprintf($v[2],$paramRewrite);
+                return $url;
+            }
+        }
+        return self::getSimplifyUrl($pathArr,$params);
+    }
+
+    /*
+     * 获取简化 简化URL格式 /index/index/index?id=1
+     */
+    protected static function getSimplifyUrl(array $pathArr,array $params):string
+    {
+        $paramStr = $params?self::getParam($params):"";
+        if($paramStr)
             $url = sprintf("/%s/%s/%s?%s",$pathArr[0],$pathArr[1],$pathArr[2],$paramStr);
-        }else{
+        else
+            $url = sprintf("/%s/%s/%s",$pathArr[0],$pathArr[1],$pathArr[2]);
+        return $url;
+    }
+
+    protected static function getOriginalUrl(array $pathArr,array $params):string
+    {
+        $paramStr = $params?self::getParam($params):"";
+        if($paramStr)
             $url = sprintf("/index.php?module=%s&controller=%s&method=%s&%s",$pathArr[0],$pathArr[1],$pathArr[2],$paramStr);
-        }
-        if(!$paramStr){
-            $url = substr($url,0,strlen($url)-1);
-        }
+        else
+            $url = sprintf("/index.php?module=%s&controller=%s&method=%s",$pathArr[0],$pathArr[1],$pathArr[2]);
         return $url;
     }
 

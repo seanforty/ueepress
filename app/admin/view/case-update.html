@@ -39,7 +39,6 @@
 				{{else}}
 				<input type="checkbox"name="stick">
 				{{/if}}
-				<label for="checkbox-pinglun">&nbsp;</label>
 			</div>
 		</div>
 	</div>
@@ -52,7 +51,6 @@
 				{{else}}
 				<input type="checkbox"name="comment">
 				{{/if}}
-				<label for="checkbox-pinglun">&nbsp;</label>
 			</div>
 		</div>
 	</div>
@@ -62,7 +60,7 @@
 		<div class="formControls col-xs-6 col-sm-6">
 			<div id="upload"></div><div id="deleteupload"></div>
 			<input type="hidden" name="img_id"  id="img_id" value="{{$res.img_id}}">
-			{{if isset($res.image)}}
+			{{if isset($res.image.img_url)}}
 			<div style="vertical-align: bottom;"  id="uploadimg">
 				<img src="{{$res.image.img_url}}" height="200" >
 				<span><i class="Hui-iconfont">&#xe6a6;</i></span>

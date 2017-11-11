@@ -41,10 +41,10 @@ class Menulist extends BaseController
         }else{
             $menuId = intval($menuId);
         }
-        $menuStr = $this->getMenuTableStr($menuId);
-        $menuList = $this->getMenuList($menuId);
-        $cateList = $this->getCateList();
-        $pageList = $this->getPageList();
+        $menuStr = $this->getMenuTableStr($menuId); //当前菜单组的菜单项列表
+        $menuList = $this->getMenuList($menuId); //菜单组列表
+        $cateList = $this->getCateList(); //分类列表
+        $pageList = $this->getPageList(); //
         $this->assign("menulist",$menuList);
         $this->assign("catelist",$cateList);
         $this->assign("pagelist",$pageList);
@@ -89,10 +89,14 @@ class Menulist extends BaseController
      * @param void
      * @return string
      */
-    public function getCateList()
+    public function getCateList():string
     {
-        $data = (new \app\api\model\Category())->find();
-        $res = (new CategoryDropdownList($data))->menuTree();
+        $cateModel = new \app\api\model\Category();
+        $artCate = $cateModel->find(["type","=","1"]);
+        $proCate = $cateModel->find(["type","=","2"]);
+        $resArt = (new CategoryDropdownList($artCate))->menuTree();
+        $resPro = (new CategoryDropdownList($proCate))->menuTree();
+        $res = "<option value='0'>---- 产品分类 ----</option>" . $resPro . "<option value='0'>---- 文章分类 ----</option>" . $resArt;
         return $res;
     }
 
@@ -103,7 +107,7 @@ class Menulist extends BaseController
      */
     public function getPageList()
     {
-        $data = (new \app\api\model\Page())->find();
+        $data = (new \app\api\model\Article())->find(["type","=","2"]);
         $res = "";
         foreach($data as $v){
             $res .= sprintf('<option value="%s">%s</option>',$v["id"],$v["title"]);

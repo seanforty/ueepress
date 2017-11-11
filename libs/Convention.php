@@ -13,8 +13,8 @@ return [
 
     //默认路由配置
     "route" => [
-        //是否开启简化URL
-        "simplify_url" => true,
+        //是否开启简化URL ( no, simple , rewrite )
+        "simplify_url" => "rewrite",
         //入口文件
         "entry" => "index.php",
         //默认module
@@ -25,7 +25,7 @@ return [
         "method" => "index",
         //URL转发（用于实现伪静态）
         "routes" => [
-            ["/page-([0-9]{1,10}).html/","index/page/index"],
+            ["/page-([0-9]{1,10}).html/","/index/page/index","/page-%s.html"],
             ["/category-([0-9]{1,10})-([0-9]{0,10})\/([0-9]{1,10}).html/","index/category/index"],
         ]
     ],

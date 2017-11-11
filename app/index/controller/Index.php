@@ -8,6 +8,7 @@
 declare(strict_types=1);
 namespace app\index\controller;
 
+use app\api\model\Link;
 use app\api\model\Product;
 
 class Index extends BaseController
@@ -23,9 +24,12 @@ class Index extends BaseController
      * @param void
      * @return void
      */
-    public function index(){
+    public function index()
+    {
         $this->getCase();
+        $this->link();
         $this->getService();
+        $this->getArticleModule();
         $this->display("pc/index");
     }
 
@@ -36,16 +40,30 @@ class Index extends BaseController
      */
     protected function getCase()
     {
-        $res = $this->model->pagination(1,["type","=","2"],["id","DESC"]);
-        if( isset($res["data"]) ){
-            $this->assign("cases",$res["data"]);
-        }else{
-            $this->assign("cases",[]);
+        $caselink = $this->siteInfo->getValueByKey("indexmodule4_link");
+        $this->assign("caselink",$caselink);
+        $res = $this->model->pagination(1, ["type", "=", "2"], ["id", "DESC"]);
+        if (isset($res["data"])) {
+            $this->assign("cases", $res["data"]);
+        } else {
+            $this->assign("cases", []);
         }
     }
 
     /*
-     * 获取模块一信息
+     * 友情链接
+     * @param void
+     * @return void
+     */
+    protected function link()
+    {
+        $linkModel = new Link();
+        $res = $linkModel->find(["status","=","1"]);
+        $this->assign("link",$res);
+    }
+
+    /*
+     * 首页服务内容
      * @param void
      * @return void
      */
@@ -56,6 +74,37 @@ class Index extends BaseController
         $service["indexmodule1_subtitle"] = $this->siteInfo->getValueByKey("indexmodule1_subtitle");
         $service["indexmodule1_content"] = $this->siteInfo->getValueByKey("indexmodule1_content");
         $this->assign("indexmodule1",$service);
+    }
+
+    /*
+     * 资讯模块
+     */
+    protected function getArticleModule()
+    {
+        $artcile = [];
+        $artcile["indexmodule2_title"] = $this->siteInfo->getValueByKey("indexmodule2_title");
+        $artcile["indexmodule2_subtitle"] = $this->siteInfo->getValueByKey("indexmodule2_subtitle");
+        $artcile["indexmodule2_link"] = $this->siteInfo->getValueByKey("indexmodule2_link");
+        $cateid1 = $this->siteInfo->getValueByKey("indexmodule2_cateid");
+        $artcile["indexmodule2_list"] = $this->getArticles($cateid1);
+
+        $artcile["indexmodule3_title"] = $this->siteInfo->getValueByKey("indexmodule3_title");
+        $artcile["indexmodule3_subtitle"] = $this->siteInfo->getValueByKey("indexmodule3_subtitle");
+        $artcile["indexmodule3_link"] = $this->siteInfo->getValueByKey("indexmodule3_link");
+        $cateid2 = $this->siteInfo->getValueByKey("indexmodule3_cateid");
+        $artcile["indexmodule3_list"] = $this->getArticles($cateid2);
+
+        $this->assign("indexmodule2",$artcile);
+    }
+
+    protected function getArticles($cid)
+    {
+        $artcileModel = new \app\api\model\Article();
+        $where = [ ["type","=","1"],["cate_id","=",$cid] ];
+        $order = [ "id","DESC" ];
+        $limit = [0,5];
+        $res = $artcileModel->find($where,$order,$limit);
+        return $res;
     }
 
 }

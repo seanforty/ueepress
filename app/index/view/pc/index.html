@@ -48,13 +48,15 @@
                 <ul class="pic clearfix">
                     {{foreach $cases as $v}}
                     {{if isset($v.image.img_url)}}
-                    <li><div class="proimg_bk"><a class="proimg"><img src="{{$v.image.img_url}}" /></a></div><p>{{$v.title}}</p></li>
+                    <li>
+                        <div class="proimg_bk"><a class="proimg"><img src="{{$v.image.img_url}}"/></a></div>
+                        <p>{{$v.title}}</p></li>
                     {{/if}}{{/foreach}}
                 </ul>
             </div>
             <a href="javascript:void(0);" class="minus"></a>
         </div>
-        <a href="/case.html" class="more" title="查看更多">查看更多+</a>
+        <a href="{{$caselink}}" class="more" title="查看更多">查看更多+</a>
     </div>
     <!--售后服务-->
     <div class="service">
@@ -76,64 +78,26 @@
     <div class="news w1100 clearfix">
         <div class="gs fl">
             <h2>
-                <a href="/news.html" title="查看更多">MORE+</a>公司新闻
-                <span>COMPANY NEWS</span></h2>
-            <dl class="clearfix">
-                <dt>
-                    <a href="/newsShow_52.html">
-                        <img src="{{$smarty.const.STATIC}}/index/picture/636449786767682650.jpg" width="198" height="148" /></a>
-                </dt>
-                <dd class="dd1">
-                    <a href="/newsShow_52.html">箱式变频供水设备七大设备特点</a></dd>
-                <dd class="dd2">
-                    <a href="/newsShow_52.html">箱式变频供水设备七大设备特点</a></dd>
-                <dd class="dd3">
-                    <a href="/newsShow_52.html" title="查看更多">MORE+</a></dd>
-            </dl>
+                <a href="{{$indexmodule2.indexmodule2_link}}" title="查看更多">MORE+</a>{{$indexmodule2.indexmodule2_title}}
+                <span>{{$indexmodule2.indexmodule2_subtitle}}</span></h2>
             <ul>
+                {{foreach $indexmodule2.indexmodule2_list as $v}}
                 <li>
-                    <span>[2017-11-07]</span>
-                    <a href="/newsShow_54.html">自吸式离心泵自吸原理及优点</a></li>
-                <li>
-                    <span>[2017-11-03]</span>
-                    <a href="/newsShow_53.html">鹤川泵业为您分析潜水排污泵在工程使用中如何应用</a></li>
-                <li>
-                    <span>[2017-10-30]</span>
-                    <a href="/newsShow_52.html">箱式变频供水设备七大设备特点</a></li>
-                <li>
-                    <span>[2017-10-25]</span>
-                    <a href="/newsShow_51.html">污水提升设备挑选技巧及它的优点</a></li>
+                    <span>{{$v.create_time}}</span>
+                    <a href="{{url path='index/articles/index' params=['id'=>$v.id]}}">{{$v.title}}</a></li>
+                {{/foreach}}
             </ul>
         </div>
         <div class="hy fr">
             <h2>
-                <a href="/article.html" title="查看更多">MORE+</a>技术文章
-                <span>ARTICLE</span></h2>
-            <dl class="clearfix">
-                <dt>
-                    <a href="/articleShow_52.html">
-                        <img src="{{$smarty.const.STATIC}}/index/picture/db9b0aa1f3ba4df281b4e38b5158a073.gif" width="198" height="148" /></a>
-                </dt>
-                <dd class="dd1">
-                    <a href="/articleShow_52.html">切割式潜水排污泵使用条件</a></dd>
-                <dd class="dd2">
-                    <a href="/articleShow_52.html">切割式潜水排污泵使用条件</a></dd>
-                <dd class="dd3">
-                    <a href="/articleShow_52.html" title="查看更多">MORE+</a></dd>
-            </dl>
+                <a href="{{$indexmodule2.indexmodule3_link}}" title="查看更多">MORE+</a>{{$indexmodule2.indexmodule3_title}}
+                <span>{{$indexmodule2.indexmodule3_subtitle}}</span></h2>
             <ul>
+                {{foreach $indexmodule2.indexmodule3_list as $v}}
                 <li>
-                    <span>[2017-11-08]</span>
-                    <a href="/articleShow_52.html">切割式潜水排污泵使用条件</a></li>
-                <li>
-                    <span>[2017-11-06]</span>
-                    <a href="/articleShow_51.html">反冲洗污水提升设备技术特点和优点</a></li>
-                <li>
-                    <span>[2017-11-02]</span>
-                    <a href="/articleShow_50.html">污水自吸泵原理与起动前准备运行</a></li>
-                <li>
-                    <span>[2017-10-28]</span>
-                    <a href="/articleShow_49.html">变频供水设备环保节能之路</a></li>
+                    <span>{{$v.create_time}}</span>
+                    <a href="{{url path='index/articles/index' params=['id'=>$v.id]}}">{{$v.title}}</a></li>
+                {{/foreach}}
             </ul>
         </div>
     </div>

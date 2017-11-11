@@ -79,7 +79,7 @@
             submitHandler:function(form){
                 $(form).ajaxSubmit({
                     type: "POST",
-                    url: "{{url path='api/link/add'}}" ,
+                    url: "{{url path='api/link/update'}}" ,
                     success: function(data){
                         layer.msg('添加成功!',{icon:1,time:1000});
                         setTimeout('parent.location.reload()',1000);

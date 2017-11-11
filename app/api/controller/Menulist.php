@@ -8,7 +8,6 @@
 declare(strict_types=1);
 namespace app\api\controller;
 
-
 use app\api\exception\ParameterException;
 use app\api\service\AdminIndexMenu;
 use app\api\service\CategoryDropdownList;
@@ -71,7 +70,7 @@ class Menulist extends BaseController
     {
         (new MustBePostiveValidate())->goCheck();
         $pid = Request::post("id");
-        $pageInfo = (new \app\api\model\Page())->get(intval($pid));
+        $pageInfo = (new \app\api\model\Article())->get(intval($pid));
         $data = [];
         $data["mid"] = Request::post("mid");
         $data["title"] = $pageInfo["title"];

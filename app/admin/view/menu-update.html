@@ -29,21 +29,11 @@
 		<div class="formControls col-xs-8 col-sm-9">
 			<span class="select-box" style="width:150px;">
 			<select class="select" name="linktype" size="1">
-				{{if $res.linktype eq "0"}}
-					<option value="0" selected>分类</option>
-					<option value="1">页面</option>
-					<option value="2">其它链接</option>
-				{{/if}}
-				{{if $res.linktype eq "1"}}
-					<option value="1" selected>页面</option>
-					<option value="0">分类</option>
-					<option value="2">其它链接</option>
-				{{/if}}
-				{{if $res.linktype eq "2"}}
-					<option value="2" selected>其它链接</option>
-					<option value="0">分类</option>
-					<option value="1">页面</option>
-				{{/if}}
+				<option value="0" {{if $res.linktype eq "0"}}selected{{/if}}>页面类型</option>
+				<option value="1" {{if $res.linktype eq "1"}}selected{{/if}}>产品分类</option>
+				<option value="2" {{if $res.linktype eq "2"}}selected{{/if}}>文章分类</option>
+				<option value="3" {{if $res.linktype eq "3"}}selected{{/if}}>案例类型</option>
+				<option value="4" {{if $res.linktype eq "4"}}selected{{/if}}>其它链接</option>
 			</select></span>
 		</div>
 	</div>
@@ -127,7 +117,7 @@ $(function(){
 
 			$(form).ajaxSubmit({
 				type: "POST",
-				url: "{{url path='api/menusite/updateMenuContent'}}" ,
+				url: "{{url path='api/menulist/updateMenuContent'}}" ,
 				success: function(data){
 					layer.msg('更新成功!',{icon:1,time:1000});
                     setTimeout('parent.location.reload()',1000);

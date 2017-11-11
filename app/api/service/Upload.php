@@ -141,9 +141,12 @@ class Upload
         $width = Config::getConfig("image.width")?Config::getConfig("image.width"):$pwidth;
         $height = Config::getConfig("image.height")?Config::getConfig("image.height"):$pheight;
 
-        //获取图像资源变量
+        //判断图片类型，获取图像资源变量
         $resource = null;
-        switch($this->fileInfo["type"])
+        $dir = ROOT_PATH . "public" . DS . $this->resultDir;
+        $ename = getimagesize($dir);
+        $mimeType = $ename["mime"];
+        switch($mimeType)
         {
             case 'image/jpeg':
                 $resource = @imagecreatefromjpeg($this->resultDir);
@@ -187,7 +190,7 @@ class Upload
         //在原图上保存缩略图
         $outputRes = "";
         $outputPath = $this->resultDir . "." . $width . "x" . $height . "." . $this->getExt();
-        switch($this->fileInfo["type"])
+        switch($mimeType)
         {
             case 'image/jpeg':
                 $outputRes = imagejpeg($paint, $outputPath);

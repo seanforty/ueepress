@@ -84,7 +84,7 @@ class BaseController extends Controller
      * @param int listorder
      * @return void
      */
-    public function changeListOrder()
+    public function changeOrder()
     {
         $id = Request::post("id");
         $listorder = Request::post("listorder");

@@ -1,0 +1,56 @@
+﻿{{include file="pc/public/_meta.html"}}
+{{include file="pc/public/_header.html"}}
+<div id="contant">
+    <div class="list_box">
+        <div class="lift_zuo cl">
+            <div class="n_pro_list">
+                <div class="list" id="fontred">
+                    <p>关于鹤川</p>
+                    <ul>
+                        <li><a href="/aboutus_1.html" id="leftId1">公司简介</a></li>
+                        <li><a href="/aboutus_2.html" id="leftId2">企业文化</a></li>
+                        <li><a href="/aboutus_3.html" id="leftId3">公司发展</a></li>
+                        <li><a href="/honor.html" id="leftId8">鹤川资质</a></li>
+                    </ul>
+                    <script language="javascript" type="text/javascript">
+                        try {
+                            document.getElementById("leftId" + left).className = "font_red";
+                        }
+                        catch (e) {
+                        }
+                    </script>
+                </div>
+
+                <div class="list1" id="fontred">
+                    <p>产品推荐</p>
+                    <ul>
+                        <li>
+                            <div class="proimg_bk">
+                                <a href="/productshow_56.html" class="proimg"><img
+                                        src="picture/s_636371959519295874.jpg"/></a>
+                            </div>
+                            <a href="/productshow_56.html"><span>AS潜水排污泵</span></a>
+                        </li>
+
+                        <li>
+                            <div class="proimg_bk">
+                                <a href="/productshow_55.html" class="proimg"><img
+                                        src="picture/s_636377792133195980.jpg"/></a>
+                            </div>
+                            <a href="/productshow_55.html"><span>ZW无堵塞自吸式排污泵</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box_right">
+            <div class="box_bt">
+                <div class="box_right_title">{{$res.title}}</div>
+                <div class="bt_text_y"><span>您现在所在位置：<a href='/'>首页</a> > <a href='/aboutus.html'>关于鹤川</a> > 公司简介</span>
+                </div>
+            </div>
+            <div class="box_right_con">{{$res.content}}</div>
+        </div>
+    </div>
+</div>
+{{include file="pc/public/_footer.html"}}

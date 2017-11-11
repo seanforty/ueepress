@@ -22,8 +22,15 @@ class Menulist extends BaseModel
         if(!$data){
             return [];
         }else{
-            $order = [["listorder","DESC"],["id","DESC"]];
-            $res = $this->table("menucontent")->where(["mid","=",$data["id"]])->order($order)->find();
+            $where = [
+                ["mid","=",$data["id"]],
+                ["parent_id","=","0"]
+            ];
+            $order = [
+                ["listorder","DESC"],
+                ["id","DESC"]
+            ];
+            $res = $this->table("menucontent")->where($where)->order($order)->find();
             $res = $this->hasOne($res,"image","img_id","id");
             return $res;
         }

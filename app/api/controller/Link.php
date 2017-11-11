@@ -37,4 +37,19 @@ class Link extends BaseController
         return status(true,"添加友链成功！");
     }
 
+    /*
+     * 更新成功
+     * RequestMethod post
+     * @param int id
+     * @reutrn string
+     */
+    public function update()
+    {
+        $id = Request::post("id");
+        $data = Request::postMany(["title","url","target","img_id","description"]);
+        $res = $this->model->updateByID(intval($id),$data);
+        DBException($res,"更新失败！");
+        return status(true,"更新成功！");
+    }
+
 }

@@ -16,111 +16,72 @@ use libs\Request;
 class Category extends BaseController
 {
     protected $categoryObj = null;
-    protected $artcileObj  = null;
+    protected $contentObj = null;
 
     public function __construct()
     {
         $this->categoryObj = new \app\api\model\Category();
-        $this->artcileObj  = new \app\api\model\Article();
         parent::__construct();
     }
 
     /*
-     * 分类页面
-     * /index/category?pcid=15&scid=16&page=1
-     * @param int pcid 父级分类ID，必须
-     * @param int scid 子级分类ID，可选
-     * @param int page 页码，可选
+     * 分类列表页面
+     * @param string template 模板
+     * @param int page 页码
+     * @param int cid 分类ID
+     * @param int ctype 1-文章分类 1-产品分类 2-案例列表
      */
-    public function index($pcid="",$scid="",$page="")
+    public function indexBase(string $template,int $page = 0, int $cid = 0,int $ctype=1)
     {
-        if(""===$pcid){
-            (new PaginationValidate())->goCheck();
-            $pcid = Request::get("pcid");
-            $scid = Request::get("scid");
-            $page = Request::get("page");
-        }
-
-        if(!$page){
+        $validateArr = [];
+        if ($page) {
+            $validateArr[] = ["page" => $page];
+        } else {
             $page = 1;
         }
-
-        //子菜单
-        $subMenu = $this->getSubMenu(intval($pcid));
-        if($subMenu){
-            $this->assign("submenu",$subMenu);
-            $this->assign("pcid",$pcid);
-            if($scid){
-                $this->assign("scid",$scid);
-            }
+        if ($cid) {
+            $validateArr = ["cid" => $cid];
         }
+        (new PaginationValidate())->goCheck($validateArr);
 
         //查询文章列表
-        $cid = $scid?$scid:$pcid;
-        $articleList = $this->getArticleByCate(intval($cid),intval($page));
-        $this->assign("articlelist",$articleList);
+        $list = $this->getListByCate(intval($cid), intval($page));
+        $this->assign("list", $articleList);
 
         //面包屑导航
-        $crumbStr = (new Breadcrumb())->render($this->getController(),intval($cid));
-        $this->assign("crumbstr",$crumbStr);
+        $crumbStr = (new Breadcrumb())->render($this->getController(), intval($cid));
+        $this->assign("crumbstr", $crumbStr);
 
         //分页
-        $pagination = new Pagination(intval($articleList["pagination"]["totalpage"]),intval($articleList["pagination"]["currentpage"]));
+        $pagination = new Pagination(intval($articleList["pagination"]["totalpage"]), intval($articleList["pagination"]["currentpage"]));
         $pageStr = $pagination->render();
-        $this->assign("pagestr",$pageStr);
+        $this->assign("pagestr", $pageStr);
 
-        $this->display("pc/category");
+        $this->display($template);
     }
 
     /*
-     * 返回指定分类组下所记录
-     * @param string cid 分类ID
-     * @param int page 页码
+     * 依据分类获取记录列表
+     * @param int cid
+     * @param int page
+     * @param int ctype
      * @return array
      */
-    protected function getArticleByCate(int $cid,int $page):array
+    protected function getListByCate(int $cid=0,int $page=1,int $ctype=1):array
     {
-        $cateList = $this->getSubCates(intval($cid));
-        $cateIds  = $this->getCateIds($cateList);
-        if($cateIds){
-            $cateIds .= ",".strval($cid);
+        if($cid){
+            $cidStr = $cid;
+            $cids = $this->getSubCates($cid);
+            if($cids){
+                $cidStr .= ",".implode(",",$cids);
+            }
+            $where = [ ["type","=",$ctype], ["cate_id","IN",$cidStr] ];
         }else{
-            $cateIds .= strval($cid);
+            $where = [ "type","=",$ctype ];
         }
-        $articleList = $this->artcileObj->pagination(intval($page),["cate_id","IN",$cateIds],["id","DESC"]);
-        return $articleList;
-    }
-
-    /*
-     * 获取子分类作为菜单（只支持二级分类）
-     * @param int pcid 当前分类
-     * @return array
-     */
-    public function getSubMenu(int $pcid):array
-    {
-        $subCates = $this->getSubCates($pcid);
-        if(!$subCates){
-            $ids = strval($pcid);
-        }else{
-            $ids = $this->getCateIds($subCates);
-        }
-        $res = $this->categoryObj->find(["id","IN",$ids],["listorder","DESC"]);
-        DBException($res,"该分类不存在！");
+        $order = ["id","DESC"];
+        $res = $this->contentObj->pagination($page,$where,$order);
         return $res;
-    }
-
-    /*
-     * 返回给定分类的子孙分类的ID组成的字符串,如"1,3,5,6,7"
-     * @param int cateList 分类记录组成的数组
-     * @return string
-     */
-    protected function getCateIds(array $cateList):string
-    {
-        $strIds = [];
-        foreach($cateList as $v){
-            $strIds[] = $v["id"];
-        }
-        return implode(",",$strIds);
     }
 
     /*
@@ -141,5 +102,4 @@ class Category extends BaseController
         }
         return $list;
     }
-
 }

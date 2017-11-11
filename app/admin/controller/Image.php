@@ -66,6 +66,8 @@ class Image extends BaseController
         $id = strval($id);
 
         //文章引用
+        $productUse = (new \app\api\model\Product())->getBy("img_id",$id);
+        //文章引用
         $articleUse = (new \app\api\model\Article())->getBy("img_id",$id);
         //分类引用
         $categoryUse = (new \app\api\model\Category())->getBy("img_id",$id);
@@ -78,6 +80,8 @@ class Image extends BaseController
         //广告引用
         $adUse = (new \app\api\model\Sliderimg())->getBy("img_id",$id);
 
+        if($productUse)
+            $useInfo[] = "产品";
         if($articleUse)
             $useInfo[] = "文章";
         if($categoryUse)

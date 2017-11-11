@@ -23,22 +23,15 @@
     </div>
     <div class="nav">
         <ul class="w1100 clearfix">
+            {{foreach $mainmenu as $v}}
             <li id="navId1">
-                <a href="/">网站首页</a></li>
-            <li id="navId2">
-                <a href="/aboutus.html">关于鹤川</a></li>
-            <li id="navId3">
-                <a href="/products.html">鹤川产品</a></li>
-            <li id="navId7">
-                <a href="/case.html">鹤川案例</a></li>
-            <li id="navId4">
-                <a href="/news.html">鹤川资讯</a></li>
-            <li id="navId6">
-                <a href="/service.html">鹤川服务</a></li>
-            <li id="navId5">
-                <a href="/honor.html">鹤川资质</a></li>
-            <li id="navId8">
-                <a href="/contact.html">联系鹤川</a></li>
+                {{if $v.linktype eq "0"}}<a href="{{url path='index/page/index' params=['id'=>$v.linkid]}}">{{/if}}
+                {{if $v.linktype eq "1"}}<a href="{{url path='index/pcategory/index' params=['id'=>$v.linkid]}}">{{/if}}
+                {{if $v.linktype eq "2"}}<a href="{{url path='index/acategory/index' params=['id'=>$v.linkid]}}">{{/if}}
+                {{if $v.linktype eq "3"}}<a href="{{url path='index/case/index' params=['id'=>$v.linkid]}}">{{/if}}
+                {{if $v.linktype eq "4"}}<a href="{{$v.linkid}}">{{/if}}
+            {{$v.title}}</a></li>
+            {{/foreach}}
         </ul>
         <script language="javascript" type="text/javascript">try {
             document.getElementById("navId" + nav).className = "current";
@@ -49,7 +42,7 @@
         <ul class="banList">
             {{foreach $ads.sliderbox as $k=>$v}}
             <li class="active">
-                <a href="$v.target_url"><img src="{{$v.image.img_url}}" /></a>
+                <a href="{{$v.target_url}}"><img src="{{$v.image.img_url}}" /></a>
             </li>
             {{/foreach}}
         </ul>

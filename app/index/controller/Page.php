@@ -23,10 +23,15 @@ class Page extends BaseController
             $pid = Request::get("id");
         }
 
-        $pageModel = new \app\api\model\Page();
-        $res = $pageModel->getOnePage(intval($pid));
+        $pageModel = new \app\api\model\Article();
+        $res = $pageModel->getWithImg(intval($pid));
         DBException($res,"此页面不存在！");
         $this->assign("res",$res);
-        $this->display("pc/page");
+
+        if(0==$res["type2"]){   //标准带侧栏 standard
+            $this->display("pc/page");
+        }elseif(1==$res["type2"]){  //全宽度 fullwidth
+            $this->display("pc/page-fullwidth");
+        }
     }
 }

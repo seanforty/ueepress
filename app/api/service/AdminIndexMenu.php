@@ -21,13 +21,15 @@ class AdminIndexMenu extends Menu
     {
         switch ($linktype){
             case 0:
-                return "分类";
+                return "页面类型";
             case 1:
-                return "页面";
+                return "产品分类";
             case 2:
-                return "超链接";
+                return "文章分类";
+            case 3:
+                return "客户案例";
             default:
-                return "未知";
+                return "其它链接";
         }
     }
 
@@ -47,7 +49,7 @@ class AdminIndexMenu extends Menu
         }
 
         $menuStr = "";
-        $deleteUrl = url(["path"=>"api/menusite/delete"]);
+        $deleteUrl = url(["path"=>"api/menucontent/delete"]);
 
 $modStr = <<<EOT
 <tr class="text-c %s">
@@ -75,7 +77,7 @@ EOT;
                 $tempTitle = "<b>" . $v['title'] . "</b>";
             }
             $editLink = url([
-                "path"=>"admin/menusite/update",
+                "path"=>"admin/menulist/update",
                 "params"=>[
                     "id"=>$v["id"],
                     "mid" => $mid
@@ -95,7 +97,7 @@ EOT;
                     }
                     $tempClass = "pid-".$v['id'];
                     $editLink = url([
-                        "path"=>"admin/menusite/update",
+                        "path"=>"admin/menulist/update",
                         "params"=>[
                             "id"=>$w["id"],
                             "mid" => $mid
@@ -110,7 +112,7 @@ EOT;
                             $tempClass = "pid-".$v['id']." pid-".$w['id'];
                             $tempTitle = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├".$u['title'];
                             $editLink = url([
-                                "path"=>"admin/menusite/update",
+                                "path"=>"admin/menulist/update",
                                 "params"=>[
                                     "id"=>$u["id"],
                                     "mid" => $mid

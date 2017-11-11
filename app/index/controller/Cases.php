@@ -8,9 +8,17 @@
 declare(strict_types=1);
 namespace app\index\controller;
 
-class Cases extends BaseController
+class Cases extends Category
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->contentObj = new \app\api\model\Product();
+    }
 
-
+    public function index(int $page = 0, int $cid = 0,int $ctype=1)
+    {
+        $this->indexBase("pc/case",$page,$cid,2);
+    }
 
 }
