@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-11 13:07:05
+/* Smarty version 3.1.30, created on 2017-11-13 15:53:17
   from "E:\www\ueepress2\app\index\view\pc\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a0685799f1380_70201941',
+  'unifunc' => 'content_5a094f6d5eeb65_86700568',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'db20a3dc344a307acf8bbd2b1d7a4204541ef08d' => 
     array (
       0 => 'E:\\www\\ueepress2\\app\\index\\view\\pc\\index.html',
-      1 => 1510376820,
+      1 => 1510559552,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:pc/public/_footer.html' => 1,
   ),
 ),false)) {
-function content_5a0685799f1380_70201941 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a094f6d5eeb65_86700568 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:pc/public/_meta.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -44,6 +44,57 @@ $_smarty_tpl->_subTemplateRender("file:pc/public/_meta.html", $_smarty_tpl->cach
             </ul>
         </div>
     </div>
+
+    <!-- html -->
+    <div class="ck-slide">
+        <div class="ck-slidebox">
+            <div class="slideWrap">
+                <ul class="dot-wrap">
+                    <li onclick="selectit(this)" style="background-color:#ccc;" class="current"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
+                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
+                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
+                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
+                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
+                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ck-slide-imgs">
+            <ul class="ck-slide-wrapper">
+                <li><a href="javascript:;"><img src="<?php echo @constant('STATIC');?>
+/index/pic/slider1.jpg" alt=""></a></li>
+                <li style="display:none"><a href="javascript:;"><img src="<?php echo @constant('STATIC');?>
+/index/pic/slider2.jpg" alt=""></a></li>
+                <li style="display:none"><a href="javascript:;"><img src="<?php echo @constant('STATIC');?>
+/index/pic/slider3.jpg" alt=""></a></li>
+                <li style="display:none"><a href="javascript:;"><img src="<?php echo @constant('STATIC');?>
+/index/pic/slider4.jpg" alt=""></a></li>
+                <li style="display:none"><a href="javascript:;"><img src="<?php echo @constant('STATIC');?>
+/index/pic/slider3.jpg" alt=""></a></li>
+                <li style="display:none"><a href="javascript:;"><img src="<?php echo @constant('STATIC');?>
+/index/pic/slider4.jpg" alt=""></a></li>
+            </ul>
+        </div>
+
+        <a href="javascript:;" class="ctrl-slide ck-prev">上一张</a>
+        <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
+    </div>
+<?php echo '<script'; ?>
+ src="<?php echo @constant('STATIC');?>
+/index/js/slide.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+>
+    $('.ck-slide').ckSlide({
+        dir: 'x'
+    });
+    function selectit(t)
+    {
+        $(".dot-wrap li").css("background","none");
+        t.style.backgroundColor= "#ccc";
+    }
+<?php echo '</script'; ?>
+>
     <!--解决问题-->
     <div class="whyOuter">
         <div class="whyInner">
@@ -84,7 +135,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
                     <?php if (isset($_smarty_tpl->tpl_vars['v']->value['image']['img_url'])) {?>
                     <li>
                         <div class="proimg_bk"><a class="proimg"><img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['image']['img_url'];?>
-"/></a></div>
+" height="247" width="247"></a></div>
                         <p><?php echo $_smarty_tpl->tpl_vars['v']->value['title'];?>
 </p></li>
                     <?php }

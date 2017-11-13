@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-11 11:35:35
+/* Smarty version 3.1.30, created on 2017-11-13 08:51:56
   from "E:\www\ueepress2\app\index\view\pc\public\_header.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a0670079dda65_05602796',
+  'unifunc' => 'content_5a08ecac7385a2_60021807',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1fd866c974b1abbc94f8cf90f515696e18a9de48' => 
     array (
       0 => 'E:\\www\\ueepress2\\app\\index\\view\\pc\\public\\_header.html',
-      1 => 1510371331,
+      1 => 1510534245,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a0670079dda65_05602796 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a08ecac7385a2_60021807 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="top">
     <div class="top1">
@@ -70,7 +70,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 "><?php }?>
                 <?php if ($_smarty_tpl->tpl_vars['v']->value['linktype'] == "2") {?><a href="<?php echo url(array('path'=>'index/acategory/index','params'=>array('id'=>$_smarty_tpl->tpl_vars['v']->value['linkid'])),$_smarty_tpl);?>
 "><?php }?>
-                <?php if ($_smarty_tpl->tpl_vars['v']->value['linktype'] == "3") {?><a href="<?php echo url(array('path'=>'index/case/index','params'=>array('id'=>$_smarty_tpl->tpl_vars['v']->value['linkid'])),$_smarty_tpl);?>
+                <?php if ($_smarty_tpl->tpl_vars['v']->value['linktype'] == "3") {?><a href="<?php echo url(array('path'=>'index/cases/index','params'=>array('id'=>$_smarty_tpl->tpl_vars['v']->value['linkid'])),$_smarty_tpl);?>
 "><?php }?>
                 <?php if ($_smarty_tpl->tpl_vars['v']->value['linktype'] == "4") {?><a href="<?php echo $_smarty_tpl->tpl_vars['v']->value['linkid'];?>
 "><?php }?>
@@ -83,11 +83,6 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 ?>
 
         </ul>
-        <?php echo '<script'; ?>
- language="javascript" type="text/javascript">try {
-            document.getElementById("navId" + nav).className = "current";
-        } catch(e) {}<?php echo '</script'; ?>
->
     </div>
     <!--banner start-->
     <div class="banner">

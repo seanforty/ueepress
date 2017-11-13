@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-11 13:05:32
+/* Smarty version 3.1.30, created on 2017-11-13 09:42:38
   from "E:\www\ueepress2\app\admin\view\system-base.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a06851cf2fcd9_50170458',
+  'unifunc' => 'content_5a08f88e106de0_87837676',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7ead43f45f25ffb72f7733391d6f7f4d742294a1' => 
     array (
       0 => 'E:\\www\\ueepress2\\app\\admin\\view\\system-base.html',
-      1 => 1510376728,
+      1 => 1510534245,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:public/_footer.html' => 1,
   ),
 ),false)) {
-function content_5a06851cf2fcd9_50170458 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a08f88e106de0_87837676 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:public/_meta.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -167,6 +167,13 @@ $_smarty_tpl->_subTemplateRender("file:public/_meta.html", $_smarty_tpl->cache_i
 					<label class="form-label col-xs-4 col-sm-2">顶部菜单链接3：</label>
 					<div class="formControls col-xs-8 col-sm-9">
 						<input type="text" name="headermenulink3" value="<?php echo $_smarty_tpl->tpl_vars['data']->value['headermenulink3'];?>
+" class="input-text">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-2">在线客服悬浮链接：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" name="floatservicelink" value="<?php echo $_smarty_tpl->tpl_vars['data']->value['floatservicelink'];?>
 " class="input-text">
 					</div>
 				</div>

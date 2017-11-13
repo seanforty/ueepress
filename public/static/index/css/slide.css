@@ -1,0 +1,24 @@
+img { border: 0;}
+
+.ck-slide { width: 1000px; height: 600px; margin: 10px auto;}
+.ck-slide .ck-slide-imgs{position: absolute; top: 150px;}
+
+.ck-slidebox { position: absolute; left: 35%; top: 0px; z-index: 30;margin-bottom: 10px;}
+.ck-slidebox ul { height: 150px; padding: 0 4px; border-radius: 8px;}
+.ck-slidebox ul li { float: left; height: 140px; margin-bottom: 10px;}
+.ck-slidebox ul li:hover { background-color: #d0d0d0;}
+
+.ck-slide ul.ck-slide-wrapper { height:450px;max-height:450px;position: absolute;top: 150px;}
+.ck-slide ul { margin: 0; padding: 0; list-style-type: none;}
+.ck-slide { position: relative; overflow: hidden;}
+.ck-slide ul.ck-slide-wrapper { position: absolute; top: 0; left: 0; z-index: 1; margin: 0; padding: 0;}
+.ck-slide ul.ck-slide-wrapper li { position: absolute;}
+
+.dot-wrap li div{ width:150px;height:140px;text-align:center;}
+.dot-wrap li a{text-decoration:none;color:black;}
+.dot-wrap li a .block{text-align:center; margin-top:15px;margin-bottom:15px;font-size:16px;}
+.dot-wrap li a .block span{font-size:18px;}
+
+.ck-slide .ck-prev, .ck-slide .ck-next { position: absolute; top: 60%; z-index: 2; width: 35px; height: 70px; margin-top: -35px; border-radius: 3px; opacity: .05; background: red; text-indent: -9999px; background-repeat: no-repeat; transition: opacity .2s linear 0s;}
+.ck-slide .ck-prev { left: 5px; background: url(../images/arrow-left.png) #000 50% no-repeat;}
+.ck-slide .ck-next { right: 5px; background: url(../images/arrow-right.png) #000 50% no-repeat;}
