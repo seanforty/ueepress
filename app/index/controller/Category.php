@@ -34,40 +34,96 @@ class Category extends BaseController
      */
     public function indexBase(string $template,int $page = 0, int $cid = 0,int $type=1,int $ctype=1)
     {
-        $validateArr = [];
-        if ($page) {
-            $validateArr[] = ["page" => $page];
-        } else {
-            $page = 1;
-        }
-        if ($cid) {
-            $validateArr = ["cid" => $cid];
-        }
-        (new PaginationValidate())->goCheck($validateArr);
+        $validRes = $this->validate($page,$cid);
+        $page = $validRes[0];
+        $cid  = $validRes[1];
 
         //查询文章列表
         $list = $this->getListByCate(intval($cid), intval($page),$type);
         $this->assign("list", $list);
 
-        //面包屑导航
-        $controller = ($ctype==1)?"acategory":"pcategory";
-        $crumbStr = (new Breadcrumb())->render($controller,$cid,"");
-        $this->assign("crumbstr", $crumbStr);
-
-        //分页
-        $pagination = new Pagination(intval($list["pagination"]["totalpage"]), intval($list["pagination"]["currentpage"]));
-        $pageStr = $pagination->render();
-        $this->assign("pagestr", $pageStr);
-
-        //左侧菜单导航
-        $side = $this->sideMenu($ctype);
-        $this->assign("side",$side);
-        if($ctype==1)
-            $this->assign("sidetitle","资讯文章");
-        else
-            $this->assign("sidetitle","产品目录");
+        $this->breadCrumb($template,$cid);
+        $this->getPagination($list,$cid,$template);
+        $this->sideNav($template);
 
         $this->display($template);
+    }
+
+    /*
+     * 验证传入参数
+     * @param int page
+     * @param int cid
+     */
+    protected function validate(int $page,int $cid)
+    {
+        $validateArr = [];
+        if ($page) {
+            $validateArr[] = ["page" => $page];
+            $page = intval($page);
+        } else {
+            $page = Request::get("page")?int(Request::get("page")):1;
+        }
+        if ($cid) {
+            $validateArr = ["cid" => $cid];
+            $cid = $intval($cid);
+        }else{
+            $cid = Request::get("id")?intval(Request::get("id")):0;
+        }
+        (new PaginationValidate())->goCheck($validateArr);
+        return [$page,$cid];
+    }
+
+    /*
+     * 显示左侧导航
+     */
+    protected function sideNav(string $template)
+    {
+        switch ($template){
+            case "pc/case":      $mid = 6;$title="产品目录";break;
+            case "pc/pcategory": $mid = 6;$title="产品目录";break;
+            case "pc/acategory": $mid = 9;$title="资讯文章";break;
+        }
+
+        $side = $this->sideMenu($mid);
+        $this->assign("side",$side);
+        $this->assign("sidetitle",$title);
+    }
+
+    /*
+     * 显示分页
+     * @param array list 通过分页获取的数组
+     */
+    protected function getPagination(array $list,int $id,string $template)
+    {
+        switch ($template){
+            case "pc/case":      $url = ["path"=>"index/cases/index"];break;
+            case "pc/pcategory": $url = ["path"=>"index/pcategory/index"];break;
+            case "pc/acategory": $url = ["path"=>"index/acategory/index"];break;
+        }
+
+        if(0!=$id){
+            $url["params"] = ["id"=>$id];
+        }
+
+        $pagination = new Pagination($url,intval($list["pagination"]["totalpage"]), intval($list["pagination"]["currentpage"]));
+        $pageStr = $pagination->render();
+        $this->assign("pagestr", $pageStr);
+    }
+
+    /*
+     * 显示面包屑导航
+     * @param string template
+     * @param int cid
+     */
+    protected function breadCrumb(string $template,int $cid)
+    {
+        switch ($template){
+            case "pc/case":      $controller = "index/cases/index"    ;$crumbtitle="客户案例";break;
+            case "pc/pcategory": $controller = "index/pcategory/index";$crumbtitle="";break;
+            case "pc/acategory": $controller = "index/acategory/index";$crumbtitle="";break;
+        }
+        $crumbStr = (new Breadcrumb())->render($controller,$cid,$crumbtitle);
+        $this->assign("crumbstr", $crumbStr);
     }
 
     /*
@@ -81,9 +137,9 @@ class Category extends BaseController
     {
         if($cid){
             $cidStr = $cid;
-            $cids = $this->getSubCates($cid);
-            if($cids){
-                $cidStr .= ",".implode(",",$cids);
+            $cates = $this->getSubCates($cid);
+            if($cates){
+                $cidStr .= ",".implode(",",array_column($cates,"id"));
             }
             $where = [ ["type","=",$ctype], ["cate_id","IN",$cidStr] ];
         }else{

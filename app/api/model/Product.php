@@ -28,6 +28,7 @@ class Product extends BaseModel
         }
         $result = $request->pagination($page);
         $result["data"] = $this->hasOne($result["data"],"Image","img_id","id");
+        $result["data"] = $this->hasOne($result["data"],"Category","cate_id","id");
         return $result;
     }
 

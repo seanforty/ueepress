@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-12 17:03:38
+/* Smarty version 3.1.30, created on 2017-11-13 22:57:08
   from "E:\www\meswebsite\app\index\view\pc\public\_meta.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a080e6a344dd3_05582047',
+  'unifunc' => 'content_5a09b2c493d802_04759156',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fa38997ec125cd4d1b14934013de55bd59ee0e00' => 
     array (
       0 => 'E:\\www\\meswebsite\\app\\index\\view\\pc\\public\\_meta.html',
-      1 => 1510477403,
+      1 => 1510567621,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a080e6a344dd3_05582047 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a09b2c493d802_04759156 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html>
@@ -29,6 +29,8 @@ function content_5a080e6a344dd3_05582047 (Smarty_Internal_Template $_smarty_tpl)
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link href="<?php echo @constant('STATIC');?>
 /index/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo @constant('STATIC');?>
+/index/css/slide.css" rel="stylesheet" type="text/css" />
     <?php echo '<script'; ?>
  type="text/javascript" src="<?php echo @constant('STATIC');?>
 /index/js/jquery1.9.1.js"><?php echo '</script'; ?>

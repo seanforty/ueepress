@@ -94,7 +94,7 @@ $(function () {
 		totalRecords:'{{$res.pagination.totalcount}}',
 		mode:'link',
 		getLink : function(n){
-			return '{{url path="admin/article/getList" params=["page"=>"'+n"]}};
+			return '{{url path="admin/articles/index" params=["page"=>"'+n"]}};
 		}
 	});
 });
@@ -106,7 +106,7 @@ function search_article()
     var logmax = $("#logmax").val();
     var keyword = $("#keyword").val();
     var categoryid = $("#categoryid").val();
-    location.href = '{{url path="admin/article/getList" params=["keyword"=>"'+keyword+'","categoryid"=>"'+categoryid+'","logmin"=>"'+logmin+'","logmax"=>"'+logmax"]}};
+    location.href = '{{url path="admin/articles/index" params=["keyword"=>"'+keyword+'","categoryid"=>"'+categoryid+'","logmin"=>"'+logmin+'","logmax"=>"'+logmax"]}};
 }
 
 </script> 

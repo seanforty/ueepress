@@ -14,34 +14,49 @@ use libs\Request;
 
 class Page extends BaseController
 {
-    public function index(string $id="")
+    public function index(int $id=0)
     {
-        if(""!==$id){
-            $pid = $id;
-            (new MustBePostiveValidate())->goCheck(["id"=>$pid]);
-        }else{
-            (new MustBePostiveValidate())->goCheck();
-            $pid = Request::get("id");
-        }
+        $id = $this->validate($id);
 
         $pageModel = new \app\api\model\Article();
-        $res = $pageModel->getWithImg(intval($pid));
+        $res = $pageModel->getWithImg(intval($id));
         DBException($res,"此页面不存在！");
         $this->assign("res",$res);
 
         //面包屑导航
-        $crumbStr = (new Breadcrumb())->render("index/page/index",intval($pid),"");
+        $crumbStr = (new Breadcrumb())->render("index/page/index",$id,$res["title"]);
         $this->assign("crumbstr", $crumbStr);
 
-        if(0==$res["type2"]){   //标准带侧栏 standard
-            $side = $this->sideMenu(3);
-            $this->assign("side",$side);
-            $this->assign("sidetitle","关于我们");
+        //标准带侧栏 standard
+        if(0==$res["type2"]){
+            $this->sideNav();
 
             $this->recommendPro();
             $this->display("pc/page");
         }elseif(1==$res["type2"]){  //全宽度 fullwidth
             $this->display("pc/page-fullwidth");
         }
+    }
+
+    /*
+     * 显示左侧导航
+     */
+    protected function sideNav()
+    {
+        $side = $this->sideMenu(7);
+        $this->assign("side",$side);
+        $this->assign("sidetitle","关于我们");
+    }
+
+    protected function validate(int $id):int
+    {
+        if(0==$id){
+            (new MustBePostiveValidate())->goCheck();
+            $id = Request::get("id")?intval(Request::get("id")):0;
+        }else{
+            $id = $id;
+            (new MustBePostiveValidate())->goCheck(["id"=>$pid]);
+        }
+        return $id;
     }
 }

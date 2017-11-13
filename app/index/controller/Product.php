@@ -17,8 +17,7 @@ class Product extends BaseController
 {
     public function index(int $id=0)
     {
-        (new MustBePostiveValidate())->goCheck();
-        $id = Request::get("id");
+        $id = $this->validate($id);
 
         //产品
         $productModel = new \app\api\model\Product();
@@ -30,16 +29,34 @@ class Product extends BaseController
         $cid = intval($res["cate_id"]);
 
         //面包屑导航
-        $crumbStr = (new Breadcrumb())->render("product",$cid,"");
+        $crumbStr = (new Breadcrumb())->render("product",intval($res["cate_id"]),$res["title"]);
         $this->assign("crumbstr", $crumbStr);
 
-        $side = $this->sideMenu(2);
+        //侧边栏
+        $side = $this->sideMenu(6);
         $this->assign("side",$side);
         $this->assign("sidetitle","产品目录");
 
         $this->recommendPro();
 
         $this->display("pc/psingle");
+    }
+
+    /*
+     * 验证传入id
+     * @param int id
+     * @return int id
+     */
+    protected function validate(int $id)
+    {
+        if(0==$id){
+            (new MustBePostiveValidate())->goCheck();
+            $id = Request::get("id")?intval(Request::get("id")):0;
+        }else{
+            $id = intval($id);
+            (new MustBePostiveValidate())->goCheck(["id"=>$id]);
+        }
+        return $id;
     }
 
     /*

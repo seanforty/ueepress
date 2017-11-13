@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-12 17:06:10
+/* Smarty version 3.1.30, created on 2017-11-14 05:16:15
   from "E:\www\meswebsite\app\index\view\pc\sidebar.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a080f02e95444_66519269',
+  'unifunc' => 'content_5a0a0b9fdfcce7_11421949',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aca72463e2ce23202bcce414e934acd185d5b924' => 
     array (
       0 => 'E:\\www\\meswebsite\\app\\index\\view\\pc\\sidebar.html',
-      1 => 1510477538,
+      1 => 1510607773,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a080f02e95444_66519269 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a0a0b9fdfcce7_11421949 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="lift_zuo cl">
     <div class="lift_zuo cl">
@@ -34,8 +34,18 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 ?>
-                    <li class="l1" id="class49"><a href="<?php echo url(array('path'=>'index/pcategory/index','params'=>array('id'=>$_smarty_tpl->tpl_vars['v']->value['id'])),$_smarty_tpl);?>
-" title="<?php echo $_smarty_tpl->tpl_vars['v']->value['title'];?>
+                    <li id="navId1">
+                        <?php if ($_smarty_tpl->tpl_vars['v']->value['linktype'] == "0") {?><li class="l1"><a href="<?php echo url(array('path'=>'index/page/index','params'=>array('id'=>$_smarty_tpl->tpl_vars['v']->value['linkid'])),$_smarty_tpl);?>
+"<?php }?>
+                        <?php if ($_smarty_tpl->tpl_vars['v']->value['linktype'] == "1") {?><li class="l1"><a href="<?php echo url(array('path'=>'index/pcategory/index','params'=>array('id'=>$_smarty_tpl->tpl_vars['v']->value['linkid'])),$_smarty_tpl);?>
+"<?php }?>
+                        <?php if ($_smarty_tpl->tpl_vars['v']->value['linktype'] == "2") {?><li class="l1"><a href="<?php echo url(array('path'=>'index/acategory/index','params'=>array('id'=>$_smarty_tpl->tpl_vars['v']->value['linkid'])),$_smarty_tpl);?>
+"<?php }?>
+                        <?php if ($_smarty_tpl->tpl_vars['v']->value['linktype'] == "3") {?><li class="l1"><a href="<?php echo url(array('path'=>'index/cases/index','params'=>array('id'=>$_smarty_tpl->tpl_vars['v']->value['linkid'])),$_smarty_tpl);?>
+"<?php }?>
+                        <?php if ($_smarty_tpl->tpl_vars['v']->value['linktype'] == "4") {?><li class="l1"><a href="<?php echo $_smarty_tpl->tpl_vars['v']->value['linkid'];?>
+"><?php }?>
+                    title="<?php echo $_smarty_tpl->tpl_vars['v']->value['title'];?>
 " class="a1"><?php echo $_smarty_tpl->tpl_vars['v']->value['title'];?>
 </a></li>
                     <?php

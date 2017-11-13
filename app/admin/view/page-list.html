@@ -53,7 +53,11 @@
 			</tbody>
 		</table>
 	</div>
+	<div style="margin: 0 40px;">
+		<div id="kkpager"></div>
+	</div>
 </div>
+
 {{include file="public/_footer.html"}}
 
 <!--请在下方写此页面业务相关的脚本-->
@@ -67,7 +71,7 @@ $(function () {
 		totalRecords:'{{$res.pagination.totalcount}}',
 		mode:'link',
 		getLink : function(n){
-			return '{{url path="admin/article/getList" params=["page"=>"'+n"]}};
+			return '{{url path="admin/page/index" params=["page"=>"'+n"]}};
 		}
 	});
 });

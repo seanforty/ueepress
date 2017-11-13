@@ -18,16 +18,27 @@ class Pagination
     protected $totalPage;
     protected $currentPage;
     protected $pageNum;
+    protected $url;
 
-    public function __construct(int $totalPage, int $currentPage,int $pageNum=5)
+    public function __construct(array $url,int $totalPage, int $currentPage,int $pageNum=5)
     {
         $this->totalPage   = $totalPage;
         $this->currentPage = $currentPage;
-        $this->pageNum    = $pageNum;
+        $this->pageNum     = $pageNum;
+        $this->url         = $url;
     }
 
     /*
      * 重写分页方法
      */
     public function render(){}
+
+    /*
+     * 生成对应页码的URL
+     * 该类初始化时传入url，格式为 [ "path"="", params=[] ];
+     */
+    protected function getUrl(int $page)
+    {
+        $this->url["params"]["page"] = $page;
+    }
 }

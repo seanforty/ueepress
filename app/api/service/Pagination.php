@@ -26,18 +26,31 @@ class Pagination extends \libs\Pagination
         $pageStr = "";
 
         if($this->currentPage>1){
-            $pageStr .= sprintf('<a  href="/index.php?p=products_list&lanmu=6&page=2">上一页</a>');
+            $pageStr .= sprintf('<a href="%s">首页</a>', $this->getUrl(1) );
+            $pageStr .= sprintf('<a href="%s">上一页</a>', $this->getUrl($this->currentPage-1) );
+        }else{
+            $pageStr .= sprintf('<a href="javascript:;">首页</a>', "" );
+            $pageStr .= sprintf('<a href="javascript:;">上一页</a>', "" );
         }
+
         for($i=$startPage;$i<=$endPage;$i++){
             if($i == $this->currentPage){
                 $pageStr .= sprintf('<a class="selected">%s</a>',$i);
             }else{
-                $pageStr .= sprintf('<a href="" class="page1">%s</a>',$i);
+                $pageStr .= sprintf('<a href="%s">%s</a>',$this->getUrl($i),$i);
             }
         }
+
         if($this->currentPage<$this->totalPage){
-            $pageStr .= sprintf('<a  href="/index.php?p=products_list&lanmu=6&page=2">下一页</a>');
+            $pageStr .= sprintf('<a href="%s">下一页</a>', $this->getUrl($this->currentPage+1) );
+            $pageStr .= sprintf('<a href="%s">尾页</a>', $this->getUrl($this->totalPage) );
+        }else{
+            $pageStr .= sprintf('<a href="javascript:;">下一页</a>', "");
+            $pageStr .= sprintf('<a href="javascript:;">尾页</a>', "");
         }
+
+        $pageStr .= sprintf(" 当前%s/%s页 每页%s条",$this->currentPage,$this->totalPage,$this->pageNum);
+
         return $pageStr;
     }
 }

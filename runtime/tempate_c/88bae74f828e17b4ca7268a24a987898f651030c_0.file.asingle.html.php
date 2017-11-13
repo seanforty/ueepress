@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-13 00:54:12
+/* Smarty version 3.1.30, created on 2017-11-14 05:24:37
   from "E:\www\meswebsite\app\index\view\pc\asingle.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a087cb421e7c6_30292815',
+  'unifunc' => 'content_5a0a0d9545cf63_04855072',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '88bae74f828e17b4ca7268a24a987898f651030c' => 
     array (
       0 => 'E:\\www\\meswebsite\\app\\index\\view\\pc\\asingle.html',
-      1 => 1510446555,
+      1 => 1510531564,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:pc/public/_footer.html' => 1,
   ),
 ),false)) {
-function content_5a087cb421e7c6_30292815 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a0a0d9545cf63_04855072 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:pc/public/_meta.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -39,8 +39,8 @@ $_smarty_tpl->_subTemplateRender("file:pc/public/_meta.html", $_smarty_tpl->cach
         <div class="list_right">
             <div class="box_bt">
                 <div class="box_right_title">企业新闻</div>
-                <div class="bt_text_y"><span>您现在所在位置：<a href="/">首页</a> > <a href="/news.html">鹤川资讯</a> > <a
-                        href="/newsList_T6.html">企业新闻</a> > 详细内容</span></div>
+                <div class="bt_text_y"><span><?php echo $_smarty_tpl->tpl_vars['crumbstr']->value;?>
+</span></div>
             </div>
             <div class="pro_photo">
                 <div><h3><?php echo $_smarty_tpl->tpl_vars['res']->value['title'];?>

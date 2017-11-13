@@ -5,7 +5,13 @@
                 <p>{{$sidetitle}}</p>
                 <ul>
                     {{foreach $side as $v}}
-                    <li class="l1" id="class49"><a href="{{url path='index/pcategory/index' params=['id'=>$v.id]}}" title="{{$v.title}}" class="a1">{{$v.title}}</a></li>
+                    <li id="navId1">
+                        {{if $v.linktype eq "0"}}<li class="l1"><a href="{{url path='index/page/index' params=['id'=>$v.linkid]}}"{{/if}}
+                        {{if $v.linktype eq "1"}}<li class="l1"><a href="{{url path='index/pcategory/index' params=['id'=>$v.linkid]}}"{{/if}}
+                        {{if $v.linktype eq "2"}}<li class="l1"><a href="{{url path='index/acategory/index' params=['id'=>$v.linkid]}}"{{/if}}
+                        {{if $v.linktype eq "3"}}<li class="l1"><a href="{{url path='index/cases/index' params=['id'=>$v.linkid]}}"{{/if}}
+                        {{if $v.linktype eq "4"}}<li class="l1"><a href="{{$v.linkid}}">{{/if}}
+                    title="{{$v.title}}" class="a1">{{$v.title}}</a></li>
                     {{/foreach}}
                 </ul>
             </div>

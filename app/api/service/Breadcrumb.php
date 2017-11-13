@@ -27,14 +27,17 @@ class Breadcrumb
         $cateObj = new Category();
 
         switch($controller){
-            case "page":
+            case "index/page/index":
                 $str .= ' > ' . $title;
                 break;
-            case "acategory":
+            case "index/acategory/index":
                 $str .= $this->getCates($id,$cateObj,"index/acategoray/index",' &gt; <a href="%s">%s</a>');
                 break;
-            case "pcategory":
+            case "index/pcategory/index":
                 $str .= $this->getCates($id,$cateObj,"index/pcategoray/index",' &gt; <a href="%s">%s</a>');
+                break;
+            case "index/cases/index":
+                $str .= ' > ' . $title;
                 break;
             case "product":
                 $str .= $this->getCates($id,$cateObj,"index/product/index",'<a href="%s">%s</a>');
@@ -64,7 +67,8 @@ class Breadcrumb
     protected function getCates(int $id,Category $category,$path,string $part,string &$crumb=""):string
     {
         $res = $category->get($id);
-        $crumb = sprintf($part,url(["path"=>$path]),$res["title"]) . $crumb;
+        if(!$res) return "";
+        $crumb = " > " . sprintf($part,url(["path"=>$path]),$res["title"]) . $crumb;
         if(0!=$res["parent_id"]){
             $this->getCates(intval($res["parent_id"]),$category,$part,$crumb);
         }

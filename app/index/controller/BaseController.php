@@ -104,11 +104,11 @@ class BaseController extends Controller
      * @param int ctype 分类类型 1-文章 2-产品
      * @return void
      */
-    protected function sideMenu(int $ctype=1)
+    protected function sideMenu(int $mid=1)
     {
-        $where = ["type","=",$ctype];
+        $where = [ ["mid","=",$mid], ["parent_id","=","0"] ];
         $order = [ ["listorder","DESC"],["id","DESC"] ];
-        $res = (new \app\api\model\Category())->find($where,$order);
+        $res = (new \app\api\model\Menucontent())->find($where,$order);
         return $res;
     }
 

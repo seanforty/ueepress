@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-13 00:34:01
+/* Smarty version 3.1.30, created on 2017-11-14 06:14:10
   from "E:\www\meswebsite\app\index\view\pc\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a0877f98181b5_31666386',
+  'unifunc' => 'content_5a0a19322429c4_21622756',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '60920c9f75435ba9b21c2b2245b664504b27e35c' => 
     array (
       0 => 'E:\\www\\meswebsite\\app\\index\\view\\pc\\index.html',
-      1 => 1510504439,
+      1 => 1510611248,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:pc/public/_footer.html' => 1,
   ),
 ),false)) {
-function content_5a0877f98181b5_31666386 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a0a19322429c4_21622756 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:pc/public/_meta.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -44,10 +44,61 @@ $_smarty_tpl->_subTemplateRender("file:pc/public/_meta.html", $_smarty_tpl->cach
             </ul>
         </div>
     </div>
+
+    <!-- html -->
+    <div class="ck-slide">
+        <div class="ck-slidebox">
+            <div class="slideWrap">
+                <ul class="dot-wrap">
+                    <li onclick="selectit(this)" style="background-color:#ccc;" class="current"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
+                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
+                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
+                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
+                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
+                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ck-slide-imgs">
+            <ul class="ck-slide-wrapper">
+                <li><a href="javascript:;"><img src="<?php echo @constant('STATIC');?>
+/index/pic/slider1.jpg" alt=""></a></li>
+                <li style="display:none"><a href="javascript:;"><img src="<?php echo @constant('STATIC');?>
+/index/pic/slider2.jpg" alt=""></a></li>
+                <li style="display:none"><a href="javascript:;"><img src="<?php echo @constant('STATIC');?>
+/index/pic/slider3.jpg" alt=""></a></li>
+                <li style="display:none"><a href="javascript:;"><img src="<?php echo @constant('STATIC');?>
+/index/pic/slider4.jpg" alt=""></a></li>
+                <li style="display:none"><a href="javascript:;"><img src="<?php echo @constant('STATIC');?>
+/index/pic/slider3.jpg" alt=""></a></li>
+                <li style="display:none"><a href="javascript:;"><img src="<?php echo @constant('STATIC');?>
+/index/pic/slider4.jpg" alt=""></a></li>
+            </ul>
+        </div>
+
+        <a href="javascript:;" class="ctrl-slide ck-prev">上一张</a>
+        <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
+    </div>
+<?php echo '<script'; ?>
+ src="<?php echo @constant('STATIC');?>
+/index/js/slide.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+>
+    $('.ck-slide').ckSlide({
+        dir: 'x'
+    });
+    function selectit(t)
+    {
+        $(".dot-wrap li").css("background","none");
+        t.style.backgroundColor= "#6399eb";
+    }
+<?php echo '</script'; ?>
+>
     <!--解决问题-->
     <div class="whyOuter">
         <div class="whyInner">
-            <div class="tit"><h2>为什么选择牛工厂</h2><span>Why choose us</span><i></i></div>
+            <div class="tit"><h2>为什么选择普中MES</h2><span>Why choose us</span><i></i></div>
             <ul>
                 <li class="w1"><a href="javascript:;"><i></i><b>网络下单，方便快捷</b>
                     <p>实现定制化MES系统产品网络下单，MES系统生产厂家直接面向客户，由客户自主选择配提升客户满意度。</p><em>+</em></a></li>

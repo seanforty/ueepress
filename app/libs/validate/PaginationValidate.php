@@ -13,7 +13,7 @@ class PaginationValidate extends BaseValidate
 {
     protected $rules = [
         "page" => ["isPositiveInt"],
-        "cate" => ["isPositiveInt"]
+        "id" => ["isPositiveInt"]
     ];
 
     protected $message = [

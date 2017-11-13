@@ -21,15 +21,7 @@
             </div>
             <div class="clearfix"></div>
 
-            <div class="page"><a>首页</a>　<a>上一页</a>　<a href='/Products_p2.html'>下一页</a>　<a
-                    href='/Products_p9.html'>尾页</a>　共154记录，当前1/9页 每页18条　跳转：<input type="text" id="EnterGoFigure"
-                                                                                  style="text-align:center; border:1px solid #ccc; width:30px;"
-                                                                                  class="EnterGoFigure" value="1"/>　
-                <button style="background:#fff; border:1px solid #ccc;" class="InputJumpEvent"
-                        onclick='InputJumpEvent(9,1);function InputJumpEvent(){var e=document.getElementById("EnterGoFigure"),v=e.value;if(v>arguments[0]){alert("跳转数不能超出总页数！");}else if(v<=0){alert("跳转数必须大于 0 ！");}else if(v!=arguments[1]){top.location.href="/Products_p"+v+".html"}else{};}'>
-                    GO
-                </button>
-            </div>
+            <div class="page">{{$pagestr}}</div>
         </div>
     </div>
 </div>
