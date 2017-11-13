@@ -1,0 +1,80 @@
+﻿{{include file="pc/public/_meta.html"}}
+{{include file="pc/public/_header.html"}}
+<div id="contant">
+    <div class="list_box">
+        {{include file="pc/sidebar.html"}}
+        <div class="list_right">
+            <div class="box_bt">
+                <div class="box_right_title">产品中心</div>
+                <div class="bt_text_y"><span>{{$crumbstr}}</span>
+                </div>
+            </div>
+
+            <!--下部分代码-->
+            <div class="column">
+                <div class="siderightCon">
+                    <div class="nypro">
+                        <div id="preview">
+                            <div class="jqzoom" id="spec-n1">
+                                {{if count($res.images) neq 0}}<img src="{{$res.images[0].img_url}}" width="398" height="398">{{/if}}
+                            </div>
+                            <div id="spec-n5">
+                                <div class="control" id="spec-left">
+                                    <img onclick="moveright()" src="{{$smarty.const.STATIC}}/index/images/left.gif"/>
+                                </div>
+                                <div id="spec-list" >
+                                    <ul class="list-h">
+                                    {{foreach $res.images as $k=>$v}}
+                                    <li><div class="proimg_bk"><a class="proimg"><img onmouseover="selectimg(this)" src="{{$v.img_url}}" height="70" width="90"></a></div></li>
+                                    {{/foreach}}
+                                    </ul>
+                                </div>
+                                <div class="control" id="spec-right">
+                                    <img onclick="moveleft()" src="{{$smarty.const.STATIC}}/index/images/right.gif"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<script>
+function selectimg(t) {
+    var src = t.src;
+    $("#spec-n1 img").attr("src",src);
+}
+function moveleft() {
+    var count = $(".list-h").children("li").length;
+    if(count>4){
+        $(".list-h li:first").css("width","0");
+    }
+}
+function moveright() {
+    $(".list-h li:first").removeAttr("style");
+}
+</script>
+                    <div class="product_bigimg_text">
+                        <h2>{{$res.title}}</h2>
+                        <div class="prod-right-title">
+                            <div class="text1">{{$res.description}}</div>
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+                    <div class="line"></div>
+
+                    <div id="con"><!--TAB切换 BOX-->
+                        <ul id="tags"><!--TAB 标题切换-->
+                            <li class=selectTag><A onmouseover="selectTag('tagContent0',this)" href="javascript:void(0)"
+                                                   onFocus="this.blur()">产品介绍</A></LI>
+                        </ul><!--TAB 标题切换 END-->
+
+                        <div id=tagContent><!--内容-->
+                            <div class="tagContent selectTag" id=tagContent0><!--商品介绍-->
+                                {{$res.content}}
+                            </div><!--商品介绍 END-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+    </div>
+</div>
+{{include file="pc/public/_footer.html"}}

@@ -70,6 +70,7 @@ class BaseController extends Controller
         $footer["beianhao"]  = $this->siteInfo->getValueByKey("beianhao");
         $footer["footertext"]= $this->siteInfo->getValueByKey("footertext");
         $footer["footercontact"] = $this->siteInfo->getValueByKey("footercontact");
+        $footer["floatservicelink"] = $this->siteInfo->getValueByKey("floatservicelink");
         $this->assign("footer",$footer);
     }
 
@@ -82,6 +83,7 @@ class BaseController extends Controller
         $data["logo"]      = $this->sliderBox->sliderInfo(1); //logo
         $data["sliderbox"] = $this->sliderBox->sliderInfo(2); //幻灯片
         $data["footer_img"]= $this->sliderBox->sliderInfo(5); //网站底部二维码
+        $data["float_service"] = $this->sliderBox->sliderInfo(6); //悬浮客服图片
         $this->assign("ads",$data);
     }
 
@@ -96,5 +98,31 @@ class BaseController extends Controller
         $this->assign("mainmenu2",$menuList2);
     }
 
+
+    /*
+     * 侧边栏菜单
+     * @param int ctype 分类类型 1-文章 2-产品
+     * @return void
+     */
+    protected function sideMenu(int $ctype=1)
+    {
+        $where = ["type","=",$ctype];
+        $order = [ ["listorder","DESC"],["id","DESC"] ];
+        $res = (new \app\api\model\Category())->find($where,$order);
+        return $res;
+    }
+
+    /*
+     * 产品推荐
+     */
+    protected function recommendPro()
+    {
+        $where = [ ["type","=","1"],["stick","=","1"] ];
+        $order = [ "id","DESC" ];
+        $productModel = new \app\api\model\Product();
+        $res = $productModel->find($where,$order,[0,3]);
+        $res = $productModel->hasOne($res,"image","img_id","id");
+        $this->assign("recopro",$res);
+    }
 
 }

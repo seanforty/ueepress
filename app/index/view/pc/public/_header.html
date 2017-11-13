@@ -28,14 +28,11 @@
                 {{if $v.linktype eq "0"}}<a href="{{url path='index/page/index' params=['id'=>$v.linkid]}}">{{/if}}
                 {{if $v.linktype eq "1"}}<a href="{{url path='index/pcategory/index' params=['id'=>$v.linkid]}}">{{/if}}
                 {{if $v.linktype eq "2"}}<a href="{{url path='index/acategory/index' params=['id'=>$v.linkid]}}">{{/if}}
-                {{if $v.linktype eq "3"}}<a href="{{url path='index/case/index' params=['id'=>$v.linkid]}}">{{/if}}
+                {{if $v.linktype eq "3"}}<a href="{{url path='index/cases/index' params=['id'=>$v.linkid]}}">{{/if}}
                 {{if $v.linktype eq "4"}}<a href="{{$v.linkid}}">{{/if}}
             {{$v.title}}</a></li>
             {{/foreach}}
         </ul>
-        <script language="javascript" type="text/javascript">try {
-            document.getElementById("navId" + nav).className = "current";
-        } catch(e) {}</script>
     </div>
     <!--banner start-->
     <div class="banner">

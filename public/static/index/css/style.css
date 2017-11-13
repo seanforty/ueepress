@@ -916,7 +916,7 @@ a:hover {
 .photo {
     position: relative;
     margin-top: 30px;
-    height: 193px;
+    height: 282px;
 }
 
 .photo a.plus {
@@ -925,7 +925,7 @@ a:hover {
     display: block;
     position: absolute;
     left: -55px;
-    top: 67px;
+    top: 110px;
     background: url(../images/jt_left.jpg) no-repeat;
     z-index: 999;
 }
@@ -936,7 +936,7 @@ a:hover {
     display: block;
     position: absolute;
     right: -55px;
-    top: 67px;
+    top: 110px;
     background: url(../images/jt_right.jpg) no-repeat;
 }
 
@@ -946,7 +946,7 @@ a:hover {
     display: block;
     position: absolute;
     left: -55px;
-    top: 67px;
+    top: 110px;
     background: url(../images/jt_left1.jpg) no-repeat;
     z-index: 999;
 }
@@ -957,7 +957,7 @@ a:hover {
     display: block;
     position: absolute;
     right: -55px;
-    top: 67px;
+    top: 110px;
     background: url(../images/jt_right1.jpg) no-repeat;
 }
 
@@ -966,7 +966,7 @@ a:hover {
     left: 0px;
     top: 0px;
     width: 1100px;
-    height: 193px;
+    height: 282px;
     overflow: hidden
 }
 
@@ -975,7 +975,7 @@ a:hover {
     left: 0;
     top: 0;
     width: 200000px;
-    height: 193px;
+    height: 282px;
     overflow: hidden;
 }
 
@@ -987,7 +987,7 @@ a:hover {
 
 .photo ul li .proimg_bk {
     width: 252px;
-    height: 162px;
+    height: 252px;
     border: 1px solid #ccc;
     position: relative;
     display: table-cell;
@@ -997,10 +997,8 @@ a:hover {
 
 .photo ul li .proimg_bk .proimg {
     width: 252px;
-    line-height: 162px;
-    *line-height: 222px;
-    height: 162px;
-    *height: 222px;
+    height: 252px;
+    *height: 252px;
     text-align: center;
     position: static;
 + position: absolute;
@@ -1014,7 +1012,7 @@ a:hover {
     top: -50%;
     left: -50%;
     max-width: 247px;
-    max-height: 157px
+    max-height: 247px
 }
 
 .photo ul li:hover .proimg_bk {
@@ -1727,13 +1725,13 @@ a:hover {
 
 .list1 ul li {
     width: 201px;
-    height: 170px;
-    margin: 10px auto;
+    height: 201px;
+    margin: 10px auto 40px auto;
 }
 
 .list1 ul li .proimg_bk {
     width: 201px;
-    height: 133px;
+    height: 201px;
     border: 1px solid #ccc;
     position: relative;
     display: table-cell;
@@ -1745,8 +1743,8 @@ a:hover {
     width: 201px;
     line-height: 133px;
     *line-height: 183px;
-    height: 133px;
-    *height: 183px;
+    height: 201px;
+    *height: 201px;
     font-size: 133px;
     text-align: center;
     position: static;
@@ -1760,8 +1758,8 @@ a:hover {
 + position: relative;
     top: -50%;
     left: -50%;
-    max-width: 196px;
-    max-height: 128px
+    max-width: 201px;
+    max-height: 201px
 }
 
 .list1 ul li a {
@@ -1916,14 +1914,14 @@ a:hover {
     float: left;
     margin-right: 10px;
     margin-left: 10px;
-    height: 190px;
+    height: 281px;
     margin-bottom: 20px;
     overflow: hidden
 }
 
 .pro_pic ul li .proimg_bk {
-    width: 248px;
-    height: 155px;
+    width: 250px;
+    height: 250px;
     border: 1px solid #ccc;
     position: relative;
     display: table-cell;
@@ -1932,26 +1930,23 @@ a:hover {
 }
 
 .pro_pic ul li .proimg_bk .proimg {
-    width: 248px;
-    line-height: 155px;
-    *line-height: 215px;
-    height: 155px;
-    *height: 215px;
-    font-size: 155px;
-    text-align: center;
+    width: 240px;
+    height: 240px;
+    *height: 250px;
     position: static;
 + position: absolute;
     top: 50%
 }
 
 .pro_pic ul li .proimg_bk img {
-    vertical-align: middle;
+    width:240px;
+    vertical-align: top;
     position: static;
 + position: relative;
     top: -50%;
     left: -50%;
-    max-width: 243px;
-    max-height: 150px
+    max-width: 240px;
+    max-height: 240px
 }
 
 .pro_pic ul li p {
@@ -2362,7 +2357,7 @@ a:hover {
 
 .nypro {
     width: 400px;
-    height: 340px;
+    height: 430px;
     float: left;
 }
 
@@ -2427,13 +2422,9 @@ a:hover {
 }
 
 #spec-list ul li .proimg_bk .proimg {
-    width: 86px;
-    line-height: 66px;
-    *line-height: 116px;
-    height: 66px;
-    *height: 116px;
-    font-size: 66px;
-    text-align: center;
+    width: 90px;
+    height: 70px;
+    *height: 70px;
     position: static;
 + position: absolute;
     top: 50%
@@ -2445,8 +2436,8 @@ a:hover {
 + position: relative;
     top: -50%;
     left: -50%;
-    max-width: 81px;
-    max-height: 61px;
+    max-width: 90px;
+    max-height: 70px;
     border: none !important
 }
 
@@ -2464,61 +2455,11 @@ a:hover {
 
 .jqzoom .proimg {
     width: 398px;
-    line-height: 299px;
-    *line-height: 350px;
-    height: 299px;
-    *height: 350px;
-    font-size: 299px;
-    text-align: center;
+    height: 398px;
+    *height: 398px;
     position: static;
 + position: absolute;
     top: 50%
-}
-
-.jqzoom .proimg img {
-    vertical-align: middle;
-    position: static;
-+ position: relative;
-    top: -50%;
-    left: -50%;
-    max-width: 393px;
-    max-height: 294px
-}
-
-.zoomdiv {
-    z-index: 100;
-    position: absolute;
-    top: 1px;
-    left: 0px;
-    width: 350px;
-    height: 350px;
-    background: url(../images/loading.gif) #fff no-repeat center center;
-    border: 1px solid #e4e4e4;
-    display: none;
-    text-align: center;
-    overflow: hidden;
-}
-
-.bigimg {
-    width: 800px;
-    height: 600px;
-}
-
-.jqZoomPup {
-    z-index: 10;
-    visibility: hidden;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 60px !important;
-    height: 60px !important;
-    border: 1px solid #aaa;
-    background: #FEDE4F 50% top no-repeat;
-    opacity: 0.5;
-    -moz-opacity: 0.5;
-    -khtml-opacity: 0.5;
-    filter: alpha(Opacity=50);
-    cursor: move;
 }
 
 #spec-list {

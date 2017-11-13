@@ -29,9 +29,10 @@ class Category extends BaseController
      * @param string template 模板
      * @param int page 页码
      * @param int cid 分类ID
-     * @param int ctype 1-文章分类 1-产品分类 2-案例列表
+     * @param int type article中1-文章类型 2-页面类型，product中1-产品类型 2-案例类型
+     * @param int ctype 1-文章分类 2-产品分类
      */
-    public function indexBase(string $template,int $page = 0, int $cid = 0,int $ctype=1)
+    public function indexBase(string $template,int $page = 0, int $cid = 0,int $type=1,int $ctype=1)
     {
         $validateArr = [];
         if ($page) {
@@ -45,17 +46,26 @@ class Category extends BaseController
         (new PaginationValidate())->goCheck($validateArr);
 
         //查询文章列表
-        $list = $this->getListByCate(intval($cid), intval($page));
-        $this->assign("list", $articleList);
+        $list = $this->getListByCate(intval($cid), intval($page),$type);
+        $this->assign("list", $list);
 
         //面包屑导航
-        $crumbStr = (new Breadcrumb())->render($this->getController(), intval($cid));
+        $controller = ($ctype==1)?"acategory":"pcategory";
+        $crumbStr = (new Breadcrumb())->render($controller,$cid,"");
         $this->assign("crumbstr", $crumbStr);
 
         //分页
-        $pagination = new Pagination(intval($articleList["pagination"]["totalpage"]), intval($articleList["pagination"]["currentpage"]));
+        $pagination = new Pagination(intval($list["pagination"]["totalpage"]), intval($list["pagination"]["currentpage"]));
         $pageStr = $pagination->render();
         $this->assign("pagestr", $pageStr);
+
+        //左侧菜单导航
+        $side = $this->sideMenu($ctype);
+        $this->assign("side",$side);
+        if($ctype==1)
+            $this->assign("sidetitle","资讯文章");
+        else
+            $this->assign("sidetitle","产品目录");
 
         $this->display($template);
     }

@@ -31,4 +31,19 @@ class Product extends BaseModel
         return $result;
     }
 
+    /*
+     * 获取单个产品记录，带多张主图
+     * @param int id
+     * @return array
+     */
+    public function getWithMultiImg(int $id): array
+    {
+        $res = $this->table()->get($id);
+        DBException($res,"产品不存在！");
+        $ids = $res["imgs"];
+        $images = (new Image())->find(["id","IN",$ids]);
+        $res["images"] = $images;
+        return $res;
+    }
+
 }

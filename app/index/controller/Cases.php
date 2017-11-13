@@ -16,9 +16,10 @@ class Cases extends Category
         $this->contentObj = new \app\api\model\Product();
     }
 
-    public function index(int $page = 0, int $cid = 0,int $ctype=1)
+    public function index(int $page = 0, int $cid = 0)
     {
-        $this->indexBase("pc/case",$page,$cid,2);
+        $this->recommendPro();
+        $this->indexBase("pc/case",$page,$cid,2,2);
     }
 
 }

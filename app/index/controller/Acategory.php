@@ -8,6 +8,8 @@
 declare(strict_types=1);
 namespace app\index\controller;
 
+use app\api\service\Breadcrumb;
+
 class Acategory extends Category
 {
     public function __construct()
@@ -16,8 +18,9 @@ class Acategory extends Category
         $this->contentObj = new \app\api\model\Article();
     }
 
-    public function index(int $page = 0, int $cid = 0,int $ctype=1)
+    public function index(int $page = 0, int $cid = 0)
     {
+        $this->recommendPro();
         $this->indexBase("pc/acategory",$page,$cid,1);
     }
 

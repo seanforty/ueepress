@@ -13,36 +13,33 @@ use app\libs\validate\ArticleListValidate;
 use app\libs\validate\MustBePostiveValidate;
 use libs\Request;
 
-class Article extends BaseController
+class Product extends BaseController
 {
-    public function index()
+    public function index(int $id=0)
     {
         (new MustBePostiveValidate())->goCheck();
         $id = Request::get("id");
 
-        //文章
-        $articleModel = new \app\api\model\Article();
-        $res = $articleModel->get(intval($id));
+        //产品
+        $productModel = new \app\api\model\Product();
+        $res = $productModel->getWithMultiImg(intval($id));
         DBException($res,"此页面不存在！");
         $this->assign("res",$res);
 
-        //文章所属分类
-        $scid = intval($res["cate_id"]);
+        //产品所属分类
+        $cid = intval($res["cate_id"]);
 
         //面包屑导航
-        $crumbStr = (new Breadcrumb())->render($this->getController(),intval($scid));
-        $this->assign("crumbstr",$crumbStr);
+        $crumbStr = (new Breadcrumb())->render("product",$cid,"");
+        $this->assign("crumbstr", $crumbStr);
 
-        //获取二级菜单
-        $pcid = $this->getTopCate(intval($scid));
-        $subMenu = (new Category())->getSubMenu($pcid);
-        if($subMenu){
-            $this->assign("submenu",$subMenu);
-            $this->assign("pcid",$pcid);
-            $this->assign("scid",$scid);
-        }
+        $side = $this->sideMenu(2);
+        $this->assign("side",$side);
+        $this->assign("sidetitle","产品目录");
 
-        $this->display("pc/article");
+        $this->recommendPro();
+
+        $this->display("pc/psingle");
     }
 
     /*

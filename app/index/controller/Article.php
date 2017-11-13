@@ -27,22 +27,19 @@ class Article extends BaseController
         $this->assign("res",$res);
 
         //文章所属分类
-        $scid = intval($res["cate_id"]);
+        $cid = intval($res["cate_id"]);
 
         //面包屑导航
-        $crumbStr = (new Breadcrumb())->render($this->getController(),intval($scid));
-        $this->assign("crumbstr",$crumbStr);
+        $crumbStr = (new Breadcrumb())->render("article",$cid,"");
+        $this->assign("crumbstr", $crumbStr);
 
-        //获取二级菜单
-        $pcid = $this->getTopCate(intval($scid));
-        $subMenu = (new Category())->getSubMenu($pcid);
-        if($subMenu){
-            $this->assign("submenu",$subMenu);
-            $this->assign("pcid",$pcid);
-            $this->assign("scid",$scid);
-        }
+        $side = $this->sideMenu(1);
+        $this->assign("side",$side);
+        $this->assign("sidetitle","文章资讯");
 
-        $this->display("pc/article");
+        $this->recommendPro();
+
+        $this->display("pc/asingle");
     }
 
     /*

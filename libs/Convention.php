@@ -14,7 +14,7 @@ return [
     //默认路由配置
     "route" => [
         //是否开启简化URL ( no, simple , rewrite )
-        "simplify_url" => "rewrite",
+        "simplify_url" => "simple",
         //入口文件
         "entry" => "index.php",
         //默认module

@@ -49,7 +49,7 @@
                     {{foreach $cases as $v}}
                     {{if isset($v.image.img_url)}}
                     <li>
-                        <div class="proimg_bk"><a class="proimg"><img src="{{$v.image.img_url}}"/></a></div>
+                        <div class="proimg_bk"><a class="proimg"><img src="{{$v.image.img_url}}" height="247" width="247"></a></div>
                         <p>{{$v.title}}</p></li>
                     {{/if}}{{/foreach}}
                 </ul>

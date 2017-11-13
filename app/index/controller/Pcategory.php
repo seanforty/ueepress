@@ -18,9 +18,10 @@ class Pcategory extends Category
         $this->contentObj = new Product();
     }
 
-    public function index(int $page = 0, int $cid = 0,int $ctype=1)
+    public function index(int $page = 0, int $cid = 0)
     {
-        $this->indexBase("pc/pcategory",$page,$cid,1);
+        $this->recommendPro();
+        $this->indexBase("pc/pcategory",$page,$cid,1,2);
     }
 
 }

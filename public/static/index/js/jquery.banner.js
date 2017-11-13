@@ -1,4 +1,5 @@
-﻿(function ($) {
+﻿//幻灯片切换
+(function ($) {
    $.fn.swBanner=function(options){
      var defaults={
 	     animateTime:300,
