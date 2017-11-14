@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-11 09:27:12
+/* Smarty version 3.1.30, created on 2017-11-14 11:13:22
   from "E:\www\ueepress2\app\admin\view\page-list.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a0651f0a25958_64268234',
+  'unifunc' => 'content_5a0a5f52f1d6c6_18784079',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd665e71ddc285ffc93bef7ca8b7de746b6412a5c' => 
     array (
       0 => 'E:\\www\\ueepress2\\app\\admin\\view\\page-list.html',
-      1 => 1510286158,
+      1 => 1510619312,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:public/_footer.html' => 1,
   ),
 ),false)) {
-function content_5a0651f0a25958_64268234 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a0a5f52f1d6c6_18784079 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:public/_meta.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -100,7 +100,11 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 			</tbody>
 		</table>
 	</div>
+	<div style="margin: 0 40px;">
+		<div id="kkpager"></div>
+	</div>
 </div>
+
 <?php $_smarty_tpl->_subTemplateRender("file:public/_footer.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -123,7 +127,7 @@ $(function () {
 ',
 		mode:'link',
 		getLink : function(n){
-			return '<?php echo url(array('path'=>"admin/article/getList",'params'=>array("page"=>"'+n")),$_smarty_tpl);?>
+			return '<?php echo url(array('path'=>"admin/page/index",'params'=>array("page"=>"'+n")),$_smarty_tpl);?>
 ;
 		}
 	});

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-13 15:53:17
+/* Smarty version 3.1.30, created on 2017-11-14 11:19:33
   from "E:\www\ueepress2\app\index\view\pc\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a094f6d5eeb65_86700568',
+  'unifunc' => 'content_5a0a60c5002e09_62906317',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'db20a3dc344a307acf8bbd2b1d7a4204541ef08d' => 
     array (
       0 => 'E:\\www\\ueepress2\\app\\index\\view\\pc\\index.html',
-      1 => 1510559552,
+      1 => 1510629557,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:pc/public/_footer.html' => 1,
   ),
 ),false)) {
-function content_5a094f6d5eeb65_86700568 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a0a60c5002e09_62906317 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:pc/public/_meta.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -34,13 +34,13 @@ $_smarty_tpl->_subTemplateRender("file:pc/public/_meta.html", $_smarty_tpl->cach
     <!--提出问题-->
     <div class="wenOuter">
         <div class="wenInner">
-            <div class="tit"><h2>企业生产常出现的问题</h2><span>Enterprise production often problems</span><i></i></div>
+            <div class="tit"><h2>企业生产中常出现的问题</h2><span>Enterprise production often problems</span><i></i></div>
             <ul>
-                <li><span>01</span>生产排程不合理，<b>订单延误、漏单经常发生</b></li>
-                <li><span>02</span>生产现场管理混乱，造成<b>人力资源和物料的浪费</b></li>
-                <li><span>03</span><b>生产进度不透明，</b>给业务和跟单带来诸多不便</li>
-                <li><span>04</span>不能及时了解产品不良率，<b>质量控制难度大</b></li>
-                <li><span>05</span>仓储管理不规范，造成<b>材料积压过多，物料查找麻烦</b></li>
+                <li><span>01</span><b>生产排程不合理</b>，订单延误、漏单经常发生</li>
+                <li><span>02</span><b>生产现场管理混乱</b>，造成人力资源和物料的浪费</li>
+                <li><span>03</span><b>生产进度不透明</b>，给业务和跟单带来诸多不便</li>
+                <li><span>04</span><b>不能及时了解产品不良率</b>，质量控制难度大</li>
+                <li><span>05</span><b>仓储管理不规范</b>，造成材料积压过多，物料查找麻烦</li>
             </ul>
         </div>
     </div>
@@ -50,12 +50,18 @@ $_smarty_tpl->_subTemplateRender("file:pc/public/_meta.html", $_smarty_tpl->cach
         <div class="ck-slidebox">
             <div class="slideWrap">
                 <ul class="dot-wrap">
-                    <li onclick="selectit(this)" style="background-color:#ccc;" class="current"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
-                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
-                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
-                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
-                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
-                    <li onclick="selectit(this)"><a href="javascript:;"><div class="block"><span>全程监控</span><br><br>数据可视呈现<br>高效远程管理</div></a></li>
+                    <li id="liid1" onclick="selectit(1)" style="background-color:#0c9dd0;" class="current"><a href="javascript:;">
+                        <div class="block" style="color:white;"><span>智能物流系统</span><br><br>智能立体仓库<br>自动运输设备<br>AGV最优路径配送<br>货物自动跟踪</div></a></li>
+                    <li id="liid2" onclick="selectit(2)"><a href="javascript:;">
+                        <div class="block"><span>自动化生产线</span><br><br>有效提高生产率<br>降低生产成本<br>缩短生产周期<br>保证生产均衡性</div></a></li>
+                    <li id="liid3" onclick="selectit(3)"><a href="javascript:;">
+                        <div class="block"><span>智能过程管控</span><br><br>采用条码技术<br>建立电子标签<br>现场规范管理<br>生产信息追溯</div></a></li>
+                    <li id="liid4" onclick="selectit(4)"><a href="javascript:;">
+                        <div class="block"><span>智能仓储管理</span><br><br>提升仓库利用<br>规范作业流程<br>降低劳动强度<br>操作人员考核</div></a></li>
+                    <li id="liid5" onclick="selectit(5)"><a href="javascript:;">
+                        <div class="block"><span>生产计划管理</span><br><br>订单交付计划<br>生产能力评估<br>APS精细化管理<br>自动化最优排程</div></a></li>
+                    <li id="liid6" onclick="selectit(6)"><a href="javascript:;">
+                        <div class="block"><span>实力服务保障</span><br><br>数据可视呈现<br>高效远程管理<br>专业顾问指导<br>终生售后服务 </div></a></li>
                 </ul>
             </div>
         </div>
@@ -91,14 +97,16 @@ $_smarty_tpl->_subTemplateRender("file:pc/public/_meta.html", $_smarty_tpl->cach
     function selectit(t)
     {
         $(".dot-wrap li").css("background","none");
-        t.style.backgroundColor= "#ccc";
+        $(".dot-wrap li a .block").css("color","black");
+        $("#liid"+t+" a .block").css("color","white");
+        $("#liid"+t).css("background","#0c9dd0");
     }
 <?php echo '</script'; ?>
 >
     <!--解决问题-->
     <div class="whyOuter">
         <div class="whyInner">
-            <div class="tit"><h2>为什么选择牛工厂</h2><span>Why choose us</span><i></i></div>
+            <div class="tit"><h2>为什么选择普中MES</h2><span>Why choose us</span><i></i></div>
             <ul>
                 <li class="w1"><a href="javascript:;"><i></i><b>网络下单，方便快捷</b>
                     <p>实现定制化MES系统产品网络下单，MES系统生产厂家直接面向客户，由客户自主选择配提升客户满意度。</p><em>+</em></a></li>

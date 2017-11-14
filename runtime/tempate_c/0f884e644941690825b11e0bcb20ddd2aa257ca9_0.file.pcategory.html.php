@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-13 08:58:58
+/* Smarty version 3.1.30, created on 2017-11-14 08:28:48
   from "E:\www\ueepress2\app\index\view\pc\pcategory.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a08ee52d4c8d9_80411668',
+  'unifunc' => 'content_5a0a38c000cf28_04282601',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0f884e644941690825b11e0bcb20ddd2aa257ca9' => 
     array (
       0 => 'E:\\www\\ueepress2\\app\\index\\view\\pc\\pcategory.html',
-      1 => 1510534245,
+      1 => 1510619312,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:pc/public/_footer.html' => 1,
   ),
 ),false)) {
-function content_5a08ee52d4c8d9_80411668 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a0a38c000cf28_04282601 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:pc/public/_meta.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -69,15 +69,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
             </div>
             <div class="clearfix"></div>
 
-            <div class="page"><a>首页</a>　<a>上一页</a>　<a href='/Products_p2.html'>下一页</a>　<a
-                    href='/Products_p9.html'>尾页</a>　共154记录，当前1/9页 每页18条　跳转：<input type="text" id="EnterGoFigure"
-                                                                                  style="text-align:center; border:1px solid #ccc; width:30px;"
-                                                                                  class="EnterGoFigure" value="1"/>　
-                <button style="background:#fff; border:1px solid #ccc;" class="InputJumpEvent"
-                        onclick='InputJumpEvent(9,1);function InputJumpEvent(){var e=document.getElementById("EnterGoFigure"),v=e.value;if(v>arguments[0]){alert("跳转数不能超出总页数！");}else if(v<=0){alert("跳转数必须大于 0 ！");}else if(v!=arguments[1]){top.location.href="/Products_p"+v+".html"}else{};}'>
-                    GO
-                </button>
-            </div>
+            <div class="page"><?php echo $_smarty_tpl->tpl_vars['pagestr']->value;?>
+</div>
         </div>
     </div>
 </div>

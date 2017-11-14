@@ -3,35 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="d5595d20-ddf6-45be-92d7-821432e364fd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/view/article-list.html" afterPath="$PROJECT_DIR$/app/admin/view/article-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/view/page-list.html" afterPath="$PROJECT_DIR$/app/admin/view/page-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api/model/Product.php" afterPath="$PROJECT_DIR$/app/api/model/Product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api/service/Breadcrumb.php" afterPath="$PROJECT_DIR$/app/api/service/Breadcrumb.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api/service/Pagination.php" afterPath="$PROJECT_DIR$/app/api/service/Pagination.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index/controller/Article.php" afterPath="$PROJECT_DIR$/app/index/controller/Article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index/controller/BaseController.php" afterPath="$PROJECT_DIR$/app/index/controller/BaseController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index/controller/Category.php" afterPath="$PROJECT_DIR$/app/index/controller/Category.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index/controller/Page.php" afterPath="$PROJECT_DIR$/app/index/controller/Page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index/controller/Product.php" afterPath="$PROJECT_DIR$/app/index/controller/Product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index/view/pc/acategory.html" afterPath="$PROJECT_DIR$/app/index/view/pc/acategory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index/view/pc/case.html" afterPath="$PROJECT_DIR$/app/index/view/pc/case.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index/view/pc/index.html" afterPath="$PROJECT_DIR$/app/index/view/pc/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index/view/pc/page-fullwidth.html" afterPath="$PROJECT_DIR$/app/index/view/pc/page-fullwidth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index/view/pc/pcategory.html" afterPath="$PROJECT_DIR$/app/index/view/pc/pcategory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index/view/pc/sidebar.html" afterPath="$PROJECT_DIR$/app/index/view/pc/sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/validate/PaginationValidate.php" afterPath="$PROJECT_DIR$/app/libs/validate/PaginationValidate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Pagination.php" afterPath="$PROJECT_DIR$/libs/Pagination.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/abc.php" afterPath="$PROJECT_DIR$/public/abc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/index/css/style.css" afterPath="$PROJECT_DIR$/public/static/index/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/log/201711/13.log" afterPath="$PROJECT_DIR$/runtime/log/201711/13.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/00170c78b78cee1b0d199e7fee32641f35cd761c_0.file.pcategory.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/00170c78b78cee1b0d199e7fee32641f35cd761c_0.file.pcategory.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/2e4cf74ee24454b5c8b622720b4977f096f5aa6d_0.file.case.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/2e4cf74ee24454b5c8b622720b4977f096f5aa6d_0.file.case.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/30acee394304c91b35d389bbfde66a7a553f5859_0.file.acategory.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/30acee394304c91b35d389bbfde66a7a553f5859_0.file.acategory.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/60920c9f75435ba9b21c2b2245b664504b27e35c_0.file.index.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/60920c9f75435ba9b21c2b2245b664504b27e35c_0.file.index.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/88bae74f828e17b4ca7268a24a987898f651030c_0.file.asingle.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/88bae74f828e17b4ca7268a24a987898f651030c_0.file.asingle.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/aca72463e2ce23202bcce414e934acd185d5b924_0.file.sidebar.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/aca72463e2ce23202bcce414e934acd185d5b924_0.file.sidebar.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/c4d36fc9e4ca56355e4a1666c55294daa22e4e7b_0.file.page-fullwidth.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/c4d36fc9e4ca56355e4a1666c55294daa22e4e7b_0.file.page-fullwidth.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/fa38997ec125cd4d1b14934013de55bd59ee0e00_0.file._meta.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/fa38997ec125cd4d1b14934013de55bd59ee0e00_0.file._meta.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/index/css/slide.css" afterPath="$PROJECT_DIR$/public/static/index/css/slide.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/log/201711/14.log" afterPath="$PROJECT_DIR$/runtime/log/201711/14.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/0f884e644941690825b11e0bcb20ddd2aa257ca9_0.file.pcategory.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/0f884e644941690825b11e0bcb20ddd2aa257ca9_0.file.pcategory.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/5dac30c089e83f68e7f348cfc6c8dc2d8c72eb5a_0.file.case.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/5dac30c089e83f68e7f348cfc6c8dc2d8c72eb5a_0.file.case.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/73e45303cf89a261855ae837246dfeb54214e4a0_0.file.acategory.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/73e45303cf89a261855ae837246dfeb54214e4a0_0.file.acategory.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/7f24676e7c33e8bb16a5c240b2894024f0ed8a40_0.file.page-fullwidth.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/7f24676e7c33e8bb16a5c240b2894024f0ed8a40_0.file.page-fullwidth.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/be277b4f1befb6c6f10eca7264534aac346da26c_0.file.sidebar.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/be277b4f1befb6c6f10eca7264534aac346da26c_0.file.sidebar.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/d665e71ddc285ffc93bef7ca8b7de746b6412a5c_0.file.page-list.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/d665e71ddc285ffc93bef7ca8b7de746b6412a5c_0.file.page-list.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/tempate_c/db20a3dc344a307acf8bbd2b1d7a4204541ef08d_0.file.index.html.php" afterPath="$PROJECT_DIR$/runtime/tempate_c/db20a3dc344a307acf8bbd2b1d7a4204541ef08d_0.file.index.html.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,17 +21,26 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="ueepress2" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="abc.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/abc.php">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/index/view/pc/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="75">
+              <caret line="65" column="24" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="24" />
+              <folding>
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#4;n#ul#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#5;n#ul#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,43 +85,43 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/libs/db/DB.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/api/controller/Image.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/admin/controller/Menulist.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/api/controller/Category.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/libs/URL.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/index/controller/Cases.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/api/service/AdminCategoryMenu.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/libs/Pagination.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/api/service/CategoryDropdownList.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/api/service/Breadcrumb.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/api/service/Menu.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/api/model/Menulist.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/admin/controller/Acategory.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/api/model/Admin.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/api/model/Product.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/api/model/BaseModel.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/admin/controller/Article.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/admin/controller/Menulist.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/api/model/Image.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/admin/controller/Product.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/admin/controller/Comment.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/libs/validate/BaseValidate.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/admin/controller/BaseController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/libs/db/DB.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/public/abc.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/admin/controller/Category.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/libs/URL.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/api/controller/Menulist.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/libs/Pagination.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/index/controller/Acategory.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/index/controller/Pcategory.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/api/controller/Admin.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/api/controller/Product.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/admin/controller/Pcategory.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/api/controller/Login.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/api/controller/Image.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/admin/controller/Products.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/api/controller/Category.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/admin/controller/Acategory.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/index/controller/BaseController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/index/controller/Article.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/index/controller/Page.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/api/model/Admin.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/index/controller/Category.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/api/model/BaseModel.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/api/model/Image.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/index/controller/Acategory.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/index/controller/Pcategory.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/api/model/Product.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/api/controller/Product.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/admin/controller/Pcategory.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/admin/controller/Article.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/admin/controller/Product.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/libs/validate/BaseValidate.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/admin/controller/Comment.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/admin/controller/BaseController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/admin/controller/Category.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/index/controller/Product.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/index/controller/Cases.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/public/abc.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/api/model/Menulist.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/api/controller/Admin.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/api/controller/Menulist.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/api/controller/Login.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -162,7 +152,6 @@
         <option value="$PROJECT_DIR$/app/index/view/pc/psingle.html" />
         <option value="$PROJECT_DIR$/libs/Convention.php" />
         <option value="$PROJECT_DIR$/app/index/view/pc/public/_meta.html" />
-        <option value="$PROJECT_DIR$/public/static/index/css/slide.css" />
         <option value="$PROJECT_DIR$/app/index/view/pc/page-fullwidth.html" />
         <option value="$PROJECT_DIR$/app/api/model/Product.php" />
         <option value="$PROJECT_DIR$/app/admin/view/article-list.html" />
@@ -183,10 +172,11 @@
         <option value="$PROJECT_DIR$/app/index/view/pc/pcategory.html" />
         <option value="$PROJECT_DIR$/app/index/view/pc/case.html" />
         <option value="$PROJECT_DIR$/app/index/view/pc/acategory.html" />
-        <option value="$PROJECT_DIR$/app/index/view/pc/index.html" />
         <option value="$PROJECT_DIR$/app/index/view/pc/public/_footer.html" />
-        <option value="$PROJECT_DIR$/public/static/index/css/style.css" />
         <option value="$PROJECT_DIR$/public/abc.php" />
+        <option value="$PROJECT_DIR$/public/static/index/css/slide.css" />
+        <option value="$PROJECT_DIR$/app/index/view/pc/index.html" />
+        <option value="$PROJECT_DIR$/public/static/index/css/style.css" />
       </list>
     </option>
   </component>
@@ -196,7 +186,6 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="uee2.com" id="87eefaa9-01ba-4de4-a326-91dae7034518" name="uee2" />
@@ -204,11 +193,11 @@
     </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
-    <option name="height" value="780" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -228,78 +217,123 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="meswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meswebsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="meswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meswebsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="meswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meswebsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="meswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meswebsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="service" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="meswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meswebsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="meswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meswebsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="meswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meswebsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="meswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meswebsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pc" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="meswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meswebsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pc" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="meswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meswebsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueepress2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueepress2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueepress2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueepress2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueepress2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueepress2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueepress2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueepress2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pc" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueepress2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueepress2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueepress2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueepress2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -330,15 +364,6 @@
     </option>
   </component>
   <component name="RunManager" selected="PHP Web Application.uee2.com">
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-    </configuration>
-    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="apache" />
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
       <method />
@@ -377,6 +402,18 @@
       <PhpTestRunnerSettings />
       <method />
     </configuration>
+    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="apache">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -397,8 +434,12 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <configuration name="localhost" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" />
-    <configuration name="uee2.com" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="uee2" />
+    <configuration default="false" name="uee2.com" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="uee2">
+      <method />
+    </configuration>
+    <configuration default="false" name="localhost" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost">
+      <method />
+    </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="PHP Web Application.uee2.com" />
       <item index="1" class="java.lang.String" itemvalue="PHP Web Application.localhost" />
@@ -427,16 +468,18 @@
       <workItem from="1510554524025" duration="3078000" />
       <workItem from="1510585121914" duration="11751000" />
       <workItem from="1510613836459" duration="866000" />
+      <workItem from="1510625999495" duration="4189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117255000" />
+    <option name="totallyTimeSpent" value="121444000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.238653" sideWeight="0.49463806" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23819445" sideWeight="0.49463806" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -464,7 +507,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.238653" sideWeight="0.49463806" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23819445" sideWeight="0.49463806" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -475,7 +518,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -506,14 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -561,7 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/index/css/slide.css" />
     <entry file="file://$PROJECT_DIR$/app/index/view/pc/page-fullwidth.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -678,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,7 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -708,7 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
           <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="108" column="61" lean-forward="true" selection-start-line="108" selection-start-column="61" selection-end-line="108" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
           <caret line="31" column="80" lean-forward="false" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,10 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="25" />
-          <folding>
-            <marker date="1510608591138" expanded="true" signature="795:799" ph="&gt;" />
-            <marker date="1510608591138" expanded="true" signature="968:972" ph="&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="31" column="80" lean-forward="false" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
           <caret line="51" column="97" lean-forward="true" selection-start-line="51" selection-start-column="97" selection-end-line="51" selection-end-column="97" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
           <caret line="110" column="5" lean-forward="true" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,34 +830,61 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/index/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="1281" column="1" lean-forward="true" selection-start-line="1281" selection-start-column="1" selection-end-line="1281" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index/view/pc/public/_footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index/view/pc/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/abc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="350">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="84" column="16" lean-forward="false" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/index/css/slide.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="89" column="1" lean-forward="false" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/index/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="392" column="1" lean-forward="false" selection-start-line="392" selection-start-column="1" selection-end-line="392" selection-end-column="1" />
+          <folding>
+            <marker date="1510629569183" expanded="true" signature="819:843" ph="{...}" />
+            <marker date="1510629569183" expanded="true" signature="1300:1324" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index/view/pc/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="65" column="24" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#5;n#ul#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
