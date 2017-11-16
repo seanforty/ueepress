@@ -1,0 +1,281 @@
+
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitename";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="sitesubtitle";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headerwelcome";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headercontact";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle1";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink1";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle2";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink2";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenutitle3";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="headermenulink3";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="title";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="description";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="keywords";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="copyright";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="beianhao";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footertext";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="footercontact";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="floatservicelink";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_menulist WHERE id=4;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_menucontent WHERE `mid` = "4" AND `parent_id` = "0" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (0,0,0,0,0,0,0);
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_menulist WHERE id=5;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_menucontent WHERE `mid` = "5" AND `parent_id` = "0" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (0,0,0,0,0,0);
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=1;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="1" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (175);
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=2;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="2" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (178,177,176);
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=5;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="5" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (179);
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_sliderbox WHERE id=6;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_sliderimg WHERE `sid`="6" ORDER BY `listorder` DESC, `id` DESC;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (208);
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule4_link";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT count(`id`) FROM uee_product WHERE `type`="2" ORDER BY id DESC;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_product WHERE `type`="2" ORDER BY id DESC LIMIT 0,10;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_image WHERE `id` IN (206,205,204,203,202,201,200,199);
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_category WHERE `id` IN (0,0,0,0,0,0,0,0);
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_link WHERE `status`="1";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_title";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_subtitle";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule1_content";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule2_title";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule2_subtitle";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule2_link";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule2_cateid";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_article WHERE `type` = "1" AND `cate_id` = "5" ORDER BY id DESC LIMIT 0,5;
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule3_title";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule3_subtitle";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule3_link";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_siteinfo WHERE `key`="indexmodule3_cateid";
+----------------------------------------
+2017-11-15 13:23:57
+uee2.com/
+GET
+SELECT * FROM uee_article WHERE `type` = "1" AND `cate_id` = "4" ORDER BY id DESC LIMIT 0,5;
+----------------------------------------
+2017-11-15 13:23:58
+uee2.com/static/index/limages/wen_right_line.png
+GET
+Error Message: syntax error, unexpected 'static' (T_STATIC), expecting identifier (T_STRING)(0)<br/>Error File: E:\www\ueepress2\libs\Route.php(115) : eval()'d code : 1<br>
